@@ -2,29 +2,9 @@
 
 * [Introducción](README.md)
 
+## Prácticas
 
-## Iniciación a mBlock
-
-* Salidas digitales
-	* [Luz intermitente]()
-	* [Luz intermitente alterna]()
-	* [Semáforo simple]()
-	* [Semáforo para invidentes]()
-
-* Salidas analógicas
-	* [Movimiento de un servomotor]()
-	* [Led RGB]()
-	* [Luces de navidad]()
-	* [La Guerra de las Galaxias]()
-
-* Entradas digitales
-	* [Pulsador simple]()
-	* [Interruptor alterno]()
-	* [MEdidor de distancias]()
-	* [Detector de aparcamiento]()
-
-* Entradas analógicas
-	* [Encendido nocturno]()
-	* [Led GRB crepuscular]()
-	* [Regulador de luz blanca]()
-	* [Servomotor con potenciómetro]()
+* [Salidas digitales](Practicas/Salidas-digitales/README.md)
+* [Salidas analógicas](Practicas/Salidas-analogicas/README.md)
+* [Entradas digitales](Practicas/Entradas-digitales/README.md)
+* [Entradas analógicas](Practicas/Entradas-analogicas/README.md)
