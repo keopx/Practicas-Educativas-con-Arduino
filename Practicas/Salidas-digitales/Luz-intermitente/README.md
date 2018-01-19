@@ -25,6 +25,8 @@ Para llevar a cabo la práctica vamos a necesitar los siguientes componentes:
 - 1 Resistencia de 220Ω
 
 
+<br><br>
+
 
 ## Esquema eléctrico
 
@@ -54,6 +56,8 @@ Se conectan los componentes sobre la placa de prototipado.
 ![Esquema eléctrico](fritzing.png)
 
 
+<br><br>
+
 
 ## Programación en mBlock
 
@@ -61,6 +65,8 @@ Para encender y apagar el led de forma intermitente, utilizamos un bucle repetir
 
 ![Programación en mBlock](mBlock.png)
 
+
+<br><br>
 
 
 ## Programación en Arduino
