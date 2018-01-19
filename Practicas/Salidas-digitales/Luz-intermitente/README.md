@@ -14,6 +14,8 @@ En esta práctica se va a construir y a programar un diodo Led que parpadea cont
 ---
 
 
+<br><br>
+
 
 ## Materiales
 
