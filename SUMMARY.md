@@ -2,7 +2,7 @@
 
 * [Introducción](README.md)
 
-## Prácticas
+## [Prácticas](Practicas/README.md)
 
 * [Salidas digitales](Practicas/Salidas-digitales/README.md)
 * [Salidas analógicas](Practicas/Salidas-analogicas/README.md)
