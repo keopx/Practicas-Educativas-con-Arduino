@@ -1,6 +1,6 @@
 # Salidas digitales
 
-* [Luz intermitente]()
+* [Luz intermitente](Practicas/Luz-intermitente/README.md)
 * [Luz intermitente alterna]()
 * [Semáforo simple]()
 * [Semáforo para invidentes]()
