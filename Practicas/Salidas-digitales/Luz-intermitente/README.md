@@ -43,14 +43,12 @@ Teniendo en cuenta las características técnicas de los diodos led que utilizam
 
 
 ```
-
 V = 2,9V
 I = 20mA
 
 V = I x R ; R = V / I
 
 R = 2,9V / 0,02A = 145Ω -> 220Ω (por aproximación)
-
 ```
 
 Se conectan los componentes sobre la placa de prototipado.
@@ -105,4 +103,5 @@ void loop() {
 
 
 
-<img src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /> Esta obra está bajo una licencia de [Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional](https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES).
+<img src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /><br>
+Esta obra está bajo una licencia de [Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional](https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES).
