@@ -5,11 +5,8 @@
  * continuamente con una frecuencia de 1 segundo.
  * 
  * @author Miguel Ángel Abellán
- * @company El Cable Amarillo
- * @license Creative Commons. Reconocimiento CompartirIgual 4.0 (Se 
- * permite el uso comercial de la obra y de las posibles obras derivadas, 
- * la distribución de las cuales se debe hacer con una licencia igual a 
- * la que regula la obra original.)
+ * @company Programo Ergo Sum
+ * @license Creative Commons. Reconocimiento CompartirIgual 4.0
  */
 
 // Se definen las variables de tipo entero

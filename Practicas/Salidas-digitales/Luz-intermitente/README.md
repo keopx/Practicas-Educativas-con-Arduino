@@ -74,6 +74,17 @@ Para encender y apagar el led de forma intermitente, utilizamos un bucle repetir
 Al igual que en el apartado anterior, programamos en Arduino IDE la práctica propuesta.
 
 ```
+/**
+ * Luz intermitente
+ * 
+ * En esta práctica se va a construir y programar un diodo Led que parpadea
+ * continuamente con una frecuencia de 1 segundo.
+ * 
+ * @author Miguel Ángel Abellán
+ * @company Programo Ergo Sum
+ * @license Creative Commons. Reconocimiento CompartirIgual 4.0
+ */
+ 
 // Se definen las variables de tipo entero
 int ledPin = 13;
 int delayTime = 1000;
