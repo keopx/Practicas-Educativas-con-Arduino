@@ -51,7 +51,7 @@ Se conectan los componentes sobre la placa de prototipado.
 
 La programación de esta práctica consiste en mover el servomotor desde un ángulo hasta otro dado.
 
-![Programación en mBlock](Programación-mBlock.png)
+![Programación en mBlock](mBlock.png)
 
 
 <br><br>

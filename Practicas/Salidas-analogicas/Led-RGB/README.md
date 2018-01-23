@@ -77,7 +77,7 @@ Se conectan los componentes sobre la placa de prototipado.
 
 La programación de esta práctica consiste en encender los diferentes colores del led RGB.
 
-![Programación en mBlock](Programación-mBlock.png)
+![Programación en mBlock](mBlock.png)
 
 
 <br><br>

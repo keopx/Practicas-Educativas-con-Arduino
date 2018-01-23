@@ -62,7 +62,7 @@ Se conectan los componentes sobre la placa de prototipado.
 
 La programación de esta práctiac consiste en encender de forma aleatoria los diferentes diodos Led.
 
-![Programación en mBlock](Programación-mBlock.png)
+![Programación en mBlock](mBlock.png)
 
 
 <br><br>
