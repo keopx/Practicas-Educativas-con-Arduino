@@ -33,6 +33,7 @@ Dentro de cada práctica encontrarás el material necesario para llevarla a cabo
 
 <br><br>
 
+---
 
 ## Licencia
 
@@ -47,8 +48,3 @@ Bajo las siguientes condiciones:
 
 * **Reconocimiento**: Debe reconocer adecuadamente la autoría, proporcionar un enlace a la licencia e indicar si se han realizado cambios. Puede hacerlo de cualquier manera razonable, pero no de una manera que sugiera que tiene el apoyo del licenciador o lo recibe por el uso que hace.
 * **CompartirIgual**: Si remezcla, transforma o crea a partir del material, deberá difundir sus contribuciones bajo la misma licencia que el original.
-
----
-
-<img src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /><br>
-Esta obra está bajo una licencia de [Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional](https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES).
