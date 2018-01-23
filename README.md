@@ -1,13 +1,38 @@
 # ¿Qué voy a aprender?
 
-En este tutorial encontrarás las prácticas de programación y electrónica para utilizar en el aula de tu centro utilizando diferentes lenguajes de programación por bloques y en modo texto. Dentro de cada práctica encontrarás el material necesario para llevarla a cabo con tus alumnos. 
+En este libro encontrarás numerosas prácticas de programación y electrónica para utilizar en el aula utilizando diferentes lenguajes de programación por bloques y en modo texto. 
+
+Dentro de cada práctica encontrarás el material necesario para llevarla a cabo con tus alumnos, estando divididas de las siguiente forma:
+
+1.	Materiales
+2.	Esquema eléctrico
+3.	Programación en mBlock
+4.	Programación en Arduino
 
 
 ---
 
+
+<br><br>
+
+
 ## Autor
 
 * Miguel Ángel Abellán \(@migueabellan\)
+
+
+<br><br>
+
+
+## Ediciones
+
+* 1ª Edición: Enero, 2017: Financiado por el Fondo Europeo de Desarrollo Regional de la Región de Murcia. [Proyecto El Cable Amarillo](https://github.com/ElCableAmarillo/Listado-de-practicas).
+* 2ª Edición: Enero, 2018: Financiado por la Asociación Programo Ergo Sum y Centro de Profesorado y Recursos de la Región de Murcia. **Adaptaciones mejoradas** sobre las prácticas de la anterior edición (Edición 2017), así como la **incorporación de nuevas prácticas de programación y electrónica**.
+
+
+
+<br><br>
+
 
 ## Licencia
 
@@ -25,4 +50,5 @@ Bajo las siguientes condiciones:
 
 ---
 
-<img src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /> Esta obra está bajo una licencia de [Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional](https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES).
+<img src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /><br>
+Esta obra está bajo una licencia de [Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional](https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES).
