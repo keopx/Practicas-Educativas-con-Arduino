@@ -76,7 +76,6 @@ Para encender y apagar los leds y zumbador del semáforo, utilizamos un bucle re
 <br /><br />
 
 
-
 ## Programación en Arduino
 
 Al igual que en el apartado anterior, programamos en Arduino IDE la práctica propuesta.
