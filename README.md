@@ -27,7 +27,7 @@ Dentro de cada práctica encontrarás el material necesario para llevarla a cabo
 ## Ediciones
 
 * 1ª Edición: Enero, 2017: Financiado por el Fondo Europeo de Desarrollo Regional de la Región de Murcia. [Proyecto El Cable Amarillo](https://github.com/ElCableAmarillo/Listado-de-practicas).
-* 2ª Edición: Enero, 2018: Financiado por la Asociación Programo Ergo Sum y Centro de Profesorado y Recursos de la Región de Murcia. **Adaptaciones mejoradas** sobre las prácticas de la anterior edición (Edición 2017), así como la **incorporación de nuevas prácticas de programación y electrónica**.
+* 2ª Edición: Enero, 2018: Financiado por la Asociación Programo Ergo Sum. **Adaptaciones mejoradas** sobre las prácticas de la Edición 2017 y **nuevas prácticas incorporadas al repositorio**.
 
 
 
