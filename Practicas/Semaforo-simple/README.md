@@ -88,39 +88,25 @@ Al igual que en el apartado anterior, programamos en Arduino IDE la práctica pr
  * @license Creative Commons. Reconocimiento CompartirIgual 4.0
  */
 
-// Definimos las variables de tipo entero
-int ledPinRojo = 13;
-int ledPinAmbar = 12;
-int ledPinVerde = 11;
-int delayTime = 5000;
-int delayTimeAmbar = 1000;
-
-//Este código se ejecuta la primera vez
 void setup() {
-  // Configuramos los pines en modo salida
-  pinMode(ledPinRojo, OUTPUT);
-  pinMode(ledPinAmbar, OUTPUT);
-  pinMode(ledPinVerde, OUTPUT);
-  // Inicializamos los pines a un valor BAJO
-  digitalWrite(ledPinRojo, LOW);
-  digitalWrite(ledPinAmbar, LOW);
-  digitalWrite(ledPinVerde, LOW);
+  pinMode(13, OUTPUT);
+  pinMode(12, OUTPUT);
+  pinMode(11, OUTPUT);
+  digitalWrite(13, LOW);
+  digitalWrite(12, LOW);
+  digitalWrite(11, LOW);
 }
 
-//Este código se ejecuta en bucle repetidamente
 void loop() {
-  // Escribimos los valores ALTO y BAJO e los pines y esperamos
-  digitalWrite(ledPinRojo, LOW);
-  digitalWrite(ledPinVerde, HIGH);
-  delay(delayTime);
-  // Escribimos los valores ALTO y BAJO e los pines y esperamos
-  digitalWrite(ledPinVerde, LOW);
-  digitalWrite(ledPinAmbar, HIGH);
-  delay(delayTimeAmbar);
-  // Escribimos los valores ALTO y BAJO e los pines y esperamos
-  digitalWrite(ledPinAmbar, LOW);
-  digitalWrite(ledPinRojo, HIGH);
-  delay(delayTime);
+  digitalWrite(13, LOW);
+  digitalWrite(11, HIGH);
+  delay(5000);
+  digitalWrite(11, LOW);
+  digitalWrite(12, HIGH);
+  delay(1000);
+  digitalWrite(12, LOW);
+  digitalWrite(13, HIGH);
+  delay(5000);
 }
 ```
 

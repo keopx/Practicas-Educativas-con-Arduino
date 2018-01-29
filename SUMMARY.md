@@ -7,7 +7,7 @@
 * [Hola Mundo](Practicas/Hola-mundo/README.md)
 * [Luz intermitente](Practicas/Luz-intermitente/README.md)
 * [Luz alterna](Practicas/Luz-alterna/README.md)
-* [Semáforo simple](Semaforo-simple/README.md)
+* [Semáforo simple](Practicas/Semaforo-simple/README.md)
 * [Semáforo para invidentes](Semaforo-para-invidentes/README.md)
 * [Movimiento de un servomotor](Movimiento-de-un-servomotor/README.md)
 * [Led RGB](Led-RGB/README.md)
