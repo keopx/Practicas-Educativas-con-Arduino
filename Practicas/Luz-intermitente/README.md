@@ -2,7 +2,7 @@
 
 ![Animación](practica.gif)
 
-En esta práctica se va a construir y a programar un diodo Led que parpadea continuamente con una frecuencia de 1 segundo.
+En esta práctica se va a programar el código encargado de encender y apagar un led conectado al pin número 13 de nuestra placa de arduino. Deberá encenderse y apagarse con una frecuencia de 1 segundo.
 
 1.	[Materiales](#materiales)
 2.	[Esquema eléctrico](#esquema-eléctrico)
@@ -24,7 +24,7 @@ Para llevar a cabo la práctica vamos a necesitar los siguientes componentes:
 - 1 Protoboard
 - 2 latiguillos
 - 1 Diodo Led
-- 1 Resistencia de 220Ω
+- 1 Resistencia de 220Ω (rojo-rojo-marrón)
 
 
 <br><br>
@@ -61,7 +61,7 @@ Se conectan los componentes sobre la placa de prototipado.
 
 ## Programación en mBlock
 
-Para encender y apagar el led de forma intermitente, utilizamos un bucle repetir. Dentro del bucle se añaden las instrucciones de apagar y encender el led, dejando una espera de 1 segundo.
+Para realizar la práctica utilizando mBlock, deberás haber configurado y cargado el firmware que hace de intermediario entre la placa y el programa mBlock. El siguiente paso será programar el código encargado de encender y apagar el pin digital 13.
 
 ![Programación en mBlock](mBlock.png)
 
@@ -71,40 +71,30 @@ Para encender y apagar el led de forma intermitente, utilizamos un bucle repetir
 
 ## Programación en Arduino
 
-Al igual que en el apartado anterior, programamos en Arduino IDE la práctica propuesta.
+Para programar el código utilizando el lenguaje de programación de Arduino IDE, recuerda elegir el puerto correcto. El siguiente paso será programar el código encargado de encender y apagar el pin digital 13 (el cual tiene contiene un led en la placa). Fíjate además que estamos indicando a Arduino que el pin digital 13 tiene que tratarlo como salida.
 
 ```
 /**
  * Luz intermitente
  * 
- * En esta práctica se va a construir y programar un diodo Led que parpadea
- * continuamente con una frecuencia de 1 segundo.
+ * En esta práctica se va a programar el código encargado de encender y apagar
+ * un led conectado al pin número 13 de nuestra placa de arduino. Deberá encenderse 
+ * y apagarse con una frecuencia de 1 segundo.
  * 
  * @author Miguel Ángel Abellán
  * @company Programo Ergo Sum
  * @license Creative Commons. Reconocimiento CompartirIgual 4.0
  */
  
-// Se definen las variables de tipo entero
-int ledPin = 13;
-int delayTime = 1000;
-
-//Este código se ejecuta la primera vez
 void setup() {
-  // Configuramos el pin en modo salida
-  pinMode(ledPin, OUTPUT);
+  pinMode(13, OUTPUT);
 }
 
-//Este código se ejecuta en bucle repetidamente
 void loop() {
-  // Se enciende el led
-  digitalWrite(ledPin, HIGH);
-  // Esperamos 
-  delay(delayTime);
-  // Se apaga el led
-  digitalWrite(ledPin, LOW);
-  // Esperamos 
-  delay(delayTime);
+  digitalWrite(13, HIGH);
+  delay(1000);
+  digitalWrite(13, LOW);
+  delay(1000);
 }
 ```
 
