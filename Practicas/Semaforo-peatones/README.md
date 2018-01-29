@@ -1,8 +1,8 @@
-# Semáforo para invidentes
+# Semáforo peatones
 
 ![Animación](practica.gif)
 
-En esta práctica vamos a simular el semáforo para peatones invidentes a través de 1 zumbador que avisa al peatón.
+En esta práctica se va a programar el código de un semáforo de peatones con zumbador. Para ello se va a programar un parpadeo del zumbador mientras la luz verde esté encendida.
 
 1.	[Materiales](#materiales)
 2.	[Esquema eléctrico](#esquema-eléctrico)
@@ -68,7 +68,7 @@ Se conectan los componentes sobre la placa de prototipado.
 
 ## Programación en mBlock
 
-Para encender y apagar los leds y zumbador del semáforo, utilizamos un bucle repetir. Dentro del bucle se añaden las instrucciones de apagar y encender cada led, dejando la espera correspondiente.
+Para realizar la práctica utilizando mBlock, deberás haber configurado y cargado el firmware que hace de intermediario entre la placa y el programa mBlock. En el bucle principal del programa se ha programado el encendido y apagado de los led. Dentro del bucle se ha creado un evento encargado de hacer sonar el zombador. En este evento puedes observar que se reproducirá el sonido de encendido y apagado 10 veces.
 
 ![Programación en mBlock](mBlock.png)
 
@@ -78,32 +78,29 @@ Para encender y apagar los leds y zumbador del semáforo, utilizamos un bucle re
 
 ## Programación en Arduino
 
-Al igual que en el apartado anterior, programamos en Arduino IDE la práctica propuesta.
+Para programar el código utilizando el lenguaje de programación de Arduino IDE, recuerda elegir el puerto correcto. El siguiente paso será programar el código encargado de hacer que funcione el semáforo para peatones.
 
 ```
 /**
- * Semáforo para invidentes
+ * Semáforo peatones
  *
- * En esta práctica vamos a simular el semáforo para peatones invidentes 
- * a través de 1 zumbador que avisa al peatón.
+ * En esta práctica se va a programar el código de un semáforo de peatones con 
+ * zumbador. Para ello se va a programar un parpadeo del zumbador mientras la luz 
+ * verde esté encendida.
  *
  * @author Miguel Ángel Abellán
  * @company Programo Ergo Sum
  * @license Creative Commons. Reconocimiento CompartirIgual 4.0
  */
 
-// Definimos las variables de tipo entero
 int ledPinRojo = 13;
 int ledPinVerde = 12;
 int ledPinZumbador = 11;
 
-//Este código se ejecuta la primera vez
 void setup() {
-  // Configuramos los pines en modo salida
   pinMode(ledPinRojo, OUTPUT);
   pinMode(ledPinVerde, OUTPUT);
   pinMode(ledPinZumbador, OUTPUT);
-  // Inicializamos los pines a un valor BAJO
   digitalWrite(ledPinRojo, LOW);
   digitalWrite(ledPinVerde, LOW);
   digitalWrite(ledPinZumbador, LOW);
@@ -111,12 +108,10 @@ void setup() {
 
 //Este código se ejecuta en bucle repetidamente
 void loop() {
-  // Mostramos el led de color rojo
   digitalWrite(ledPinRojo, HIGH);
   delay(5000);
   digitalWrite(ledPinRojo, LOW);
   
-  // Mientras el semáforo está en verde suena el zumbador
   digitalWrite(ledPinVerde, HIGH);
   for(int i=0; i<10; i++){
     digitalWrite(ledPinZumbador, HIGH);

@@ -8,7 +8,8 @@
 * [Luz intermitente](Practicas/Luz-intermitente/README.md)
 * [Luz alterna](Practicas/Luz-alterna/README.md)
 * [Semáforo simple](Practicas/Semaforo-simple/README.md)
-* [Semáforo para invidentes](Semaforo-para-invidentes/README.md)
+* [Semáforo peatones](Practicas/Semaforo-peatones/README.md)
+
 * [Movimiento de un servomotor](Movimiento-de-un-servomotor/README.md)
 * [Led RGB](Led-RGB/README.md)
 * [Luces de navidad](Luces-de-navidad/README.md)
