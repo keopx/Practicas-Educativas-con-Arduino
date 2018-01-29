@@ -5,7 +5,7 @@
 ### Prácticas
 
 * [Hola Mundo](Practicas/Hola-mundo/README.md)
-* [Luz intermitente](Luz-intermitente/README.md)
+* [Luz intermitente](Practicas/Luz-intermitente/README.md)
 * [Luz intermitente alterna](Luz-intermitente-alterna/README.md)
 * [Semáforo simple](Semaforo-simple/README.md)
 * [Semáforo para invidentes](Semaforo-para-invidentes/README.md)
