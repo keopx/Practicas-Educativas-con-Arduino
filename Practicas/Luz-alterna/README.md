@@ -1,8 +1,8 @@
-# Luz intermitente alterna
+# Luz alterna
 
 ![Animación](practica.gif)
 
-En esta práctica vamos a crear un intermitente alterno con 2 diodos Led que cambian con una frecuencia de 1 segundo.
+En esta práctica se va a programar el código encargado de encender y apagar de forma alterna 2 diodos led conectados a los pines 12 y 13 de nuestra placa de arduino. Deberán encenderse y apagarse con una frecuencia de 1 segundo.
 
 1.	[Materiales](#materiales)
 3.	[Esquema eléctrico](#esquema-eléctrico)
@@ -62,8 +62,7 @@ Se conectan los componentes sobre la placa de prototipado.
 
 ## Programación en mBlock
 
-Para encender y apagar los leds de forma intermitente alterna, utilizamos un bucle repetir. Dentro del bucle se añaden las instrucciones de apagar y encender cada led, dejando una espera de 1 segundo.
-
+Para realizar la práctica utilizando mBlock, deberás haber configurado y cargado el firmware que hace de intermediario entre la placa y el programa mBlock. El siguiente paso será programar el código encargado de encender y apagar los pines digitales 12 y 13 de forma alterna.
 
 ![Programación en mBlock](Programación-mBlock.png)
 
@@ -73,47 +72,35 @@ Para encender y apagar los leds de forma intermitente alterna, utilizamos un buc
 
 ## Programación en Arduino
 
-Al igual que en el apartado anterior, programamos en Arduino IDE la práctica propuesta.
+Para programar el código utilizando el lenguaje de programación de Arduino IDE, recuerda elegir el puerto correcto. El siguiente paso será programar el código encargado de encender y apagar los pines digitales 12 y 13 de forma alterna. Fíjate además que estamos indicando a Arduino que los pines 12 y 13 tiene que tratarlos como salida, y además se están inicializando a un valor de bajo.
 
 ```
 /**
- * Luz intermitente alterna
+ * Luz alterna
  *
- * En esta práctica vamos a crear un intermitente alterno con 2 diodos Led
- * que cambian con una frecuencia de 1 segundo.
+ * En esta práctica se va a programar el código encargado de encender y apagar 
+ * de forma alterna 2 diodos led conectados a los pines 12 y 13 de nuestra placa 
+ * de arduino. Deberán encenderse y apagarse con una frecuencia de 1 segundo.
  *
  * @author Miguel Ángel Abellán
  * @company Programo Ergo Sum
  * @license Creative Commons. Reconocimiento CompartirIgual 4.0
  */
 
-// Definimos las variables de tipo entero
-int ledPinRojo = 13;
-int ledPinVerde = 12;
-int delayTime = 1000;
-
-//Este código se ejecuta la primera vez
 void setup() {
-  // Configuramos los pines en modo salida
-  pinMode(ledPinRojo, OUTPUT);
-  pinMode(ledPinVerde, OUTPUT);
-  // Inicializamos los pines a un valor BAJO
-  digitalWrite(ledPinRojo, LOW);
-  digitalWrite(ledPinVerde, LOW);
+  pinMode(13, OUTPUT);
+  pinMode(12, OUTPUT);
+  digitalWrite(13, LOW);
+  digitalWrite(12, LOW);
 }
 
-//Este código se ejecuta en bucle repetidamente
 void loop() {
-  // Escribimos los valores ALTO y BAJO e los pines y esperamos
-  digitalWrite(ledPinRojo, HIGH);
-  digitalWrite(ledPinVerde, LOW);
-  // Esperar
-  delay(delayTime);
-  // Escribimos los valores ALTO y BAJO e los pines y esperamos
-  digitalWrite(ledPinRojo, LOW);
-  digitalWrite(ledPinVerde, HIGH);
-  // Esperar
-  delay(delayTime);
+  digitalWrite(13, HIGH);
+  digitalWrite(12, LOW);
+  delay(1000);
+  digitalWrite(13, LOW);
+  digitalWrite(12, HIGH);
+  delay(1000);
 }
 ```
 
