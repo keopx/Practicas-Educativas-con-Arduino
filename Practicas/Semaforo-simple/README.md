@@ -66,7 +66,7 @@ Se conectan los componentes sobre la placa de prototipado.
 
 Para encender y apagar los leds, utilizamos un bucle repetir. Dentro del bucle se añaden las instrucciones de apagar y encender cada led, dejando la espera correspondiente.
 
-![Programación en mBlock](mBlock.png)
+![Programación en mBlock](mblock.png)
 
 
 <br /><br />
@@ -79,9 +79,6 @@ Al igual que en el apartado anterior, programamos en Arduino IDE la práctica pr
 ```
 /**
  * Semáforo simple
- *
- * En esta práctica vamos a crear un semáforo simple con una frecuencia de cambio
- * de 5 segundos en verde y rojo, y 1 segundo durante su estado en ámbar.
  *
  * @author Miguel Ángel Abellán
  * @company Programo Ergo Sum
