@@ -16,4 +16,4 @@
 	* [Semáforo peatones](Practicas/Semaforo-peatones/README.md)
 
 * Salidas analógicas
-	* [Luces aleatorias](Luces-aleatorias/README.md)
+	* [Luces aleatorias](Practicas/Luces-aleatorias/README.md)
