@@ -64,7 +64,7 @@ Se conectan los componentes sobre la placa de prototipado.
 
 Para realizar la práctica utilizando mBlock, deberás haber configurado y cargado el firmware que hace de intermediario entre la placa y el programa mBlock. El siguiente paso será programar el código encargado de encender y apagar los pines digitales 12 y 13 de forma alterna.
 
-![Programación en mBlock](Programación-mBlock.png)
+![Programación en mBlock](mblock.png)
 
 
 <br /><br />
@@ -78,10 +78,6 @@ Para programar el código utilizando el lenguaje de programación de Arduino IDE
 /**
  * Luz alterna
  *
- * En esta práctica se va a programar el código encargado de encender y apagar 
- * de forma alterna 2 diodos led conectados a los pines 12 y 13 de nuestra placa 
- * de arduino. Deberán encenderse y apagarse con una frecuencia de 1 segundo.
- *
  * @author Miguel Ángel Abellán
  * @company Programo Ergo Sum
  * @license Creative Commons. Reconocimiento CompartirIgual 4.0
@@ -90,8 +86,6 @@ Para programar el código utilizando el lenguaje de programación de Arduino IDE
 void setup() {
   pinMode(13, OUTPUT);
   pinMode(12, OUTPUT);
-  digitalWrite(13, LOW);
-  digitalWrite(12, LOW);
 }
 
 void loop() {
