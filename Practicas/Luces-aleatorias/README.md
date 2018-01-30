@@ -63,7 +63,7 @@ Se conectan los componentes sobre la placa de prototipado.
 
 Para realizar la práctica utilizando mBlock, deberás haber configurado y cargado el firmware que hace de intermediario entre la placa y el programa mBlock. El siguiente paso será programar el código encargado regular los valores de los led. Fíjate como el número aleatorio está comprendido entre 0 y 255.
 
-![Programación en mBlock](mBlock.png)
+![Programación en mBlock](mblock.png)
 
 
 <br><br>
