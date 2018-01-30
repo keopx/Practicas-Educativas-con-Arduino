@@ -70,7 +70,7 @@ Se conectan los componentes sobre la placa de prototipado.
 
 Para realizar la práctica utilizando mBlock, deberás haber configurado y cargado el firmware que hace de intermediario entre la placa y el programa mBlock. En el bucle principal del programa se ha programado el encendido y apagado de los led. Dentro del bucle se ha creado un evento encargado de hacer sonar el zombador. En este evento puedes observar que se reproducirá el sonido de encendido y apagado 10 veces.
 
-![Programación en mBlock](mBlock.png)
+![Programación en mBlock](mblock.png)
 
 
 <br /><br />
@@ -84,42 +84,33 @@ Para programar el código utilizando el lenguaje de programación de Arduino IDE
 /**
  * Semáforo peatones
  *
- * En esta práctica se va a programar el código de un semáforo de peatones con 
- * zumbador. Para ello se va a programar un parpadeo del zumbador mientras la luz 
- * verde esté encendida.
- *
  * @author Miguel Ángel Abellán
  * @company Programo Ergo Sum
  * @license Creative Commons. Reconocimiento CompartirIgual 4.0
  */
 
-int ledPinRojo = 13;
-int ledPinVerde = 12;
-int ledPinZumbador = 11;
-
 void setup() {
-  pinMode(ledPinRojo, OUTPUT);
-  pinMode(ledPinVerde, OUTPUT);
-  pinMode(ledPinZumbador, OUTPUT);
+  pinMode(13, OUTPUT);
+  pinMode(12, OUTPUT);
+  pinMode(11, OUTPUT);
   digitalWrite(ledPinRojo, LOW);
-  digitalWrite(ledPinVerde, LOW);
-  digitalWrite(ledPinZumbador, LOW);
+  digitalWrite(12, LOW);
+  digitalWrite(11, LOW);
 }
 
-//Este código se ejecuta en bucle repetidamente
 void loop() {
-  digitalWrite(ledPinRojo, HIGH);
+  digitalWrite(13, HIGH);
   delay(5000);
-  digitalWrite(ledPinRojo, LOW);
+  digitalWrite(13, LOW);
   
-  digitalWrite(ledPinVerde, HIGH);
+  digitalWrite(12, HIGH);
   for(int i=0; i<10; i++){
-    digitalWrite(ledPinZumbador, HIGH);
+    digitalWrite(11, HIGH);
     delay(200);
-    digitalWrite(ledPinZumbador, LOW);
+    digitalWrite(11, LOW);
     delay(500);
   }
-  digitalWrite(ledPinVerde, LOW);
+  digitalWrite(12, LOW);
 }
 ```
 

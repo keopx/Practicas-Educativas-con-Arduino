@@ -1,40 +1,31 @@
 /**
  * Semáforo peatones
  *
- * En esta práctica se va a programar el código de un semáforo de peatones con 
- * zumbador. Para ello se va a programar un parpadeo del zumbador mientras la luz 
- * verde esté encendida.
- *
  * @author Miguel Ángel Abellán
  * @company Programo Ergo Sum
  * @license Creative Commons. Reconocimiento CompartirIgual 4.0
  */
 
-int ledPinRojo = 13;
-int ledPinVerde = 12;
-int ledPinZumbador = 11;
-
 void setup() {
-  pinMode(ledPinRojo, OUTPUT);
-  pinMode(ledPinVerde, OUTPUT);
-  pinMode(ledPinZumbador, OUTPUT);
+  pinMode(13, OUTPUT);
+  pinMode(12, OUTPUT);
+  pinMode(11, OUTPUT);
   digitalWrite(ledPinRojo, LOW);
-  digitalWrite(ledPinVerde, LOW);
-  digitalWrite(ledPinZumbador, LOW);
+  digitalWrite(12, LOW);
+  digitalWrite(11, LOW);
 }
 
-//Este código se ejecuta en bucle repetidamente
 void loop() {
-  digitalWrite(ledPinRojo, HIGH);
+  digitalWrite(13, HIGH);
   delay(5000);
-  digitalWrite(ledPinRojo, LOW);
+  digitalWrite(13, LOW);
   
-  digitalWrite(ledPinVerde, HIGH);
+  digitalWrite(12, HIGH);
   for(int i=0; i<10; i++){
-    digitalWrite(ledPinZumbador, HIGH);
+    digitalWrite(11, HIGH);
     delay(200);
-    digitalWrite(ledPinZumbador, LOW);
+    digitalWrite(11, LOW);
     delay(500);
   }
-  digitalWrite(ledPinVerde, LOW);
+  digitalWrite(12, LOW);
 }
