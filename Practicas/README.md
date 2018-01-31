@@ -1,8 +1,6 @@
 # Prácticas
 
 
-* [La Guerra de las Galaxias](La-guerra-de-las-galaxias/README.md)
-
 * [Pulsador simple](Pulsador-simple/README.md)
 * [Interruptor alterno](Interruptor-alterno/README.md)
 * [Medidor de distancias](Medidor-de-distancias/README.md)
