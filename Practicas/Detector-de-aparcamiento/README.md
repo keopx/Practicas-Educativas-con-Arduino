@@ -1,14 +1,8 @@
-# Detector de aparcamiento
+# Práctica 3: Detector de aparcamiento con ultrasonidos
 
-![Animación](practica.gif)
+El objetivo de esta práctica es medir la distancia entre objetos simulando el detector de aparcamiento con zumbador existente en algunos vehículos. Para ello se va a utilizar un sensor de ultrasonidos.
 
-En esta práctica vamos a calcular la distancia de aparcamiento en un vehículo mostrando una señal acústica a medida se va acercando al obstáculo.
- 
-1.  [Materiales](#materiales)
-2.  [Esquema eléctrico](#esquema-eléctrico)
-3.  [Programación en mBlock](#programación-en-mBlock)
-4.  [Programación en Arduino](#programación-en-arduino)
-
+![Detector de aparcamiento con Arduino](practica.gif)
 
 
 ---
@@ -19,11 +13,10 @@ En esta práctica vamos a calcular la distancia de aparcamiento en un vehículo 
 
 ## Materiales
 
-Para llevar a cabo la práctica, vamos a necesitar los siguientes materiales:
-- 1 Placa de Arduino UNO
+- 1 Arduino UNO
 - 1 Protoboard
-- 6 latiguillos
-- 1 Sensor de ultrasonidos
+- 6 Latiguillos
+- 1 Ultrasonidos
 - 1 Zumbador
 
 
@@ -37,17 +30,15 @@ Teniendo en cuenta las características técnicas de los diodos led que utilizam
 | Sensor de proximidad HC-SR04  |           |
 | ----------------------------- | --------- |
 | Polarizado                    | Si        |
-| Señal de salida               | Digital   |
 | Tensión                       | 5V        |
 | Rango de medición             | 2cm a 4m  |
 
-Para calcular la distancia tenemos que ayudarnos de la velocidad del sonido para obtener los cálculos. Hay que tener en cuenta que el resultado es el tiempo en ida + vuelta.
+| Características Zumbador         |        |
+| -------------------------------- | ------ |
+| Polarizado                       | Sí     |
+| Tensión de trabajo               | 3-12V  |
 
-```
-Velocidad del sonido: 343 m/s
-```
-
-Se conectan los componentes sobre la placa de prototipado.
+Fijándonos en los pines del sensor de ultrasonidos, se conecta el pin Vcc al pin 5V de la placa de arduino, el GND al GND de la placa de arduino, y los pines triger y echo a los pines 12 y 11 respectivamente. Por otro lado se conecta el zumbador al pin digital 13 de la placa de arduino.
 
 ![Esquema eléctrico](fritzing.png)
 
@@ -57,9 +48,9 @@ Se conectan los componentes sobre la placa de prototipado.
 
 ## Programación en mBlock
 
-Fijándonos en el diagrama de flujo programamos la práctica mediante lenguaje de programación por bloques mBlock. 
+Al ejecutar el código se deberá detectar la distancia mediante el bloque que devuelve la distancia en centímetros y almacenarla en una variable. De esta forma en caso de estar a más de 30 centímetros el zumbador permanecerá desactivado. En caso de estar a menos 10 centímetros se activará de forma fija, y si se encuentra entre 10 y 30 centímetros irá aumentando la velocidad del zumbador en base a una constante de 5 milisegundos.
 
-![Programación en mBlock](mBlock.png)
+![Programación en mBlock](mblock.png)
 
 
 <br /><br />
@@ -67,70 +58,53 @@ Fijándonos en el diagrama de flujo programamos la práctica mediante lenguaje d
 
 ## Programación en Arduino
 
-Al igual que en el apartado anterior, programamos en Arduino IDE la práctica propuesta.
+En primer lugar, se configura el pin digitales 13 y 12 en modo salida (OUTPUT) y el pin digital 11 en modo entrada (INPUT). Esta configuración se establece en la función setup(), ya que solamente se ejecuta una vez. Además se establece el pin digital 12 a un valor bajo (LOW).
+
+Al ejecutar el código se deberá detectar la distancia mediante el bloque que devuelve la distancia en centímetros y almacenarla en una variable. De esta forma en caso de estar a más de 30 centímetros el zumbador permanecerá desactivado. En caso de estar a menos 10 centímetros se activará de forma fija, y si se encuentra entre 10 y 30 centímetros irá aumentando la velocidad del zumbador en base a una constante de 5 milisegundos.
 
 ```
 /**
  * Detector de aparcamiento
- * 
- * En esta práctica vamos a calcular la distancia de aparcamiento en un 
- * vehículo mostrando una señal acústica a medida se va acercando al
- * obstáculo.
  * 
  * @author Miguel Ángel Abellán
  * @company Programo Ergo Sum
  * @license Creative Commons. Reconocimiento CompartirIgual 4.0
  */
 
-// Se definen las variables de tipo entero
-int zumbadorPin = 13;
-int trigPin = 12;
-int echoPin = 11;
-
-//Este código se ejecuta la primera vez
 void setup() {
-  Serial.begin (9600);
-  pinMode(zumbadorPin, OUTPUT);
-  pinMode(trigPin, OUTPUT);
-  pinMode(echoPin, INPUT);
+  pinMode(13, OUTPUT);
+  pinMode(12, OUTPUT);
+  pinMode(11, INPUT);
 
   //Inicialización  de los pines
-  digitalWrite(zumbadorPin, LOW);
-  digitalWrite(trigPin, LOW);
+  digitalWrite(13, LOW);
+  digitalWrite(12, LOW);
 }
 
 //Este código se ejecuta en bucle repetidamente
 void loop() {
-  
-  //Enviamos un pulso durante 10µs
-  digitalWrite(trigPin, HIGH);
+  digitalWrite(12, HIGH);
   delayMicroseconds(10);
-  digitalWrite(trigPin, LOW);
+  digitalWrite(12, LOW);
 
-  //Obtenemos la duración del pulso (ida+vuelta) en µs
   long tiempo;
-  tiempo = pulseIn(echoPin, HIGH);
+  tiempo = pulseIn(11, HIGH);
 
-  //Calculamos la distancia. Velocidad Sonido = 343 m/s
+  // Velocidad Sonido = 343 m/s
   float distancia = 34300*tiempo*0.000001;
-  distancia = distancia / 2; //Solo IDA
-
-  Serial.print("Distancia: ");
-  Serial.println(distancia);
+  distancia = distancia / 2;
   
-  //Encendemos el zumbador si estamos a menos de 30 cms
   if(int(distancia)<30){
-    //Encendemos el zumbador si estamos a menos de 10 cms
     if(int(distancia)<10){
-      digitalWrite(zumbadorPin, HIGH);
+      digitalWrite(13, HIGH);
     }else{
-      digitalWrite(zumbadorPin, HIGH);
+      digitalWrite(13, HIGH);
       delay(50);
-      digitalWrite(zumbadorPin, LOW);
+      digitalWrite(13, LOW);
       delay(distancia*5);
     }
   }else{
-    digitalWrite(zumbadorPin, LOW);
+    digitalWrite(13, LOW);
   }
 }
 ```
@@ -143,3 +117,5 @@ void loop() {
 
 <img src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /><br>
 Esta obra está bajo una licencia de [Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional](https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES).
+
+2018 [Asociación Programo Ergo Sum](https://www.programoergosum.com)

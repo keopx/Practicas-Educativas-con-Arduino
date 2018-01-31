@@ -1,13 +1,22 @@
-# Medidor de distancias
+# Práctica 2: Medidor de distancia con ultrasonidos
 
-![Animación](practica.gif)
+El objetivo de esta práctica es medir la distancia entre objetos próximos comprendidos entre unos cuantos centímetros. Para ello se va a utilizar un sensor de ultrasonidos.
 
-En esta práctica deberás medir distancias cortas inferiores a 4 metros mediante el sensor de ultrasonidos.
+![Medidor de distancias con Arduino](practica.gif)
 
-1.  [Materiales](#materiales)
-2.  [Esquema eléctrico](#esquema-eléctrico)
-3.  [Programación en mBlock](#programación-en-mBlock)
-4.  [Programación en Arduino](#programación-en-arduino)
+
+---
+
+
+<br><br>
+
+
+## Materiales
+
+- 1 Arduino UNO
+- 1 Protoboard
+- 4 Latiguillos
+- 1 Ultrasonidos
 
 
 <br /><br />
@@ -15,24 +24,13 @@ En esta práctica deberás medir distancias cortas inferiores a 4 metros mediant
 
 ## Esquema eléctrico
 
-Teniendo en cuenta las características técnicas de los diodos led que utilizamos en esta práctica, calculamos la resistencia del circuito aplicando la Ley de Ohm.
-
-Tenemos que tener en cuenta que el sensor de ultrasonidos tiene un rango de medición inferior a 4 metros y valor obtenido es el tiempo transcurrido desde la emisión del pulso hasta la recepción del cambio de pulso, es decir, cuenta el tiempo de ida + vuelta.
-
 | Sensor de proximidad HC-SR04  |           |
 | ----------------------------- | --------- |
 | Polarizado                    | Si        |
-| Señal de salida               | Digital   |
 | Tensión                       | 5V        |
 | Rango de medición             | 2cm a 4m  |
 
-Para calcular la distancia tenemos que ayudarnos de la velocidad del sonido para obtener los cálculos. Hay que tener en cuenta que el resultado es el tiempo en ida + vuelta.
-
-```
-Velocidad del sonido: 343 m/s
-```
-
-Se conectan los componentes sobre la placa de prototipado.
+Fijándonos en los pines del sensor de ultrasonidos, se conecta el pin Vcc al pin 5V de la placa de arduino, el GND al GND de la placa de arduino, y los pines triger y echo a los pines 13 y 12 respectivamente.
 
 ![Esquema eléctrico](fritzing.png)
 
@@ -42,11 +40,9 @@ Se conectan los componentes sobre la placa de prototipado.
 
 ## Programación en mBlock
 
-Fijándonos en el diagrama de flujo programamos la práctica mediante lenguaje de programación por bloques mBlock. 
+Al ejecutar el código se deberá detectar la distancia mediante el bloque que devuelve la distancia en centímetros. Además el valor se guardará en una variable para mostrarla por la pantalla.
 
-Podrás observar el gran parecido que se tiene con el diagrama de flujo.
-
-![Programación en mBlock](mBlock.png)
+![Programación en mBlock](mblock.png)
 
 
 <br /><br />
@@ -54,49 +50,41 @@ Podrás observar el gran parecido que se tiene con el diagrama de flujo.
 
 ## Programación en Arduino
 
-Al igual que en el apartado anterior, programamos en Arduino IDE la práctica propuesta.
+En primer lugar, se configura el pin digitales 13 en modo salida (OUTPUT) y el pin digital 12 en modo entrada (INPUT). Esta configuración se establece en la función setup(), ya que solamente se ejecuta una vez. Además se establece el pin digital 13 a un valor bajo (LOW).
+
+Al ejecutar el código se establece el pin digital 13 a un valor alto (HIGH) y bajo (LOW) rápidamente durante 10 microsegundos. Este es el estado que cambia y deberá detectar el pin digital 12, el cual almacena en una variable el tiempo transcurrido. Solamente quedará calcular la distancia conociendo la velocidad del sonido y dividiendo el resultado entre 2 ya que se trata de ida y vuelta.
+
+Para ver los valores de distancias deberás abrir el monitor serial.
 
 ```
 /**
  * Medidor de distancia
- * 
- * En esta práctica deberás medir distancias cortas inferiores a 4 metros
- * mediante el sensor de ultrasonidos.
  * 
  * @author Miguel Ángel Abellán
  * @company Programo Ergo Sum
  * @license Creative Commons. Reconocimiento CompartirIgual 4.0
  */
 
-// Se definen las variables de tipo entero
-int trigPin = 13;
-int echoPin = 12;
-
-//Este código se ejecuta la primera vez
 void setup() {
-  Serial.begin (9600);
-  pinMode(trigPin, OUTPUT);
-  pinMode(echoPin, INPUT);
+  Serial.begin(9600);
+  pinMode(13, OUTPUT);
+  pinMode(12, INPUT);
 
-  //Inicialización  de los pines
-  digitalWrite(trigPin, LOW);
+  digitalWrite(13, LOW);
 }
 
-//Este código se ejecuta en bucle repetidamente
 void loop() {
-  
-  //Enviamos un pulso durante 10µs
-  digitalWrite(trigPin, HIGH);
+  digitalWrite(13, HIGH);
   delayMicroseconds(10);
-  digitalWrite(trigPin, LOW);
+  digitalWrite(13, LOW);
 
-  //Obtenemos la duración del pulso (ida+vuelta) en µs
   long tiempo;
-  tiempo = pulseIn(echoPin, HIGH);
+  tiempo = pulseIn(12, HIGH);
 
-  //Calculamos la distancia. Velocidad Sonido = 343 m/s
+  // Velocidad Sonido = 343 m/s
   float distancia = 34300*tiempo*0.000001;
-  distancia = distancia / 2; //Solo IDA
+  distancia = distancia / 2;
+
   Serial.print("Distancia: ");
   Serial.println(distancia);
 }
@@ -110,3 +98,5 @@ void loop() {
 
 <img src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /><br>
 Esta obra está bajo una licencia de [Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional](https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES).
+
+2018 [Asociación Programo Ergo Sum](https://www.programoergosum.com)

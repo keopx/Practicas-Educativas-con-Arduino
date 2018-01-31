@@ -24,3 +24,9 @@
 	* [Led RGB (cátodo común)](Practicas/Led-RGB-catodo-comun/README.md)
 	* [Servomotor 0-180](Practicas/Servomotor-0-180/README.md)
 	* [La Guerra de las Galaxias](Practicas/La-guerra-de-las-galaxias/README.md)
+
+
+* Entradas digitales
+	* [Pulsador simple](Practicas/Pulsador-simple/README.md)
+	* [Medidor de distancias](Practicas/Medidor-de-distancias/README.md)
+	* [Detector de aparcamiento](Practicas/Detector-de-aparcamiento/README.md)
