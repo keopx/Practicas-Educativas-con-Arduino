@@ -1,6 +1,6 @@
 # Práctica 1: Luz intermitente
 
-El objetivo de esta práctica es encender y apagar un LED de forma intermitente con una frecuencia de 1 segundo, es decir, se va a programar un código encargado de encender y apagar un led (haciendo uso de la entrada digital). Para ello se va a construir un circuito utilizando un LED.
+El objetivo de esta práctica es programar un LED que parpadeé de forma intermitente con una frecuencia de 1 segundo, es decir, se va a programar un código encargado de encender y apagar un LED (haciendo uso de la salida digital).
 
 ![Luz intermitente con Arduino](practica.gif)
 
@@ -25,14 +25,14 @@ El objetivo de esta práctica es encender y apagar un LED de forma intermitente 
 
 ## Esquema eléctrico
 
-| Características LED              |        |
-| -------------------------------- | ------ |
-| Polarizado                       | Sí     |
-| Itensidad de Corriente           | 20mA   |
-| Tensión Led (verde, ámbar, rojo) | 2,1V   |
-| Tensión Led blanco               | 3,3V   |
+**Características LED**
 
-Cálculo de la resistencia
+| Polarizado                       | Sí     |
+| Intensidad de Corriente          | 20mA   |
+| Tensión Led (verde, ámbar, rojo) | 2.1V   |
+| Tensión Led blanco               | 3.3V   |
+
+**Cálculo de la resistencia para el LED**
 
 ```
 V = 5V - 2.1V = 2.9V
@@ -53,7 +53,7 @@ Se conecta el LED al pin digital 13 de la placa de arduino (utilizando su debida
 
 ## Programación en mBlock
 
-Al ejecutar el código se deberá encender el LED conectado al pin digital 13, esperar 1 segundo, apagarse y volver a esperar. Este procedimiento se deberá repetir indefinidamente.
+Al ejecutar el código se deberá establecer en el pin digital 13 un valor alto, esperar 1 segundo, establecerse un valor bajo y volver a esperar. Este procedimiento se deberá repetir indefinidamente.
 
 ![Programación en mBlock](mblock.png)
 
@@ -65,7 +65,7 @@ Al ejecutar el código se deberá encender el LED conectado al pin digital 13, e
 
 En primer lugar, se configura el pin digital 13 en modo salida (OUTPUT). Esta configuración se establece en la función setup(), ya que solamente se ejecuta una vez.
 
-Por otro lado, al ejecutar el código se deberá establecer en el pin digital 13 un valor alto (HIGH), esperar 1 segundo (1000 milisegundos), establecerse un valor bajo (LOW) y volver a esperar 1 segundo. Este procedimiento se realiza en la función loop() ya que se repite indefinidamente.
+Por otro lado, al ejecutar el código se deberá establecer en el pin digital 13 un valor alto (HIGH), esperar 1 segundo (1000 milisegundos), establecerse un valor bajo (LOW) y volver a esperar. Este procedimiento se realiza en la función loop() ya que se repite indefinidamente.
 
 ```
 /**
