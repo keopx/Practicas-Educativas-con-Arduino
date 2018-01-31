@@ -1,4 +1,4 @@
-# Movimiento de un servomotor
+# Servomotor 0-180
 
 ![Animación](practica.gif)
 
@@ -30,7 +30,6 @@ Para llevar a cabo la práctica, vamos a necesitar los siguientes materiales:
 
 ## Esquema eléctrico
 
-Teniendo en cuenta las características técnicas de los diodos led que utilizamos en esta práctica, calculamos la resistencia del circuito aplicando la Ley de Ohm.
 
 | Servo motores      |                  |
 | ------------------ | ---------------- |
@@ -51,7 +50,7 @@ Se conectan los componentes sobre la placa de prototipado.
 
 La programación de esta práctica consiste en mover el servomotor desde un ángulo hasta otro dado.
 
-![Programación en mBlock](mBlock.png)
+![Programación en mBlock](mblock.png)
 
 
 <br><br>
@@ -63,29 +62,21 @@ Al igual que en el apartado anterior, programamos en Arduino IDE la práctica pr
 
 ```
 /**
- * Movimiento de un servomotor
- * 
- * En esta práctica el servomotor se mueve desde su posición origen a 
- * su posición final en ángulos de 10° repetidamente.
+ * Servomotor 0-180
  * 
  * @author Miguel Ángel Abellán
  * @company Programo Ergo Sum
  * @license Creative Commons. Reconocimiento CompartirIgual 4.0
  */
 
-// Importamos la librería del servomotor
 #include <Servo.h>
 
-// Definimos la variable de tipo servo
 Servo servomotor;
 
-//Este código se ejecuta la primera vez
 void setup() {
-  // Configuramos los pines en modo salida
   servomotor.attach(9);
 }
 
-//Este código se ejecuta en bucle repetidamente
 void loop() {
   for(int i=0; i<=180; i+=10){
     servomotor.write(i);

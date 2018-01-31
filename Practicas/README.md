@@ -1,8 +1,6 @@
 # Prácticas
 
 
-
-* [Movimiento de un servomotor](Movimiento-de-un-servomotor/README.md)
 * [La Guerra de las Galaxias](La-guerra-de-las-galaxias/README.md)
 
 * [Pulsador simple](Pulsador-simple/README.md)
