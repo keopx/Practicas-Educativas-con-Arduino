@@ -27,6 +27,7 @@ El objetivo de esta práctica es programar un LED que parpadeé de forma intermi
 
 **Características LED**
 
+| -------------------------------- | ------ |
 | Polarizado                       | Sí     |
 | Intensidad de Corriente          | 20mA   |
 | Tensión Led (verde, ámbar, rojo) | 2.1V   |
