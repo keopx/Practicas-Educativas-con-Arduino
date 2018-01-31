@@ -77,7 +77,7 @@ Se conectan los componentes sobre la placa de prototipado.
 
 La programación de esta práctica consiste en encender los diferentes colores del led RGB.
 
-![Programación en mBlock](mBlock.png)
+![Programación en mBlock](mblock.png)
 
 
 <br><br>
@@ -89,57 +89,32 @@ Al igual que en el apartado anterior, programamos en Arduino IDE la práctica pr
 
 ```
 /**
- * Led RGB
- * 
- * Un led RGB permite visualizar una luz de diferentes colores en 
- * función de la alimentación de cada una de sus patillas. En esta 
- * práctica vamos a visualizar los colores rojos, verde y azul 
- * alimentando para cada color una sola parte gracias al uso de 
- * pines PWM de la placa de Arduino.
+ * Led RGB (ánodo común)
  * 
  * @author Miguel Ángel Abellán
  * @company Programo Ergo Sum
  * @license Creative Commons. Reconocimiento CompartirIgual 4.0
  */
 
-// Definimos las variables de tipo entero
-int ledPinR = 9;
-int ledPinG = 6;
-int ledPinB = 5;
-int delayTime = 1000;
-
-//Este código se ejecuta la primera vez
 void setup() {
-  // Configuramos los pines en modo salida
-  pinMode(ledPinR, OUTPUT);
-  pinMode(ledPinG, OUTPUT);
-  pinMode(ledPinB, OUTPUT);
-  // Inicializamos los pines a un valor BAJO
-  analogWrite(ledPinR, 255);
-  analogWrite(ledPinG, 255);
-  analogWrite(ledPinB, 255);
+  pinMode(9, OUTPUT);
+  pinMode(6, OUTPUT);
+  pinMode(5, OUTPUT);
 }
 
-//Este código se ejecuta en bucle repetidamente
 void loop() {
-  // Escribimos el valor 0 para encender el rojo
-  analogWrite(ledPinR, 0);
-  analogWrite(ledPinG, 255);
-  analogWrite(ledPinB, 255);
-  // Esperamos
-  delay(delayTime);
-  // Escribimos el valor 0 para encender el verde
-  analogWrite(ledPinR, 255);
-  analogWrite(ledPinG, 0);
-  analogWrite(ledPinB, 255);
-  // Esperamos
-  delay(delayTime);
-  // Escribimos el valor 0 para encender el azul
-  analogWrite(ledPinR, 255);
-  analogWrite(ledPinG, 255);
-  analogWrite(ledPinB, 0);
-  // Esperamos
-  delay(delayTime);
+  analogWrite(9, 0);
+  analogWrite(6, 255);
+  analogWrite(5, 255);
+  delay(1000);
+  analogWrite(9, 255);
+  analogWrite(6, 0);
+  analogWrite(5, 255);
+  delay(1000);
+  analogWrite(9, 255);
+  analogWrite(6, 255);
+  analogWrite(5, 0);
+  delay(1000);
 }
 ```
 

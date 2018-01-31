@@ -3,7 +3,6 @@
 
 
 * [Movimiento de un servomotor](Movimiento-de-un-servomotor/README.md)
-* [Led RGB](Led-RGB/README.md)
 * [La Guerra de las Galaxias](La-guerra-de-las-galaxias/README.md)
 
 * [Pulsador simple](Pulsador-simple/README.md)
