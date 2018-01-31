@@ -1,8 +1,8 @@
-# Pulsador simple
+# Práctica 1: Encender un LED mediante pulsador
 
 ![Animación](practica.gif)
 
-En esta práctica vamos a programar un interruptor para encender un led en un momento dado.
+El objetivo de esta práctica es encender un LED utilizando un simple pulsador, es decir, se va a programar un código encargado de detectar si se pulsa el pulsador (haciendo uso de la entrada digital), en cuyo caso se encenderá el LED (haciendo uso de la salida digital). Para ello se va a construir un circuito utilizando un LED y un pulsador.
 
 1.  [Materiales](#materiales)
 2.  [Esquema eléctrico](#esquema-eléctrico)
@@ -19,12 +19,12 @@ En esta práctica vamos a programar un interruptor para encender un led en un mo
 
 ## Materiales
 
-Para llevar a cabo la práctica, vamos a necesitar los siguientes materiales:
-- 1 Placa de Arduino UNO
+- 1 Arduino UNO
 - 1 Protoboard
-- 4 latiguillos
-- 2 resistencias
-- 1 diodo led
+- 4 Latiguillos
+- 1 LED
+- 1 Resistencia de 220Ω (rojo-rojo-marrón)
+- 1 Resistencia de 10KΩ (marrón-negro-naranja)
 
 
 <br /><br />
@@ -32,11 +32,7 @@ Para llevar a cabo la práctica, vamos a necesitar los siguientes materiales:
 
 ## Esquema eléctrico
 
-Teniendo en cuenta las características técnicas de los diodos led que utilizamos en esta práctica, calculamos la resistencia del circuito aplicando la Ley de Ohm.
-
-Para realizar el montaje correctamente en nuestra placa de prototipado, necesitaremos conectar una resistencia al circuito (Pull-Down o Pull-Up). Estas dos resistencias son un mecanismo básico y habitual dentro del mundo de la electrónica.
-- La resistencia de Pull-Up fuerza HIGH cuando el pulsador está abierto. Cuando está cerrado el PIN se pone a LOW, la intensidad que circula se ve limitada por esta resistencia.
-- La resistencia de Pull-Down fuerza LOW cuando el pulsador está abierto. Cuando está cerrado el PIN se pone a HIGH, y la intensidad que circula se ve limitada por esta resistencia.
+Por un lado se conecta el LED al pin digital 13 de la placa de arduino (utilizando su debida resistencia). Por otro lado, se conecta el pulsador al pin digital 2 de la placa de arduino (utilizando la resistencia en modo Pull-Down).
 
 | Interruptor de palanca           |       |
 | -------------------------------- | ----- |
@@ -65,11 +61,9 @@ Se conectan los componentes sobre la placa de prototipado.
 
 ## Programación en mBlock
 
-Fijándonos en el diagrama de flujo programamos la práctica mediante lenguaje de programación por bloques mBlock. 
+Al ejecutar el código se deberá detectar en todo momento si se ha pulsado el pulsador conectado al pin digital 2, en cuyo caso se establecerá el valor alto al pin digital 13, el cual está conectado al LED.
 
-Podrás observar el gran parecido que se tiene con el diagrama de flujo.
-
-![Programación en mBlock](mBlock.png)
+![Programación en mBlock](mblock.png)
 
 
 <br /><br />
@@ -77,40 +71,28 @@ Podrás observar el gran parecido que se tiene con el diagrama de flujo.
 
 ## Programación en Arduino
 
-Al igual que en el apartado anterior, programamos en Arduino IDE la práctica propuesta.
+Al ejecutar el código se deberá detectar en todo momento si se ha pulsado el pulsador conectado al pin digital 2 (configurado como entrada digital), en cuyo caso se establecerá el valor alto al pin digital 13 (configurado como salida digital), el cual está conectado al LED.
 
 ```
 /**
  * Pulsador simple
- * 
- * En esta práctica vamos a programar un interruptor para encender un 
- * led en un momento dado.
  * 
  * @author Miguel Ángel Abellán
  * @company Programo Ergo Sum
  * @license Creative Commons. Reconocimiento CompartirIgual 4.0
  */
 
-// Se definen las variables de tipo entero
-int ledPin = 13;
-int interruptorPin = 2;
-
-//Este código se ejecuta la primera vez
 void setup() {
-  // Configuramos el pin en modo salida
-  pinMode(ledPin, OUTPUT);
-  pinMode(interruptorPin, INPUT);
+  pinMode(13, OUTPUT);
+  pinMode(2, INPUT);
 }
 
-//Este código se ejecuta en bucle repetidamente
 void loop() {
-  
-  // Lectura del pin del interruptor
-  if (digitalRead(interruptorPin) == HIGH) {
-    digitalWrite(ledPin, HIGH);
+  if (digitalRead(2) == HIGH) {
+    digitalWrite(13, HIGH);
   }
   else {
-    digitalWrite(ledPin, LOW);
+    digitalWrite(13, LOW);
   }
 }
 ```
