@@ -1,4 +1,4 @@
-# Led RGB
+# Led RGB (ánodo común)
 
 ![Animación](practica.gif)
 
