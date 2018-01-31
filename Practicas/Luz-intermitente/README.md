@@ -25,8 +25,7 @@ El objetivo de esta práctica es programar un LED que parpadeé de forma intermi
 
 ## Esquema eléctrico
 
-**Características LED**
-
+| Características LED              |        |
 | -------------------------------- | ------ |
 | Polarizado                       | Sí     |
 | Intensidad de Corriente          | 20mA   |
