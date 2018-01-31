@@ -20,7 +20,6 @@ void nota(int frecuencia, int duracion)
   delay(duracion);
   noTone(9);
   delay(50);
-
 }
 
 void setup() {

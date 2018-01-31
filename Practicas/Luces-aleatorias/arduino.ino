@@ -1,5 +1,5 @@
 /**
- * Luces de navidad
+ * Luces aleatorias
  *  
  * @author Miguel Ángel Abellán
  * @company Programo Ergo Sum

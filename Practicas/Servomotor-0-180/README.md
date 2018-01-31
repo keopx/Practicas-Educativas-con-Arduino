@@ -1,14 +1,8 @@
-# Servomotor 0-180
+# Práctica 4: Servomotor 0º-180º
 
-![Animación](practica.gif)
+El objetivo de esta práctica consiste en mover un servomotor desde su posición o ángulo de 0º hasta 180º y vuelta a empezar, de forma repetida. Además, se desplazará de 10º en 10º.
 
-En esta práctica el servomotor se mueve desde su posición origen a su posición final en ángulos de 10° repetidamente.
-
-1.	[Materiales](#materiales)
-2.	[Esquema eléctrico](#esquema-eléctrico)
-3.	[Programación en mBlock](#programación-en-mblock)
-4.	[Programación en Arduino](#programación-en-arduino)
-
+![Servomotor con Arduino](practica.gif)
 
 
 ---
@@ -19,9 +13,8 @@ En esta práctica el servomotor se mueve desde su posición origen a su posició
 
 ## Materiales
 
-Para llevar a cabo la práctica, vamos a necesitar los siguientes materiales:
-- 1 Placa de Arduino UNO
-- 3 latiguillos
+- 1 Arduino UNO
+- 3 Latiguillos
 - 1 Servomotor
 
 
@@ -30,15 +23,13 @@ Para llevar a cabo la práctica, vamos a necesitar los siguientes materiales:
 
 ## Esquema eléctrico
 
-
 | Servo motores      |                  |
 | ------------------ | ---------------- |
 | Polarizado         | Sí               |
-| Tensión operativa  | 4,8V             |
+| Tensión operativa  | 5V               |
 | Rotación           | 0° a 180°        |
-| Torque estático    | 4,5V > 1,5Kg/cm  |
 
-Se conectan los componentes sobre la placa de prototipado.
+Conectamos el cable rojo (positivo del servomotor) al pin 5V de la placa de arduino, el cable negro (negativo del servomotor) al pin GND de la placa de arduino y el color amarillo al pin analógico PWM 9 de la placa de arduino.
 
 ![Esquema eléctrico](fritzing.png)
 
@@ -48,7 +39,7 @@ Se conectan los componentes sobre la placa de prototipado.
 
 ## Programación en mBlock
 
-La programación de esta práctica consiste en mover el servomotor desde un ángulo hasta otro dado.
+Al ejecutar el código se crea una variable encargada de almacenar el ángulo del servomotor, que por defecto empezará en su posición de 0º. A continuación se repite 18 veces el cambio de ángulo por 10º esperando una décima de segundo. De esta forma el servomotor se desplazará hasta la posición 180º. Y como tiene que regresar se vuelve a crear un bucle pero en este caso la variable irá decrementando de 10º en 10º.
 
 ![Programación en mBlock](mblock.png)
 
@@ -58,7 +49,9 @@ La programación de esta práctica consiste en mover el servomotor desde un áng
 
 ## Programación en Arduino
 
-Al igual que en el apartado anterior, programamos en Arduino IDE la práctica propuesta.
+En primer lugar, se importa la librería a utilizar <Servo.h> y se inicializa el objeto llamado servomotor. Además se configura el pin analógico PWM 9 a utilizar por el servomotor. Esta configuración se establece en la función setup(), ya que solamente se ejecuta una vez.
+
+Por otro lado, al ejecutar el código se recorre 18 veces el cambio de ángulo por 10º esperando una décima de segundo. De esta forma el servomotor se desplazará hasta la posición 180º. Y como tiene que regresar se vuelve a crear un bucle pero en este caso la variable irá decrementando de 10º en 10º.
 
 ```
 /**
@@ -97,3 +90,5 @@ void loop() {
 
 <img src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /><br>
 Esta obra está bajo una licencia de [Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional](https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES).
+
+2018 [Asociación Programo Ergo Sum](https://www.programoergosum.com)

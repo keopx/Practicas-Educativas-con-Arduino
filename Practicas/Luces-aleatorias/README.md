@@ -1,14 +1,8 @@
-# Luces aleatorias
+# Práctica 1: Luces aleatorias
 
-![Animación](practica.gif)
+El objetivo de esta práctica es encender en diferentes intensidades 3 LEDs blancos, es decir, se va a programar un código encargado de encender cada LED blanco a una intensidad de luz diferente (haciendo uso de la salida analógica).
 
-En esta práctica vamos a encender de forma aleatoria 3 Diodos Led de color blanco utilizando las salidas analógicas. Para ello utilizaremos valores aleatorios comprendidos entre 0 y 255 para representar los diferentes valores.
-
-1.	[Materiales](#materiales)
-2.	[Esquema eléctrico](#esquema-eléctrico)
-3.	[Programación en mBlock](#programación-en-mblock)
-4.	[Programación en Arduino](#programación-en-arduino)
-
+![Luces aleatorias con Arduino](practica.gif)
 
 
 ---
@@ -19,12 +13,11 @@ En esta práctica vamos a encender de forma aleatoria 3 Diodos Led de color blan
 
 ## Materiales
 
-Para llevar a cabo la práctica, vamos a necesitar los siguientes materiales:
-- 1 Placa de Arduino UNO
+- 1 Arduino UNO
 - 1 Protoboard
-- 4 latiguillos
-- 3 Diodos Led (blancos)
-- 3 Resistencia 100Ω
+- 4 Latiguillos
+- 3 LEDs blancos
+- 3 Resistencias de 100Ω (marrón-negro-marrón)
 
 
 <br><br>
@@ -32,26 +25,25 @@ Para llevar a cabo la práctica, vamos a necesitar los siguientes materiales:
 
 ## Esquema eléctrico
 
-Teniendo en cuenta las características técnicas de los diodos led que utilizamos en esta práctica, calculamos la resistencia del circuito aplicando la Ley de Ohm.
-
-| Diodos Led                       |        |
+| Características LED              |        |
 | -------------------------------- | ------ |
 | Polarizado                       | Sí     |
-| Itensidad de Corriente           | 20mA   |
-| Tensión Led (verde, ámbar, rojo) | 2,1V   |
-| Tensión Led blanco               | 3,3V   |
+| Intensidad de Corriente          | 20mA   |
+| Tensión Led (verde, ámbar, rojo) | 2.1V   |
+| Tensión Led blanco               | 3.3V   |
 
+**Cálculo de la resistencia para el LED**
 
 ```
-V = 1,7V
+V = 5V - 2.1V = 2.9V
 I = 20mA
 
 V = I x R ; R = V / I
 
-R = 1,7V / 0,02A = 85Ω 
+R = 2.9V / 0.02A = 145Ω -> 220Ω (por aproximación)
 ```
 
-Se conectan los componentes sobre la placa de prototipado.
+Se conectan los LEDs a los pines analógicos PWM (~) 9, 6 y 5. La patilla larga del LED debe ser conectada al voltaje positivo (ánodo) y la corta al voltaje negativo (cátodo) pasando por la resistencia.
 
 ![Esquema eléctrico](fritzing.png)
 
@@ -61,7 +53,7 @@ Se conectan los componentes sobre la placa de prototipado.
 
 ## Programación en mBlock
 
-Para realizar la práctica utilizando mBlock, deberás haber configurado y cargado el firmware que hace de intermediario entre la placa y el programa mBlock. El siguiente paso será programar el código encargado regular los valores de los led. Fíjate como el número aleatorio está comprendido entre 0 y 255.
+Al ejecutar el código se establecerá un valor aleatorio entre 0 y 255 en cada uno de los pines analógicos PWM. Además esperaremos medio segundo para poder visualizar el efecto.
 
 ![Programación en mBlock](mblock.png)
 
@@ -71,11 +63,13 @@ Para realizar la práctica utilizando mBlock, deberás haber configurado y carga
 
 ## Programación en Arduino
 
-Para programar el código utilizando el lenguaje de programación de Arduino IDE, recuerda elegir el puerto correcto. El siguiente paso será programar el código encargado regular los valores de los led. Fíjate como el número aleatorio está comprendido entre 0 y 255.
+En primer lugar, se configura los pines analógicos PWM 9, 6 y 5 en modo salida (OUTPUT). Esta configuración se establece en la función setup(), ya que solamente se ejecuta una vez.
+
+Por otro lado, al ejecutar el código se establecerá un valor aleatorio entre 0 y 255 en cada uno de los pines analógicos PWM y esperaremos medio segundo (500 milisegundos) para visualizar el efecto aleatorio.
 
 ```
 /**
- * Luces de navidad
+ * Luces aleatorias
  *  
  * @author Miguel Ángel Abellán
  * @company Programo Ergo Sum
@@ -104,3 +98,5 @@ void loop() {
 
 <img src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /><br>
 Esta obra está bajo una licencia de [Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional](https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES).
+
+2018 [Asociación Programo Ergo Sum](https://www.programoergosum.com)

@@ -1,14 +1,8 @@
-# La Guerra de las Galaxias
+# Práctica 5: La Guerra de las Galaxias
 
-![Animación](practica.gif)
+El objetivo de esta práctica consiste en reproducir con ayuda de un zumbador la banda sonora de La Guerra de las Galaxias mediante frecuencias.
 
-A través de un zumbador reproducimos la banda sonora de La Guerra de las Galaxias mediante frecuencias.
- 
-1.	[Materiales](#materiales)
-2.	[Esquema eléctrico](#esquema-eléctrico)
-3.	[Programación en mBlock](#programación-en-mBlock)
-4.	[Programación en Arduino](#programación-en-arduino)
-
+![La Guerra de las Galaxias con Arduino](practica.gif)
 
 
 ---
@@ -19,10 +13,9 @@ A través de un zumbador reproducimos la banda sonora de La Guerra de las Galaxi
 
 ## Materiales
 
-Para llevar a cabo la práctica, vamos a necesitar los siguientes materiales:
-- 1 Placa de Arduino UNO
+- 1 Arduino UNO
 - 1 Protoboard
-- 2 latiguillos
+- 2 Latiguillos
 - 1 Zumbador
 
 
@@ -36,8 +29,7 @@ Para llevar a cabo la práctica, vamos a necesitar los siguientes materiales:
 | Polarizado                       | Sí    |
 | Tensión de trabajo               | 3-12V |
 
-
-Se conectan los componentes sobre la placa de prototipado.
+Se conecta el cable negro (negativo) del zumbador al pin GND de la placa de arduino y el cable rojo (positivo) al pin analógico PWM 9 de la placa de arduino.
 
 ![Esquema eléctrico](fritzing.png)
 
@@ -47,7 +39,7 @@ Se conectan los componentes sobre la placa de prototipado.
 
 ## Programación en mBlock
 
-La programación de esta práctica consiste en reproducir las notas musicales siguiendo la partitura de la canción. 
+Al ejecutar el código utilizamos los bloques de sonido siguiendo la partitura de la banda sonora de La Guerra de las Galaxias.
 
 ![Programación en mBlock](mblock.png)
 
@@ -57,7 +49,9 @@ La programación de esta práctica consiste en reproducir las notas musicales si
 
 ## Programación en Arduino
 
-Al igual que en el apartado anterior, programamos en Arduino IDE la práctica propuesta.
+En primer lugar se crea una lista con las notas y tonos de cada una de las notas. También se va a utilizar una función encargada deemitir una frecuencia pasada por parámetro durante una determinada duración, también pasada por parámetro.
+
+Por otro lado, al ejecutar el código se llama a la función que reproduce la nota dada siguiendo la partitura de la banda sonora de La Guerra de las Galaxias.
 
 ```
 /**
@@ -82,7 +76,6 @@ void nota(int frecuencia, int duracion)
   delay(duracion);
   noTone(9);
   delay(50);
-
 }
 
 void setup() {

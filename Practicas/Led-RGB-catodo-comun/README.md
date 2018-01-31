@@ -1,14 +1,8 @@
-# Led RGB (cátodo común)
+# Práctica 3: LED RGB (cátodo común)
 
-![Animación](practica.gif)
+En esta práctica se va a encender un Led RGB de cátodo común en sus 3 colores básicos rojo, verde y azul. Aunque esta práctica se podría realizar utilizando salidas digitales, se va a realizar utilizando salidas analógicas con valores de 255.
 
-En esta práctica vamos a visualizar los colores rojos, verde y azul alimentando para cada color una sola parte gracias al uso de pines PWM de la placa de Arduino.
-
-1.	[Materiales](#materiales)
-2.	[Esquema eléctrico](#esquema-eléctrico)
-3.	[Programación en mBlock](#programación-en-mblock)
-4.	[Programación en Arduino](#programación-en-arduino)
-
+![Led RGB con Arduino](practica.gif)
 
 
 ---
@@ -19,12 +13,12 @@ En esta práctica vamos a visualizar los colores rojos, verde y azul alimentando
 
 ## Materiales
 
-Para llevar a cabo la práctica, vamos a necesitar los siguientes materiales:
-- 1 Placa de Arduino UNO
+- 1 Arduino UNO
 - 1 Protoboard
-- 4 latiguillos
-- 1 Diodo Led RGB (cátodo común)
-- 3 Resistencia
+- 4 Latiguillos
+- 1 LED RGB de cátodo común
+- 1 Resistencias de 100Ω (marrón-negro-marrón)
+- 2 Resistencias de 220Ω (rojo-rojo-marrón)
 
 
 <br><br>
@@ -32,31 +26,29 @@ Para llevar a cabo la práctica, vamos a necesitar los siguientes materiales:
 
 ## Esquema eléctrico
 
-Teniendo en cuenta las características técnicas de los diodos led que utilizamos en esta práctica, calculamos la resistencia del circuito aplicando la Ley de Ohm.
 
-| Diodo Led RGB (ánodo común)      |        |
-| -------------------------------- | ------ |
-| Polarizado                       | Sí     |
-| Diámetro                         | 5mm    |
-| Itensidad de Corriente           | 20mA   |
-| Tensión en Led (rojo)            | 2,1V   |
-| Tensión en Led (verde)           | 3,3V   |
-| Tensión en Led (azul)            | 3,3V   |
+| Diodo Led RGB (cátodo común)     |          |
+| -------------------------------- | -------- |
+| Polarizado                       | Negativo |
+| Itensidad de Corriente           | 20mA     |
+| Tensión en Led (rojo)            | 2,1V     |
+| Tensión en Led (verde)           | 3,3V     |
+| Tensión en Led (azul)            | 3,3V     |
+
+**Cálculo de la resistencia para el LED RGB (rojo)**
 
 ```
-LED ROJO
-
 V = 2,9V
 I = 20mA
 
 V = I x R ; R = V / I
 
 R = 2,9V / 0,02A = 145Ω 
+```
 
---
+**Cálculo de la resistencia para el LED RGB (verde-azul)**
 
-LED VDERDE Y AZUL
-
+```
 V = 1,7V
 I = 20mA
 
@@ -65,7 +57,7 @@ V = I x R ; R = V / I
 R = 1,7V / 0,02A = 85Ω 
 ```
 
-Se conectan los componentes sobre la placa de prototipado.
+La patilla más larga del LED RGB de cátodo común se conecta al pin GND de la placa de arduino para que esté polarizado positivamente. La patilla que queda a la izquierda corresponde al color rojo, el cual se conectará con su debida resistencia. Las otras dos patillas corresponden a los colores verde y azul por orden. También habrá que conectarlas a sus resistencias que además son de menor valor.
 
 ![Esquema eléctrico](fritzing.png)
 
@@ -75,7 +67,7 @@ Se conectan los componentes sobre la placa de prototipado.
 
 ## Programación en mBlock
 
-La programación de esta práctica consiste en encender los diferentes colores del led RGB.
+Al ejecutar el código se activará cada uno de los pines encargados de encender el LED RGB. En este caso, al estar utilizando un LED RGB de cátodo común para encender el color rojo tendremos que polarizar el color que queremos visualizar, dicho de otro modo, tendremos que establecer a un valor alto el pin conectado a la patilla del color rojo y un valor bajo a las patillas del color verde y azul.
 
 ![Programación en mBlock](mblock.png)
 
@@ -85,7 +77,9 @@ La programación de esta práctica consiste en encender los diferentes colores d
 
 ## Programación en Arduino
 
-Al igual que en el apartado anterior, programamos en Arduino IDE la práctica propuesta.
+En primer lugar, se configura los pines analógicos PWM 9, 6 y 5 en modo salida (OUTPUT). Esta configuración se establece en la función setup(), ya que solamente se ejecuta una vez.
+
+Por otro lado, al ejecutar el código se activará cada uno de los pines encargados de encender el LED RGB. En este caso, al estar utilizando un LED RGB de cátodo común para encender el color rojo tendremos que polarizar el color que queremos visualizar, dicho de otro modo, tendremos que establecer a un valor alto el pin conectado a la patilla del color rojo y un valor bajo a las patillas del color verde y azul. Además se crea un retardo de 1 segundo (1000 milisegundos) para apreciar el efecto de cambio de color.
 
 ```
 /**
@@ -126,3 +120,5 @@ void loop() {
 
 <img src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /><br>
 Esta obra está bajo una licencia de [Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional](https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES).
+
+2018 [Asociación Programo Ergo Sum](https://www.programoergosum.com)
