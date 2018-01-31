@@ -1,14 +1,8 @@
-# Luz intermitente
+# Práctica 1: Luz intermitente
 
-![Animación](practica.gif)
+El objetivo de esta práctica es encender y apagar un LED de forma intermitente con una frecuencia de 1 segundo, es decir, se va a programar un código encargado de encender y apagar un led (haciendo uso de la entrada digital). Para ello se va a construir un circuito utilizando un LED.
 
-En esta práctica se va a programar el código encargado de encender y apagar un led conectado al pin número 13 de nuestra placa de arduino. Deberá encenderse y apagarse con una frecuencia de 1 segundo.
-
-1.	[Materiales](#materiales)
-2.	[Esquema eléctrico](#esquema-eléctrico)
-3.	[Programación en mBlock](#programación-en-mblock)
-4.	[Programación en Arduino](#programación-en-arduino)
-
+![Luz intermitente con Arduino](practica.gif)
 
 
 ---
@@ -19,12 +13,11 @@ En esta práctica se va a programar el código encargado de encender y apagar un
 
 ## Materiales
 
-Para llevar a cabo la práctica vamos a necesitar los siguientes componentes:
-- 1 Placa de Arduino UNO
+- 1 Arduino UNO
 - 1 Protoboard
-- 2 latiguillos
-- 1 Diodo Led
-- 1 Resistencia de 220Ω (rojo-rojo-marrón)
+- 2 Latiguillos
+- 1 LED
+- 1 Resistencias de 220Ω (rojo-rojo-marrón)
 
 
 <br><br>
@@ -32,26 +25,25 @@ Para llevar a cabo la práctica vamos a necesitar los siguientes componentes:
 
 ## Esquema eléctrico
 
-Teniendo en cuenta las características técnicas de los diodos led que utilizamos en esta práctica, calculamos la resistencia del circuito aplicando la Ley de Ohm.
-
-| Diodos Led                       |        |
+| Características LED              |        |
 | -------------------------------- | ------ |
 | Polarizado                       | Sí     |
 | Itensidad de Corriente           | 20mA   |
 | Tensión Led (verde, ámbar, rojo) | 2,1V   |
 | Tensión Led blanco               | 3,3V   |
 
+Cálculo de la resistencia
 
 ```
-V = 2,9V
+V = 5V - 2.1V = 2.9V
 I = 20mA
 
 V = I x R ; R = V / I
 
-R = 2,9V / 0,02A = 145Ω -> 220Ω (por aproximación)
+R = 2.9V / 0.02A = 145Ω -> 220Ω (por aproximación)
 ```
 
-Se conectan los componentes sobre la placa de prototipado.
+Se conecta el LED al pin digital 13 de la placa de arduino (utilizando su debida resistencia). La patilla larga del LED debe ser conectada al voltaje positivo (ánodo) y la corta al voltaje negativo (cátodo) pasando por la resistencia.
 
 ![Esquema eléctrico](fritzing.png)
 
@@ -61,7 +53,7 @@ Se conectan los componentes sobre la placa de prototipado.
 
 ## Programación en mBlock
 
-Para realizar la práctica utilizando mBlock, deberás haber configurado y cargado el firmware que hace de intermediario entre la placa y el programa mBlock. El siguiente paso será programar el código encargado de encender y apagar el pin digital 13.
+Al ejecutar el código se deberá encender el LED conectado al pin digital 13, esperar 1 segundo, apagarse y volver a esperar. Este procedimiento se deberá repetir indefinidamente.
 
 ![Programación en mBlock](mblock.png)
 
@@ -71,7 +63,9 @@ Para realizar la práctica utilizando mBlock, deberás haber configurado y carga
 
 ## Programación en Arduino
 
-Para programar el código utilizando el lenguaje de programación de Arduino IDE, recuerda elegir el puerto correcto. El siguiente paso será programar el código encargado de encender y apagar el pin digital 13 (el cual tiene contiene un led en la placa). Fíjate además que estamos indicando a Arduino que el pin digital 13 tiene que tratarlo como salida.
+En primer lugar, se configura el pin digital 13 en modo salida (OUTPUT). Esta configuración se establece en la función setup(), ya que solamente se ejecuta una vez.
+
+Por otro lado, al ejecutar el código se deberá establecer en el pin digital 13 un valor alto (HIGH), esperar 1 segundo (1000 milisegundos), establecerse un valor bajo (LOW) y volver a esperar 1 segundo. Este procedimiento se realiza en la función loop() ya que se repite indefinidamente.
 
 ```
 /**
