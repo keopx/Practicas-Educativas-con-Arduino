@@ -1,5 +1,5 @@
 /**
- * Semáforo peatones
+ * Semáforo de peatones
  *
  * @author Miguel Ángel Abellán
  * @company Programo Ergo Sum
@@ -10,7 +10,7 @@ void setup() {
   pinMode(13, OUTPUT);
   pinMode(12, OUTPUT);
   pinMode(11, OUTPUT);
-  digitalWrite(ledPinRojo, LOW);
+  digitalWrite(13, LOW);
   digitalWrite(12, LOW);
   digitalWrite(11, LOW);
 }

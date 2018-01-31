@@ -1,14 +1,8 @@
-# Semáforo peatones
+# Práctica 4: Semáforo de peatones
 
-![Animación](practica.gif)
+El objetivo de esta práctica es construir un semáforo para peatones utilizando dos LEDs y un zumbador, es decir, se va a programar un código encargado de encender una luz roja y una luz verde al mismo tiempo que se emite un zumbido para avisar al peatón que puede cruzar por el paso de peatones.
 
-En esta práctica se va a programar el código de un semáforo de peatones con zumbador. Para ello se va a programar un parpadeo del zumbador mientras la luz verde esté encendida.
-
-1.	[Materiales](#materiales)
-2.	[Esquema eléctrico](#esquema-eléctrico)
-3.	[Programación en mBlock](#programación-en-mBlock)
-4.	[Programación en Arduino](#programación-en-arduino)
-
+![Semáforo de peatones con Arduino](practica.gif)
 
 
 ---
@@ -19,12 +13,11 @@ En esta práctica se va a programar el código de un semáforo de peatones con z
 
 ## Materiales
 
-Para llevar a cabo la práctica, vamos a necesitar los siguientes materiales:
-- 1 Placa de Arduino UNO
+- 1 Arduino UNO
 - 1 Protoboard
-- 5 latiguillos
-- 2 Diodo Led
-- 2 Resistencia de 220Ω
+- 5 Latiguillos
+- 2 LEDs
+- 2 Resistencias de 220Ω (rojo-rojo-marrón)
 - 1 Zumbador
 
 
@@ -33,32 +26,30 @@ Para llevar a cabo la práctica, vamos a necesitar los siguientes materiales:
 
 ## Esquema eléctrico
 
-Teniendo en cuenta las características técnicas de los diodos led que utilizamos en esta práctica, calculamos la resistencia del circuito aplicando la Ley de Ohm.
-
-| Diodos Led                       |        |
+| Características LED              |        |
 | -------------------------------- | ------ |
 | Polarizado                       | Sí     |
-| Diámetro                         | 5mm    |
-| Itensidad de Corriente           | 20mA   |
-| Tensión Led (verde, ámbar, rojo) | 2,1V   |
-| Tensión Led blanco               | 3,3V   |
+| Intensidad de Corriente          | 20mA   |
+| Tensión Led (verde, ámbar, rojo) | 2.1V   |
+| Tensión Led blanco               | 3.3V   |
 
-| Zumbador piezo-eléctrico         |       |
-| -------------------------------- | ----- |
-| Polarizado                       | Sí    |
-| Tensión de trabajo               | 3-12V |
+| Características Zumbador         |        |
+| -------------------------------- | ------ |
+| Polarizado                       | Sí     |
+| Tensión de trabajo               | 3-12V  |
 
+**Cálculo de la resistencia para el LED**
 
 ```
-V = 2,9V
+V = 5V - 2.1V = 2.9V
 I = 20mA
 
 V = I x R ; R = V / I
 
-R = 2,9V / 0,02A = 145Ω 
+R = 2.9V / 0.02A = 145Ω -> 220Ω (por aproximación)
 ```
 
-Se conectan los componentes sobre la placa de prototipado.
+Se conecta el LED rojo al pin digital 13 y el LED de color verde al pin digital 12 de la placa de arduino (utilizando su debida resistencia). La patilla larga del LED debe ser conectada al voltaje positivo (ánodo) y la corta al voltaje negativo (cátodo) pasando por la resistencia. El zumbador se conecta debidamente polarizado al pin digital 11.
 
 ![Esquema eléctrico](fritzing.png)
 
@@ -68,7 +59,7 @@ Se conectan los componentes sobre la placa de prototipado.
 
 ## Programación en mBlock
 
-Para realizar la práctica utilizando mBlock, deberás haber configurado y cargado el firmware que hace de intermediario entre la placa y el programa mBlock. En el bucle principal del programa se ha programado el encendido y apagado de los led. Dentro del bucle se ha creado un evento encargado de hacer sonar el zombador. En este evento puedes observar que se reproducirá el sonido de encendido y apagado 10 veces.
+Al ejecutar el código se deberán establecer los pines digitales a valores bajos, lo que se conoce como inicialización. A continuación, en el bucle principal del programa se programa la activación del pin 13 en valor a alto de manera que espere 5 segundos. Una vez transcurrido el tiempo de espera se desactiva el pin 13 y se llama a un evento encargado de hacer la programación del paso de peatones. En este evento puedes observar que se reproducirá el sonido de encendido y apagado 10 veces al estar conectado al pin digital 11.
 
 ![Programación en mBlock](mblock.png)
 
@@ -78,11 +69,13 @@ Para realizar la práctica utilizando mBlock, deberás haber configurado y carga
 
 ## Programación en Arduino
 
-Para programar el código utilizando el lenguaje de programación de Arduino IDE, recuerda elegir el puerto correcto. El siguiente paso será programar el código encargado de hacer que funcione el semáforo para peatones.
+En primer lugar, se configuran los pines digitales 11, 12 y 13 en modo salida (OUTPUT). Esta configuración se establece en la función setup(), ya que solamente se ejecuta una vez. Además, se ha creado la inicialización de los pines a un valor bajo (LOW).
+
+Por otro lado, en la función principal loop() se programa la activación del pin 13 en valor a alto de manera que espere 5 segundos (5000 milisegundos). Una vez transcurrido el tiempo de espera se desactiva el pin 13 y se recorre un bucle encargado de hacer la programación del paso de peatones. En el interior del bucle puedes observar que se reproducirá el sonido de encendido y apagado 10 veces al estar conectado al pin digital 11.
 
 ```
 /**
- * Semáforo peatones
+ * Semáforo de peatones
  *
  * @author Miguel Ángel Abellán
  * @company Programo Ergo Sum
@@ -93,7 +86,7 @@ void setup() {
   pinMode(13, OUTPUT);
   pinMode(12, OUTPUT);
   pinMode(11, OUTPUT);
-  digitalWrite(ledPinRojo, LOW);
+  digitalWrite(13, LOW);
   digitalWrite(12, LOW);
   digitalWrite(11, LOW);
 }
@@ -122,3 +115,5 @@ void loop() {
 
 <img src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /><br>
 Esta obra está bajo una licencia de [Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional](https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES).
+
+2018 [Asociación Programo Ergo Sum](https://www.programoergosum.com)

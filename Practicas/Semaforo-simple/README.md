@@ -1,4 +1,4 @@
-# Semáforo simple
+# Práctica 3: Semáforo simple
 
 El objetivo de esta práctica es construir un semáforo simple, es decir, se va a programar un código encargado de simular un semáforo como el que se puede encontrar en cualquier ciudad.
 
