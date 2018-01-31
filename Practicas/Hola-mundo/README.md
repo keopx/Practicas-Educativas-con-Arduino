@@ -1,14 +1,8 @@
 # Hola Mundo
 
-![Animación](practica.gif)
-
 En este práctica se va a programar el código encargado de encender y apagar el led situado junto el pin número 13 de nuestra placa de Arduino. Deberá encenderse y apagarse con una frecuencia de 1 segundo.
 
-1.	[Materiales](#materiales)
-2.	[Esquema eléctrico](#esquema-eléctrico)
-3.	[Programación en mBlock](#programación-en-mblock)
-4.	[Programación en Arduino](#programación-en-arduino)
-
+![Hola Mundo](practica.gif)
 
 
 ---
@@ -19,8 +13,7 @@ En este práctica se va a programar el código encargado de encender y apagar el
 
 ## Materiales
 
-Para llevar a cabo la práctica vamos a necesitar los siguientes componentes:
-- 1 Placa de Arduino UNO
+- 1 Arduino UNO
 
 
 <br><br>
@@ -77,3 +70,5 @@ void loop() {
 
 <img src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /><br>
 Esta obra está bajo una licencia de [Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional](https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES).
+
+2018 [Asociación Programo Ergo Sum](https://www.programoergosum.com)
