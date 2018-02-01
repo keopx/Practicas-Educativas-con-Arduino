@@ -1,14 +1,8 @@
-# Encendido nocturno
+# Práctica 1: Encendido nocturno
 
-![Animación](practica.gif)
+El objetivo de esta práctica es encender un LED utilizando un sensor de luz LDR, es decir, queremos que se encienda LED cuando cae la noche y oscurece. En caso contrario el LED permanecerá apagado. Para ello utilizaremos un sensor LDR.
 
-En esta práctica tenemos que programar utilizando un sensor LDR el encendido nocturno de un led.
-
-1.  [Materiales](#materiales)
-2.  [Esquema eléctrico](#esquema-eléctrico)
-3.  [Programación en mBlock](#programación-en-mBlock)
-4.  [Programación en Arduino](#programación-en-arduino)
-
+![Encendido nocturno con Arduino](practica.gif)
 
 
 ---
@@ -19,13 +13,13 @@ En esta práctica tenemos que programar utilizando un sensor LDR el encendido no
 
 ## Materiales
 
-Para llevar a cabo la práctica, vamos a necesitar los siguientes materiales:
-- 1 Placa de Arduino UNO
+- 1 Arduino UNO
 - 1 Protoboard
-- 4 latiguillos
-- 2 resistencias
-- 1 sensor LDR
-- 1 diodo led
+- 4 Latiguillos
+- 1 LED
+- 1 Sensor LDR
+- 1 Resistencia de 220Ω (rojo-rojo-marrón)
+- 1 Resistencia de 10KΩ (marrón-negro-naranja)
 
 
 <br /><br />
@@ -33,32 +27,31 @@ Para llevar a cabo la práctica, vamos a necesitar los siguientes materiales:
 
 ## Esquema eléctrico
 
-Teniendo en cuenta las características técnicas de los diodos led que utilizamos en esta práctica, calculamos la resistencia del circuito aplicando la Ley de Ohm.
-
-Para realizar el montaje correctamente en nuestra placa de prototipado, necesitaremos conectar una resistencia al circuito (Pull-Down o Pull-Up). Estas dos resistencias son un mecanismo básico y habitual dentro del mundo de la electrónica.
-- La resistencia de Pull-Up fuerza HIGH cuando el pulsador está abierto. Cuando está cerrado el PIN se pone a LOW, la intensidad que circula se ve limitada por esta resistencia.
-- La resistencia de Pull-Down fuerza LOW cuando el pulsador está abierto. Cuando está cerrado el PIN se pone a HIGH, y la intensidad que circula se ve limitada por esta resistencia.
-
 | Sensor LDR                        |       |
 | --------------------------------- | ----- |
 | Polarizado                        | No    |
 | Resistencia mínima (con luz)      | 100Ω  |
 | Resistencia máxima (sin luz)      | 1MΩ   |
 
-El valor de la resistencia viene condicionado por la intensidad que pasa por el sensor LDR. En este caso podemos tomar una resistencia de 10KΩ.
+| Características LED              |        |
+| -------------------------------- | ------ |
+| Polarizado                       | Sí     |
+| Intensidad de Corriente          | 20mA   |
+| Tensión Led (verde, ámbar, rojo) | 2.1V   |
+| Tensión Led blanco               | 3.3V   |
 
-Por otro lado, hay añadir un led al circuito con su respectiva resistencia como hemos calculado en prácticas anteriores.
+**Cálculo de la resistencia para el LED**
 
 ```
-V = 1,7V
+V = 5V - 2.1V = 2.9V
 I = 20mA
 
 V = I x R ; R = V / I
 
-R = 1,7V / 0,02A = 85Ω 
+R = 2.9V / 0.02A = 145Ω -> 220Ω (por aproximación)
 ```
 
-Se conectan los componentes sobre la placa de prototipado.
+Por un lado se conecta el LED al pin digital 13 de la placa de arduino (utilizando su debida resistencia). Por otro lado, se conecta el sensor LDR al pin analógico 0 de la placa de arduino (utilizando la resistencia en modo Pull-Down).
 
 ![Esquema eléctrico](fritzing.png)
 
@@ -68,9 +61,9 @@ Se conectan los componentes sobre la placa de prototipado.
 
 ## Programación en mBlock
 
-Fijándonos en el diagrama de flujo programamos la práctica mediante lenguaje de programación por bloques mBlock. 
+Al ejecutar el código se calcula el valor del sensor analógico conectado al pin 0 de la placa de arduino, y en caso de ser superior al valor 150 se activará la salida digital 13 encendiendo el LED. En caso contrario el LED permanecerá apagado.
 
-![Programación en mBlock](mBlock.png)
+![Programación en mBlock](mblock.png)
 
 
 <br /><br />
@@ -78,41 +71,29 @@ Fijándonos en el diagrama de flujo programamos la práctica mediante lenguaje d
 
 ## Programación en Arduino
 
-Al igual que en el apartado anterior, programamos en Arduino IDE la práctica propuesta.
+En primer lugar, se configura el pin digital 13 en modo salida (OUTPUT). Esta configuración se establece en la función setup(), ya que solamente se ejecuta una vez.
+
+Por otro lado, en la función loop() se calcula el valor del sensor analógico conectado al pin 0 de la placa de arduino, y en caso de ser superior al valor 150 se activará la salida digital 13 encendiendo el LED. En caso contrario el LED permanecerá apagado.
 
 ```
 /**
  * Encendido nocturno
- *
- * En esta práctica tenemos que programar utilizando un sensor LDR
- * el encendido nocturno de un led.
  *
  * @author Miguel Ángel Abellán
  * @company Programo Ergo Sum
  * @license Creative Commons. Reconocimiento CompartirIgual 4.0
  */
 
-// Se definen las variables de tipo entero
-int ledPin = 13;
-int ldrPin = 0;
-int limite = 150;
-
-//Este código se ejecuta la primera vez
 void setup() {
-  // Configuramos el pin en modo salida
-  pinMode(ledPin, OUTPUT);
-  pinMode(ldrPin, INPUT);
+  pinMode(13, OUTPUT);
 }
 
-//Este código se ejecuta en bucle repetidamente
 void loop() {
-
-  // Lectura del pin del interruptor
-  if (analogRead(ldrPin) > limite) {
-    digitalWrite(ledPin, HIGH);
+  if (analogRead(0) > 150) {
+    digitalWrite(13, HIGH);
   }
   else {
-    digitalWrite(ledPin, LOW);
+    digitalWrite(13, LOW);
   }
 }
 ```
@@ -125,3 +106,5 @@ void loop() {
 
 <img src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /><br>
 Esta obra está bajo una licencia de [Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional](https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES).
+
+2018 [Asociación Programo Ergo Sum](https://www.programoergosum.com)

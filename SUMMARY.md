@@ -30,3 +30,10 @@
 	* [Pulsador simple](Practicas/Pulsador-simple/README.md)
 	* [Medidor de distancias](Practicas/Medidor-de-distancias/README.md)
 	* [Detector de aparcamiento](Practicas/Detector-de-aparcamiento/README.md)
+
+
+* Entradas analógicas
+	* [Encendido nocturno](Practicas/Encendido-nocturno/README.md)
+	* [Led RGB crepuscular](Practicas/Led-RGB-crepuscular/README.md)
+	* [Regulador de luz](Practicas/Regulador-de/README.md)
+	* [Servomotor manual](Practicas/Servomotor-manual/README.md)
