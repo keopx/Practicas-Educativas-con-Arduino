@@ -12,10 +12,11 @@
 
 
 * Salidas digitales
-	* [Luz intermitente](Practicas/Luz-intermitente/README.md)
-	* [Luz alterna](Practicas/Luz-alterna/README.md)
-	* [Semáforo simple](Practicas/Semaforo-simple/README.md)
-	* [Semáforo peatones](Practicas/Semaforo-peatones/README.md)
+	* Prácticas
+		* [Luz intermitente](Practicas/Luz-intermitente/README.md)
+		* [Luz alterna](Practicas/Luz-alterna/README.md)
+		* [Semáforo simple](Practicas/Semaforo-simple/README.md)
+		* [Semáforo peatones](Practicas/Semaforo-peatones/README.md)
 
 
 * Salidas analógicas
@@ -35,5 +36,5 @@
 * Entradas analógicas
 	* [Encendido nocturno](Practicas/Encendido-nocturno/README.md)
 	* [Led RGB crepuscular](Practicas/Led-RGB-crepuscular/README.md)
-	* [Regulador de luz](Practicas/Regulador-de/README.md)
+	* [Regulador de luz](Practicas/Regulador-de-luz/README.md)
 	* [Servomotor manual](Practicas/Servomotor-manual/README.md)
