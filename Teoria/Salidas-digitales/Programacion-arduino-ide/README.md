@@ -1,4 +1,4 @@
-# Salidas digitales en Arduino
+# Programación en Arduino IDE
 
 
 

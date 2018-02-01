@@ -11,7 +11,11 @@
 * [Hola Mundo](Practicas/Hola-mundo/README.md)
 
 
-* Salidas digitales
+* [Salidas digitales](Teoria/Salidas-digitales/README.md)
+	* [Materiales](Teoria/Salidas-digitales/Materiales/README.md)
+	* [Programación en mBlock](Teoria/Salidas-digitales/Programacion-mblock/README.md)
+	* [Programación en Arduino IDE](Teoria/Salidas-digitales/Programacion-arduino-ide/README.md)
+	* [Electrónica](Teoria/Salidas-digitales/Electronica/README.md)
 	* Prácticas
 		* [Luz intermitente](Practicas/Luz-intermitente/README.md)
 		* [Luz alterna](Practicas/Luz-alterna/README.md)
