@@ -25,7 +25,7 @@ Cada una de las prácticas está compuesta por el enunciado de la misma, esquema
 
 ## Autor
 
-* Miguel Ángel Abellán ([@migueabellan](https://twitter.com/migueabellan)
+* Miguel Ángel Abellán ([@migueabellan](https://twitter.com/migueabellan))
 
 
 <br><br>
