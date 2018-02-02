@@ -30,6 +30,9 @@ La salida digital toma los valores 0V (bajo) ó 5V (alto).
 Los pines de salida han sido diseñados para entregar señales de voltaje, no para suplir corriente a un circuito. El máximo de corriente que puede entregar un pin de salida es de aproximadamente 40mA (suficiente para encender un LED). Las cargas que vamos a manejar no deben superar los 5V ni consumir más de 40mA.
 
 
+<br><br>
+
+
 ---
 
 
