@@ -54,12 +54,6 @@ delay(1000);
 <br><br>
 
 
----
-
-
-<br><br>
-
-
 ## Estructura de un programa en Arduino IDE
 
 Todo programa para Arduino consta de 2 funciones; la función setup() y la función loop(). La función setup() es la primera función que se ejecuta en nuestro programa, ejecutándose sólo una vez, y se utiliza para configurar la comunicación con nuestro equipo, inicializar los pines de nuestra tarjeta de Arduino e inicialización de las variables.
