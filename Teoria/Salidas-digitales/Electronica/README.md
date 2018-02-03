@@ -3,9 +3,6 @@
 Antes de construir las prácticas deberás conocer la parte de electrónica básica.
 
 
-<br><br>
-
-
 ---
 
 
@@ -37,7 +34,7 @@ Para explicar un uso muy sencillo de la Ley de Ohm, pongamos un ejemplo.
 
 Supongamos que conectamos un diodo LED a una placa de arduino. ¿Hace falta conectar alguna resistencia al circuito? Sí, ya que no solo se romperá el LED sino que además se podría deteriorar los pines de arduino. En ese caso, ¿Qué resistencia le debemos poner al circuito?
 
-Para calcular la resistencia del circuito, primero debemos conocer las características del LED que se explicaban en la sección anterior. Un LED típio de 5mm admite una tensión de 2.1V y una intnsidad de corriente de 20mA para lucir de forma óptima. 
+Para calcular la resistencia del circuito, primero debemos conocer las características del LED que se explicaban en la sección anterior. Un LED típico de 5mm admite una tensión de 2.1V y una intensidad de corriente de 20mA para lucir de forma óptima. 
 
 Las placas de Arduino UNO trabajan a 5V, con lo cual se deberá reducir la tensión en el LED, lo que se conoce como diferencia de potencial en el LED que será:
 
