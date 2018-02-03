@@ -3,11 +3,17 @@
 Para el desarrollo de las prácticas de este capítulo, se van a utilizar los siguientes componentes:
 
 
+---
+
+
+<br><br>
+
+
 ## Arduino UNO Rev3
 
 **Arduino** es una plataforma para prototipado de electrónica basada en hardware y software libre, es decir, podemos construir circuitos eléctricos y programarlos.
 
-![Arduino UNO Rev3](assets/arduino-uno.png)
+![Arduino UNO](assets/arduino-uno.png)
 
 #### *Características*
 
@@ -32,9 +38,9 @@ Para el desarrollo de las prácticas de este capítulo, se van a utilizar los si
 
 ## Placa de prototipado o protoboard
 
-Una **protoboard** es una placa para prototipar circuitos eléctricos conectandos en sus orificios sin necesidad de soldar los componentes.
+Una **protoboard** es una placa para prototipar circuitos eléctricos conectados en sus orificios sin necesidad de soldar los componentes.
 
-![Protoboard 830 puntos](assets/protoboard.png)
+![Protoboard](assets/protoboard.png)
 
 #### *Características*
 
