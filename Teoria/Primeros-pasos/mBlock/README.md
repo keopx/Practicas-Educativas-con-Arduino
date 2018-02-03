@@ -4,7 +4,7 @@ mBlock es un entorno gráfico de programación basado en Scratch 2.0 y desarroll
 
 Está basado en el lenguaje de programación por bloques y sus instrucciones han sido diseñadas con un lenguaje natural, eliminando términos técnicos y empleando una terminología más natural. Así se facilita el acceso a la programación en niveles educativos básicos.
 
-![mblock](assets/mBlock.png)
+![mblock](assets/mblock.png)
 
 
 <br />
