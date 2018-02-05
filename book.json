@@ -1,10 +1,11 @@
 {
-  "plugins": [
-    "footer"
-  ],
-  "pluginsConfig": {
-    "layout": {
-      "footerPath" : "footer.html"
+    "plugins": ["page-footer-ex"],
+    "pluginsConfig": {
+        "page-footer-ex": {
+            "copyright": "[Programo Ergo Sum](https://www.programoergosum.com)",
+            "markdown": true,
+            "update_label": "<i>Última actualización:</i> ",
+            "update_format": "YYYY-MM-DD HH:mm:ss"
+        }
     }
-  }
-}
+} 
