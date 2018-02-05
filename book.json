@@ -3,7 +3,7 @@
     "pluginsConfig": {
         "page-footer-ex": {
             "copyright": "[Programo Ergo Sum](https://www.programoergosum.com)",
-            "markdown": false,
+            "markdown": true,
             "update_label": "<i>actualizado</i>",
             "update_format": "YYYY-MM-DD HH:mm:ss"
         }
