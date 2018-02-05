@@ -1,14 +1,6 @@
-"pdf": {
-        "pageNumbers": true,
-        "fontSize": 12,
-        "fontFamily": "sans",
-        "paperSize": "a4",
-        "margin": {
-            "right": 62,
-            "left": 62,
-            "top": 36,
-            "bottom": 36
-        },
-        "headerTemplate": "_TITLE_ | _PAGENUM_",
-        "footerTemplate": "2018 [Asociación Programo Ergo Sum](https://www.programoergosum.com)"
-    },
+{
+    "pdf": {
+        "headerTemplate": "Header of the PDF with _TITLE_",
+        "footerTemplate": "Footer HTML template. Available variables: _PAGENUM_, _TITLE_, _AUTHOR_ and _SECTION_."
+    }
+}
