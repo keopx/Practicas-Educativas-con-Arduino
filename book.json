@@ -1,6 +1,14 @@
 {
+    "gitbook": "2.x.x",
+    "plugins": [],
+    "links": {
+        "sidebar": {
+            "Contact us / Support": "https://www.gitbook.com/contact"
+        }
+    },
+    "pluginsConfig": {},
     "pdf": {
-        "headerTemplate": "Header of the PDF with _TITLE_",
-        "footerTemplate": "Footer HTML template. Available variables: _PAGENUM_, _TITLE_, _AUTHOR_ and _SECTION_."
+        "headerTemplate": "Header of the PDF with ",
+        "footerTemplate": "Footer HTML template. ."
     }
 }
