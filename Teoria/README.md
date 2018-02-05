@@ -1,12 +1,4 @@
-# Primeros pasos con Arduino
-
-En este apartado se explica cómo instalar y configurar tu placa de arduino así como los diferentes programas que se van a utilizar en las prácticas de programación y robótica de este manual.
-
-
-<br />
-
-
-## Qué es Arduino
+# Qué es Arduino
 
 **Arduino** es una plataforma para prototipado de electrónica basada en hardware y software libre y fácil de utilizar. Podemos construir circuitos electrónicos y programarlos para:
 - iniciarnos en el mundo de la electrónica y robótica.
@@ -78,9 +70,3 @@ Para programar una tarjeta de Arduino, podemos utilizar diferentes lenguajes y e
 	- [mBlock](mBlock/README.md)
 - Lenguajes de programación en modo texto
 	- [Arduino IDE](Arduino-ide/README.md)
-
-
----
-
-<img src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /><br>
-Esta obra está bajo una licencia de [Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional](https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES).
