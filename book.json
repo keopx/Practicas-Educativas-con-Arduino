@@ -1,15 +1,10 @@
 {
-    "gitbook": "3.x.x",
-    "plugins": [],
-    "links": {
-        "sidebar": {
-            "Contacto": "https://www.programoergosum.com/contacto"
-        }
-    },
-    "pluginsConfig": {},
-    "pdf": {
-        "fontSize": 10,
-        "headerTemplate": null,
-        "footerTemplate": "@ProgramoErgoSum _PAGENUM_"
+  "plugins": ["pdf-styling"],
+  "pluginsConfig": {
+    "pdf-styling": {
+      "background": {
+        "image": "assets/logo-programo-ergo-sum.png"
+      }
     }
+  }
 }
