@@ -10,6 +10,6 @@
     "pdf": {
         "fontSize": 10,
         "headerTemplate": null,
-        "footerTemplate": "@ProgramoErgoSum"
+        "footerTemplate": "@ProgramoErgoSum _PAGENUM_"
     }
 }
