@@ -1,5 +1,12 @@
 {
-
+    "gitbook": "2.x.x",
+    "plugins": [],
+    "links": {
+        "sidebar": {
+            "Contacto": "https://www.programoergosum.com/contacto"
+        }
+    },
+    "pluginsConfig": {},
     "pdf": {
         "pageNumbers": true,
         "fontSize": 12,
