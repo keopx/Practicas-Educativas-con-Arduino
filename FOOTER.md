@@ -1,1 +1,8 @@
-*content published under [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)*
+<br><br>
+
+---
+<p align="center">
+<img src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /><br>
+Esta obra está bajo una licencia de [Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional](https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES).
+</p>
+2018 [Asociación Programo Ergo Sum](https://www.programoergosum.com)
