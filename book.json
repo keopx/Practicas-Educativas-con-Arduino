@@ -1,13 +1,16 @@
 {
-    "gitbook": "2.x.x",
-    "plugins": [],
-    "links": {
-        "sidebar": {
-            "Contact us / Support": "https://www.gitbook.com/contact"
-        }
-    },
-    "pluginsConfig": {},
+
     "pdf": {
+        "pageNumbers": true,
+        "fontSize": 12,
+        "fontFamily": "sans",
+        "paperSize": "a4",
+        "margin": {
+            "right": 62,
+            "left": 62,
+            "top": 36,
+            "bottom": 36
+        },
         "headerTemplate": "Header of the PDF with _TITLE_",
         "footerTemplate": "Footer HTML template. Available variables: _PAGENUM_, _TITLE_, _AUTHOR_ and _SECTION_."
     }
