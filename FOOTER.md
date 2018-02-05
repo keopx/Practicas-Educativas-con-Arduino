@@ -1,7 +1,5 @@
 <br><br>
 
----
-
 <p align="center">
 	<img src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" />
 	<br>
