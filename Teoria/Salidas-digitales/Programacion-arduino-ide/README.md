@@ -86,15 +86,3 @@ Es importante tener claras las siguientes reglas del lenguaje de programación:
 * Toda línea termina en punto y coma ";" excepto las estructuras de control que se acompañan con llaves "{}".
 * Las instrucciones y variables son sensibles a mayúsculas y minúsculas, es decir, debemos respetar el nombre exacto.
 * Las instrucciones que comienzan por el símbolo de doble barra "//" se tomará como comentario para el programa. También se dispone de comentarios de múltiples líneas /* */.
-
-
-<br><br>
-
-
----
-
-
-<img src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /><br>
-Esta obra está bajo una licencia de [Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional](https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES).
-
-2018 [Asociación Programo Ergo Sum](https://www.programoergosum.com)

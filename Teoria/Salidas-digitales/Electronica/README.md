@@ -53,15 +53,3 @@ R = 2.9V / 0.02A = 145Ω
 ```
 
 145 Ohm es el valor de la resistencia que debemos poner en nuestro circuito. Si no nos sale un valor de resistencia que no tenemos intentaremos acercarnos lo máximo posible, siempre por encima del valor ideal.
-
-
-<br><br>
-
-
----
-
-
-<img src="http://i.creativecommons.org/l/by-sa/4.0/88x31.png" /><br>
-Esta obra está bajo una licencia de [Creative Commons Reconocimiento-CompartirIgual 4.0 Internacional](https://creativecommons.org/licenses/by-sa/4.0/deed.es_ES).
-
-2018 [Asociación Programo Ergo Sum](https://www.programoergosum.com)
