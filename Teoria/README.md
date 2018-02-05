@@ -65,8 +65,8 @@ Arduino contiene la siguiente distribución de pines:
 Para programar una tarjeta de Arduino, podemos utilizar diferentes lenguajes y entornos de programación. En este caso vamos a introducir la programación y electrónica con Arduino utilizando los lenguajes de programación por bloques y lenguajes de programación en modo texto.
 
 - Lenguajes de programación por bloques:
-	- [Scratch 4 Arduino](Scratch-4-arduino/README.md)
-	- [Snap 4 Arduino](Snap-4-arduino/README.md)
-	- [mBlock](mBlock/README.md)
+	- [Scratch 4 Arduino](Instalacion/README.md#scratch-4-arduino)
+	- [Snap 4 Arduino](Instalacion/README.md#snap-4-arduino)
+	- [mBlock](Instalacion/README.md#mblock)
 - Lenguajes de programación en modo texto
-	- [Arduino IDE](Arduino-ide/README.md)
+	- [Arduino IDE](Instalacion/README.md#arduino-ide)
