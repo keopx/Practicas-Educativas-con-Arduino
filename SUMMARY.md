@@ -13,10 +13,10 @@
 
 
 * [Salidas digitales](Teoria/Salidas-digitales/README.md)
-	* [Materiales](Teoria/Salidas-digitales/Materiales/README.md)
-	* [Programación en mBlock](Teoria/Salidas-digitales/Programacion-mblock/README.md)
-	* [Programación en Arduino IDE](Teoria/Salidas-digitales/Programacion-arduino-ide/README.md)
-	* [Electrónica](Teoria/Salidas-digitales/Electronica/README.md)
+	* [Materiales](Teoria/Salidas-digitales/materiales.md)
+	* [Programación en mBlock](Teoria/Salidas-digitales/programacion-mblock.md)
+	* [Programación en Arduino IDE](Teoria/Salidas-digitales/programacion-arduino-ide.md)
+	* [Electrónica](Teoria/Salidas-digitales/electronica.md)
 	* [Prácticas](Teoria/Salidas-digitales/practicas.md)
 		* [Luz intermitente](Practicas/Luz-intermitente/README.md)
 		* [Luz alterna](Practicas/Luz-alterna/README.md)
