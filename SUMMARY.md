@@ -17,7 +17,7 @@
 	* [Programación en mBlock](Teoria/Salidas-digitales/Programacion-mblock/README.md)
 	* [Programación en Arduino IDE](Teoria/Salidas-digitales/Programacion-arduino-ide/README.md)
 	* [Electrónica](Teoria/Salidas-digitales/Electronica/README.md)
-	* Prácticas
+	* [Prácticas](Teoria/practicas.md)
 		* [Luz intermitente](Practicas/Luz-intermitente/README.md)
 		* [Luz alterna](Practicas/Luz-alterna/README.md)
 		* [Semáforo simple](Practicas/Semaforo-simple/README.md)
