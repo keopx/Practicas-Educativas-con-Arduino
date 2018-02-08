@@ -13,7 +13,7 @@ Para el desarrollo de las prácticas de este capítulo, se van a utilizar los si
 
 **Arduino** es una plataforma para prototipado de electrónica basada en hardware y software libre, es decir, podemos construir circuitos eléctricos y programarlos.
 
-![Arduino UNO](assets/arduino-uno.png)
+![Arduino UNO](/Teoria/Materiales/arduino-uno.png)
 
 #### *Características*
 
@@ -40,7 +40,7 @@ Para el desarrollo de las prácticas de este capítulo, se van a utilizar los si
 
 Una **protoboard** es una placa para prototipar circuitos eléctricos conectados en sus orificios sin necesidad de soldar los componentes.
 
-![Protoboard](assets/protoboard.png)
+![Protoboard](/Teoria/Materiales/protoboard.png)
 
 #### *Características*
 
@@ -57,7 +57,7 @@ Una **protoboard** es una placa para prototipar circuitos eléctricos conectados
 
 Los **latiguillos** son utilizados para conectar entre si los diferentes componentes electrónicos.
 
-![Latiguillos](assets/latiguillos.png)
+![Latiguillos](/Teoria/Materiales/latiguillos.png)
 
 #### *Características*
 
@@ -73,7 +73,7 @@ Los **latiguillos** son utilizados para conectar entre si los diferentes compone
 
 Un **diodo Led** es un componente eléctrico que emite luz al paso de corriente eléctrica sobre él, desde el polo positivo (ánodo) al polo negativo (cátodo).
 
-![Diodos Led](assets/diodos-led.png)
+![Diodos Led](/Teoria/Materiales/diodos-led.png)
 
 #### *Características*
 
@@ -99,7 +99,7 @@ Los **resistores** son un componente eléctrico que se oponen el paso de la corr
 - 4,7KΩ (amarillo-morado-rojo)
 - 10KΩ (marrón-negro-naranja)
 
-![Resistencias](assets/resistencias.png)
+![Resistencias](/Teoria/Materiales/resistencias.png)
 
 #### *Características*
 
@@ -117,7 +117,7 @@ Los **resistores** son un componente eléctrico que se oponen el paso de la corr
 
 Un **zumbador** es un componente eléctrico que emite una frecuencia de sonidos al paso de la corriente eléctrica sobre él desde el polo positivo (ánodo) al polo negativo (cátodo).
 
-![Zumbador](assets/zumbador.png)
+![Zumbador](/Teoria/Materiales/zumbador.png)
 
 #### *Características*
 
