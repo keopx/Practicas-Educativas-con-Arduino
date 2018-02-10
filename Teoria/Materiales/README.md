@@ -10,14 +10,14 @@ Para el desarrollo de las prácticas de este libro vas a necesitar los siguiente
 - [Diodo LED](#diodo-led)
 - [Diodo LED RGB](#diodo-led-rgb)
 - [Zumbador](#zumbador)
-- [Servomotores](#servomotores)
+- [Servomotor](#servomotor)
 - [Motor de CC](#motor-de-cc)
 - [Motor paso a paso](#motor-paso-a-paso)
-- [Pulsadores](#pulsadores)
-- [Potenciómetros](#potenciometros)
-- [Sensor de luz LDR](#ldr)
-- [Sensores de temperatura LM35](#sensores-de-temperatura-lm35)
-- [Sensor ultrasonidos HC-SR04](#sensor-ultrasonidos-hc-sr04)
+- [Pulsador](#pulsador)
+- [Potenciómetro](#potenciometro)
+- [Sensor de luz LDR](#sensor-de-luz-ldr)
+- [Sensor de temperatura LM35](#sensor-de-temperatura-lm35)
+- [Sensor de ultrasonidos HC-SR04](#sensor-de-ultrasonidos-hc-sr04)
 
 
 
@@ -313,7 +313,7 @@ Con un **interruptor** podemos abrir o cerrar el circuito eléctrico accionando 
 
 
 
-## Potenciómetr
+## Potenciómetro
 
 Un **potenciómetro** es una resistencia variable mecánica, es decir, podemos regular su valor manualmente.
 
@@ -358,7 +358,7 @@ El **sensor LDR** es una resistencia sensible a la luz, es decir, cambia el valo
 
 
 
-## Sensores de temperatura LM35
+## Sensor de temperatura LM35
 
 El **sensor de temperatura LM35** proporciona una salida de voltaje proporcional a la temperatura.
 
@@ -382,7 +382,7 @@ El **sensor de temperatura LM35** proporciona una salida de voltaje proporcional
 
 
 
-## Sensor ultrasonidos HC-SR04
+## Sensor de ultrasonidos HC-SR04
 
 El **sensor de proximidad HC-SR04** es un sensor ultrasónico capaz de medir distancias pequeñas hasta un obstáculo.
 
