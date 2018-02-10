@@ -5,8 +5,6 @@
 
 * [¿Qué es Arduino?](Teoria/README.md)
 	* [Instalación](Teoria/Instalacion/README.md)
-		* [Scratch 4 Arduino](Teoria/Instalacion/README.md#scratch-4-arduino)
-		* [Snap 4 Arduino](Teoria/Instalacion/README.md#snap-4-arduino)
 		* [mBlock](Teoria/Instalacion/README.md#mblock)
 		* [Arduino IDE](Teoria/Instalacion/README.md#arduino-ide)
 	* [Hola Mundo](Practicas/Hola-mundo/README.md)
