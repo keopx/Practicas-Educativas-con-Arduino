@@ -35,10 +35,15 @@
 		* [La Guerra de las Galaxias](Practicas/La-guerra-de-las-galaxias/README.md)
 
 
-* Entradas digitales
-	* [Pulsador simple](Practicas/Pulsador-simple/README.md)
-	* [Medidor de distancias](Practicas/Medidor-de-distancias/README.md)
-	* [Detector de aparcamiento](Practicas/Detector-de-aparcamiento/README.md)
+* [Entradas digitales](Teoria/Entradas-digitales/README.md)
+	* [Materiales](Teoria/Entradas-digitales/materiales.md)
+	* [Programación en mBlock](Teoria/Entradas-digitales/programacion-mblock.md)
+	* [Programación en Arduino IDE](Teoria/Entradas-digitales/programacion-arduino-ide.md)
+	* [Electrónica](Teoria/Entradas-digitales/electronica.md)
+	* [Prácticas](Teoria/Entradas-digitales/practicas.md)
+        * [Pulsador simple](Practicas/Pulsador-simple/README.md)
+        * [Medidor de distancias](Practicas/Medidor-de-distancias/README.md)
+        * [Detector de aparcamiento](Practicas/Detector-de-aparcamiento/README.md)
 
 
 * Entradas analógicas
