@@ -1,53 +1,8 @@
 # Summary
 
 * [Introducción](README.md)
-
-
-* [¿Qué es Arduino?](Teoria/README.md)
+    * [¿Qué es Arduino?](Teoria/README.md)
+    * [Materiales](Teoria/Materiales/README.md)
 	* [Instalación](Teoria/Instalacion/README.md)
 		* [mBlock](Teoria/Instalacion/README.md#mblock)
 		* [Arduino IDE](Teoria/Instalacion/README.md#arduino-ide)
-	* [Hola Mundo](Practicas/Hola-mundo/README.md)
-
-
-* [Salidas digitales](Teoria/Salidas-digitales/README.md)
-	* [Materiales](Teoria/Salidas-digitales/materiales.md)
-	* [Programación en mBlock](Teoria/Salidas-digitales/programacion-mblock.md)
-	* [Programación en Arduino IDE](Teoria/Salidas-digitales/programacion-arduino-ide.md)
-	* [Electrónica](Teoria/Salidas-digitales/electronica.md)
-	* [Prácticas](Teoria/Salidas-digitales/practicas.md)
-		* [Luz intermitente](Practicas/Luz-intermitente/README.md)
-		* [Luz alterna](Practicas/Luz-alterna/README.md)
-		* [Semáforo simple](Practicas/Semaforo-simple/README.md)
-		* [Semáforo peatones](Practicas/Semaforo-peatones/README.md)
-
-
-* [Salidas analógicas](Teoria/Salidas-analogicas/README.md)
-	* [Materiales](Teoria/Salidas-analogicas/materiales.md)
-	* [Programación en mBlock](Teoria/Salidas-analogicas/programacion-mblock.md)
-	* [Programación en Arduino IDE](Teoria/Salidas-analogicas/programacion-arduino-ide.md)
-	* [Electrónica](Teoria/Salidas-analogicas/electronica.md)
-	* [Prácticas](Teoria/Salidas-analogicas/practicas.md)
-		* [Luces aleatorias](Practicas/Luces-aleatorias/README.md)
-		* [Led RGB (ánodo común)](Practicas/Led-RGB-anodo-comun/README.md)
-		* [Led RGB (cátodo común)](Practicas/Led-RGB-catodo-comun/README.md)
-		* [Servomotor 0-180](Practicas/Servomotor-0-180/README.md)
-		* [La Guerra de las Galaxias](Practicas/La-guerra-de-las-galaxias/README.md)
-
-
-* [Entradas digitales](Teoria/Entradas-digitales/README.md)
-	* [Materiales](Teoria/Entradas-digitales/materiales.md)
-	* [Programación en mBlock](Teoria/Entradas-digitales/programacion-mblock.md)
-	* [Programación en Arduino IDE](Teoria/Entradas-digitales/programacion-arduino-ide.md)
-	* [Electrónica](Teoria/Entradas-digitales/electronica.md)
-	* [Prácticas](Teoria/Entradas-digitales/practicas.md)
-        * [Pulsador simple](Practicas/Pulsador-simple/README.md)
-        * [Medidor de distancias](Practicas/Medidor-de-distancias/README.md)
-        * [Detector de aparcamiento](Practicas/Detector-de-aparcamiento/README.md)
-
-
-* Entradas analógicas
-	* [Encendido nocturno](Practicas/Encendido-nocturno/README.md)
-	* [Led RGB crepuscular](Practicas/Led-RGB-crepuscular/README.md)
-	* [Regulador de luz](Practicas/Regulador-de-luz/README.md)
-	* [Servomotor manual](Practicas/Servomotor-manual/README.md)
