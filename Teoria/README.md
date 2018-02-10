@@ -5,7 +5,7 @@
 - construir componentes electrónicos a nuestro gusto.
 - crear nuestro propio modelo de negocio.
 
-![Arduino UNO Rev3](Instalacion/assets/Arduino-UNO-Rev3.png)
+![Arduino UNO](Materiales/arduino-uno.png)
 
 
 <br />
@@ -45,7 +45,7 @@ Arduino contiene la siguiente distribución de pines:
 - También disponemos de **3 pines GND** para conectar a tierra nuestros circuitos.
 - Y por último **2 pines de alimentación** de 5V y 3.3V respectivamente.
 
-![Pines Arduino UNO Rev3](Instalacion/assets/Pines-Arduino-UNO-Rev3.png)
+![Pines Arduino UNO](Materiales/pines-arduino-uno.png)
 
 | Pines Arduino UNO Rev3  |           |
 | ----------------------- | --------- |
@@ -65,8 +65,6 @@ Arduino contiene la siguiente distribución de pines:
 Para programar una tarjeta de Arduino, podemos utilizar diferentes lenguajes y entornos de programación. En este caso vamos a introducir la programación y electrónica con Arduino utilizando los lenguajes de programación por bloques y lenguajes de programación en modo texto.
 
 - Lenguajes de programación por bloques:
-	- [Scratch 4 Arduino](Instalacion/README.md#scratch-4-arduino)
-	- [Snap 4 Arduino](Instalacion/README.md#snap-4-arduino)
 	- [mBlock](Instalacion/README.md#mblock)
 - Lenguajes de programación en modo texto
 	- [Arduino IDE](Instalacion/README.md#arduino-ide)

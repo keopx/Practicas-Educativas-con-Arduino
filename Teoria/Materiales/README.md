@@ -1,6 +1,6 @@
 # Materiales
 
-Para el desarrollo de las prácticas de este libro vas a necesitar los siguientes componentes de electrónica:
+Para el desarrollo de las prÃ¡cticas de este libro vas a necesitar los siguientes componentes de electrÃ³nica:
 
 - [Arduino UNO](#arduino-uno)
 - [Protoboard](#protoboard)
@@ -14,7 +14,7 @@ Para el desarrollo de las prácticas de este libro vas a necesitar los siguientes
 - [Motor de CC](#motor-de-cc)
 - [Motor paso a paso](#motor-paso-a-paso)
 - [Pulsadores](#pulsadores)
-- [Potenciómetros](#potenciometros)
+- [PotenciÃ³metros](#potenciometros)
 - [Sensor de luz LDR](#ldr)
 - [Sensores de temperatura LM35](#sensores-de-temperatura-lm35)
 - [Sensor de proximidad HC-SR04](#1-sensor-de-proximidad-hc-sr04)
@@ -30,26 +30,26 @@ Para el desarrollo de las prácticas de este libro vas a necesitar los siguientes
 
 ## Arduino UNO
 
-**Arduino** es una plataforma para prototipado de electrónica basada en hardware y software libre, es decir, podemos construir circuitos eléctricos y programarlos.
+**Arduino** es una plataforma para prototipado de electrÃ³nica basada en hardware y software libre, es decir, podemos construir circuitos elÃ©ctricos y programarlos.
 
 ![Arduino UNO](arduino-uno.png)
 
-#### *Características*
+#### *CaracterÃ­sticas*
 
 | Arduino UNO Rev3          |           |
 | ------------------------- | --------- |
 | Microprocesador           | ATmega328 |
-| Tensión operativa         | 5V        |
-| Tensión de alimentación   | 7-12V     |
+| TensiÃ³n operativa         | 5V        |
+| TensiÃ³n de alimentaciÃ³n   | 7-12V     |
 | Entradas digitales        | 14        |
 | Salidas digitales         | 14        |
-| Entradas analógicas       | 6         |
+| Entradas analÃ³gicas       | 6         |
 | Memoria flash             | 32Kb      |
 | SRAM                      | 2Kb       |
 | EEPROM                    | 1Kb       |
 | Velocidad del reloj       | 16MHz     |
-| Máxima VC para entradas   | 40mA      |
-| Máxima VC para pines 3.3V | 50mA      |
+| MÃ¡xima VC para entradas   | 40mA      |
+| MÃ¡xima VC para pines 3.3V | 50mA      |
 
 
 
@@ -61,15 +61,15 @@ Para el desarrollo de las prácticas de este libro vas a necesitar los siguientes
 
 ## Protoboard
 
-Una **protoboard** es una placa para prototipar circuitos eléctricos conectandos en sus orificios sin necesidad de soldar los componentes.
+Una **protoboard** es una placa para prototipar circuitos elÃ©ctricos conectandos en sus orificios sin necesidad de soldar los componentes.
 
 ![Protoboard](protoboard.png)
 
-#### *Características*
+#### *CaracterÃ­sticas*
 
 | Protoboard  |                 |
 | ----------- | --------------- |
-| Serigrafías | Sí, polarizadas |
+| SerigrafÃ­as | SÃ­, polarizadas |
 
 
 
@@ -81,11 +81,11 @@ Una **protoboard** es una placa para prototipar circuitos eléctricos conectandos
 
 ## Latiguillos
 
-Los **latiguillos** son utilizados para conectar entre si los diferentes componentes electrónicos.
+Los **latiguillos** son utilizados para conectar entre si los diferentes componentes electrÃ³nicos.
 
 ![Latiguillos](latiguillos.png)
 
-#### *Características*
+#### *CaracterÃ­sticas*
 
 | Latiguillos |                           |
 | ----------- | ------------------------- |
@@ -101,19 +101,19 @@ Los **latiguillos** son utilizados para conectar entre si los diferentes compone
 
 ## Diodos LED
 
-Un **diodo Led** es un componente eléctrico que emite luz al paso de corriente eléctrica sobre él, desde el polo positivo (ánodo) al polo negativo (cátodo).
+Un **diodo Led** es un componente elÃ©ctrico que emite luz al paso de corriente elÃ©ctrica sobre Ã©l, desde el polo positivo (Ã¡nodo) al polo negativo (cÃ¡todo).
 
 ![Diodos LED](diodos-led.png)
 
-#### *Características*
+#### *CaracterÃ­sticas*
 
 | Diodos Led de colores            |        |
 | -------------------------------- | ------ |
-| Polarizado                       | Sí     |
-| Diámetro                         | 5mm    |
+| Polarizado                       | SÃ­     |
+| DiÃ¡metro                         | 5mm    |
 | Intensidad de Corriente          | 20mA   |
-| Tensión Led (verde, ámbar, rojo) | 2,1V   |
-| Tensión Led blanco               | 3,3V   |
+| TensiÃ³n Led (verde, Ã¡mbar, rojo) | 2,1V   |
+| TensiÃ³n Led blanco               | 3,3V   |
 
 
 
@@ -125,29 +125,29 @@ Un **diodo Led** es un componente eléctrico que emite luz al paso de corriente e
 
 ## Diodos LED RGB
 
-Un **diodo LED RGB** es un componente eléctrico que emite luz al paso de corriente eléctrica sobre él. Dependiendo de la tensión en sus diferentes patillas se pueden formar más de 10 millones de colores.
+Un **diodo LED RGB** es un componente elÃ©ctrico que emite luz al paso de corriente elÃ©ctrica sobre Ã©l. Dependiendo de la tensiÃ³n en sus diferentes patillas se pueden formar mÃ¡s de 10 millones de colores.
 
 ![Diodos LED RGB](diodos-led-rgb.png)
 
-#### *Características*
+#### *CaracterÃ­sticas*
 
-| Diodo Led RGB (ánodo común)      |          |
+| Diodo Led RGB (Ã¡nodo comÃºn)      |          |
 | -------------------------------- | -------- |
 | Polarizado                       | Positivo |
-| Diámetro                         | 5mm      |
+| DiÃ¡metro                         | 5mm      |
 | Itensidad de Corriente           | 20mA     |
-| Tensión en Led (rojo)            | 2,1V     |
-| Tensión en Led (verde)           | 3,3V     |
-| Tensión en Led (azul)            | 3,3V     |
+| TensiÃ³n en Led (rojo)            | 2,1V     |
+| TensiÃ³n en Led (verde)           | 3,3V     |
+| TensiÃ³n en Led (azul)            | 3,3V     |
 
-| Diodo Led RGB (cátodo común)     |          |
+| Diodo Led RGB (cÃ¡todo comÃºn)     |          |
 | -------------------------------- | -------- |
 | Polarizado                       | Negativo |
-| Diámetro                         | 5mm      |
+| DiÃ¡metro                         | 5mm      |
 | Itensidad de Corriente           | 20mA     |
-| Tensión en Led (rojo)            | 2,1V     |
-| Tensión en Led (verde)           | 3,3V     |
-| Tensión en Led (azul)            | 3,3V     |
+| TensiÃ³n en Led (rojo)            | 2,1V     |
+| TensiÃ³n en Led (verde)           | 3,3V     |
+| TensiÃ³n en Led (azul)            | 3,3V     |
 
 
 
@@ -159,23 +159,23 @@ Un **diodo LED RGB** es un componente eléctrico que emite luz al paso de corrien
 
 ## Resistencias
 
-Las **resistencias** son un componente eléctrico que se oponen el paso de la corriente en un circuito. 
-- 100O (marrón-negro-marrón)
-- 220O (rojo-rojo-marrón)
-- 330O (naranja-naranja-marrón)
-- 1KO (marrón-negro-rojo)
+Las **resistencias** son un componente elÃ©ctrico que se oponen el paso de la corriente en un circuito. 
+- 100O (marrÃ³n-negro-marrÃ³n)
+- 220O (rojo-rojo-marrÃ³n)
+- 330O (naranja-naranja-marrÃ³n)
+- 1KO (marrÃ³n-negro-rojo)
 - 4,7KO (amarillo-morado-rojo)
-- 10KO (marrón-negro-naranja)
+- 10KO (marrÃ³n-negro-naranja)
 
 ![Resistencias](resistencias.png)
 
-#### *Características*
+#### *CaracterÃ­sticas*
 
 | Resistencia                      |      |
 | -------------------------------- | ---- |
 | Polarizado                       | No   |
-| Potencia de disipación           | 0,5W |
-| Precisión                        | 5%   |
+| Potencia de disipaciÃ³n           | 0,5W |
+| PrecisiÃ³n                        | 5%   |
 
 
 
@@ -187,17 +187,17 @@ Las **resistencias** son un componente eléctrico que se oponen el paso de la cor
 
 ## Diodos
 
-Un **diodo** es un componente eléctrico que permite el paso de la corriente en un solo sentido, desde el polo positivo (ánodo) al polo negativo (cátodo).
+Un **diodo** es un componente elÃ©ctrico que permite el paso de la corriente en un solo sentido, desde el polo positivo (Ã¡nodo) al polo negativo (cÃ¡todo).
 
 ![Diodos](diodos.png)
 
-#### *Características*
+#### *CaracterÃ­sticas*
 
 | Diodo 1N4007                     |       |
 | -------------------------------- | ----- |
-| Polarizado                       | Sí    |
-| Tensión en polarización directa  | 1,1V  |
-| Tensión en polarización inversa  | 1000V |
+| Polarizado                       | SÃ­    |
+| TensiÃ³n en polarizaciÃ³n directa  | 1,1V  |
+| TensiÃ³n en polarizaciÃ³n inversa  | 1000V |
 
 
 
@@ -209,16 +209,16 @@ Un **diodo** es un componente eléctrico que permite el paso de la corriente en u
 
 ## Zumbadores
 
-Un **zumbador** es un componente eléctrico que emite una frecuencia de sonidos al paso de la corriente eléctrica sobre él desde el polo positivo (ánodo) al polo negativo (cátodo).
+Un **zumbador** es un componente elÃ©ctrico que emite una frecuencia de sonidos al paso de la corriente elÃ©ctrica sobre Ã©l desde el polo positivo (Ã¡nodo) al polo negativo (cÃ¡todo).
 
 ![Zumbador](zumbador.png)
 
-#### *Características*
+#### *CaracterÃ­sticas*
 
-| Zumbador piezo-eléctrico         |       |
+| Zumbador piezo-elÃ©ctrico         |       |
 | -------------------------------- | ----- |
-| Polarizado                       | Sí    |
-| Tensión de trabajo               | 3-12V |
+| Polarizado                       | SÃ­    |
+| TensiÃ³n de trabajo               | 3-12V |
 
 
 
@@ -230,11 +230,11 @@ Un **zumbador** es un componente eléctrico que emite una frecuencia de sonidos a
 
 ## Pulsadores
 
-Con un **interruptor** podemos abrir o cerrar el circuito eléctrico accionando la palanca.
+Con un **interruptor** podemos abrir o cerrar el circuito elÃ©ctrico accionando la palanca.
 
 ![Pulsadores](pulsador.png)
 
-#### *Características*
+#### *CaracterÃ­sticas*
 
 | Pulsadores                       |       |
 | -------------------------------- | ----- |
@@ -250,17 +250,17 @@ Con un **interruptor** podemos abrir o cerrar el circuito eléctrico accionando l
 
 ## LDR
 
-El **sensor LDR** es una resistencia sensible a la luz, es decir, cambia el valor de su resistencia según la cantidad de luz que incide sobre él.
+El **sensor LDR** es una resistencia sensible a la luz, es decir, cambia el valor de su resistencia segÃºn la cantidad de luz que incide sobre Ã©l.
 
 ![Sensor LDR](ldr.png)
 
-#### *Características*
+#### *CaracterÃ­sticas*
 
 | Sensor LDR                        |       |
 | --------------------------------- | ----- |
 | Polarizado                        | No    |
-| Resistencia mínima (con luz)      | 100O  |
-| Resistencia máxima (sin luz)      | 1MO   |
+| Resistencia mÃ­nima (con luz)      | 100O  |
+| Resistencia mÃ¡xima (sin luz)      | 1MO   |
 
 
 
@@ -270,20 +270,20 @@ El **sensor LDR** es una resistencia sensible a la luz, es decir, cambia el valo
 
 
 
-## Potenciómetros
+## PotenciÃ³metros
 
-Un **potenciómetro** es una resistencia variable mecánica, es decir, podemos regular su valor manualmente.
+Un **potenciÃ³metro** es una resistencia variable mecÃ¡nica, es decir, podemos regular su valor manualmente.
 
-![Potenciómetro](potenciometro.png)
+![PotenciÃ³metro](potenciometro.png)
 
-#### *Características*
+#### *CaracterÃ­sticas*
 
-| Potenciómetro 10K  |       |
+| PotenciÃ³metro 10K  |       |
 | ------------------ | ----- |
-| Polarizado         | Sí    |
-| Resistencia mínima | 0O    |
-| Resistencia máxima | 10KO  |
-| Precisión          | 5%    |
+| Polarizado         | SÃ­    |
+| Resistencia mÃ­nima | 0O    |
+| Resistencia mÃ¡xima | 10KO  |
+| PrecisiÃ³n          | 5%    |
 
 
 
@@ -295,17 +295,17 @@ Un **potenciómetro** es una resistencia variable mecánica, es decir, podemos reg
 
 ## Servomotores
 
-Un **miniservo** es un componente eléctrico similar a un motor capaz de girar una determinada cantidad de grados, entre 0° y 180° en este caso.
+Un **miniservo** es un componente elÃ©ctrico similar a un motor capaz de girar una determinada cantidad de grados, entre 0Â° y 180Â° en este caso.
 
 ![Servomotor](servomotor.png)
 
-#### *Características*
+#### *CaracterÃ­sticas*
 
 | Servomotores       |                  |
 | ------------------ | ---------------- |
-| Polarizado         | Sí               |
-| Rotación           | 0° a 180°        |
-| Torque estático    | 4,5V > 1,5Kg/cm  |
+| Polarizado         | SÃ­               |
+| RotaciÃ³n           | 0Â° a 180Â°        |
+| Torque estÃ¡tico    | 4,5V > 1,5Kg/cm  |
 
 
 
@@ -317,16 +317,16 @@ Un **miniservo** es un componente eléctrico similar a un motor capaz de girar un
 
 ## Motor de CC
 
-El **motor** genera una velocidad de giro y dirección en el rotor del motor, dependiendo de la tensión y polarización del mismo.
+El **motor** genera una velocidad de giro y direcciÃ³n en el rotor del motor, dependiendo de la tensiÃ³n y polarizaciÃ³n del mismo.
 
 ![Motor de corriente continua](motor-de-cc.png)
 
-#### *Características*
+#### *CaracterÃ­sticas*
 
 | Motor de corriente continua        |                 |
 | ---------------------------------- | --------------- |
 | Polarizado                         | No              |
-| Tensión máxima                     | 4,5V            |
+| TensiÃ³n mÃ¡xima                     | 4,5V            |
 | Potencia                           | 0,5W            |
 | RPM                                | 9800rpm a 4,5V  |
 
@@ -344,15 +344,15 @@ El **sensor de temperatura LM35** proporciona una salida de voltaje proporcional
 
 ![Sensor de temperatura LM35](Sensor-de-temperatura-LM35.png)
 
-#### *Características*
+#### *CaracterÃ­sticas*
 
 | Sensor de temperatura LM35    |               |
 | ----------------------------- | ------------- |
 | Polarizado                    | Si            |
-| Señal de salida               | Analógica     |
-| Tensión                       | 3V a 5V       |
-| Rango de medición             | -55° a 150°C  |
-| Precisión                     | ±0,5°C        |
+| SeÃ±al de salida               | AnalÃ³gica     |
+| TensiÃ³n                       | 3V a 5V       |
+| Rango de mediciÃ³n             | -55Â° a 150Â°C  |
+| PrecisiÃ³n                     | Â±0,5Â°C        |
 
 
 
@@ -364,18 +364,18 @@ El **sensor de temperatura LM35** proporciona una salida de voltaje proporcional
 
 ## Ultrasonidos HC-SR04
 
-El **sensor de proximidad HC-SR04** es un sensor ultrasónico capaz de medir distancias pequeñas hasta un obstáculo.
+El **sensor de proximidad HC-SR04** es un sensor ultrasÃ³nico capaz de medir distancias pequeÃ±as hasta un obstÃ¡culo.
 
 ![Sensor de proximidad](Sensor-de-proximidad.png)
 
-#### *Características*
+#### *CaracterÃ­sticas*
 
 | Sensor de proximidad HC-SR04  |           |
 | ----------------------------- | --------- |
 | Polarizado                    | Si        |
-| Señal de salida               | Digital   |
-| Tensión                       | 5V        |
-| Rango de medición             | 2cm a 4m  |
+| SeÃ±al de salida               | Digital   |
+| TensiÃ³n                       | 5V        |
+| Rango de mediciÃ³n             | 2cm a 4m  |
 
 
 
@@ -387,18 +387,18 @@ El **sensor de proximidad HC-SR04** es un sensor ultrasónico capaz de medir dist
 
 ## Sensores de infrarrojos CNY70
 
-El **sensor de infrarrojos** es un sensor óptico capaz de detectar colores de objetos y superficies.
+El **sensor de infrarrojos** es un sensor Ã³ptico capaz de detectar colores de objetos y superficies.
 
 ![Sensor infrarrojos](Sensor-infrarrojos.png)
 
-#### *Características*
+#### *CaracterÃ­sticas*
 
 | Sensor de infrarrojos CNY70   |           |
 | ----------------------------- | --------- |
 | Polarizado                    | Si        |
-| Señal de salida               | Digital   |
-| Tensión                       | 5V        |
-| Rango de medición             | 0 a 5cm   |
+| SeÃ±al de salida               | Digital   |
+| TensiÃ³n                       | 5V        |
+| Rango de mediciÃ³n             | 0 a 5cm   |
 
 
 
@@ -414,9 +414,9 @@ Un **motor paso a paso** es componente similar al motor de corriente continua co
 
 ![Motor paso a paso](Motor-paso-a-paso.png)
 
-#### *Características*
+#### *CaracterÃ­sticas*
 
 | Motor paso a paso  |                  |
 | ------------------ | ---------------- |
-| Polarizado         | Sí               |
-| Tensión            | 5-12V            |
+| Polarizado         | SÃ­               |
+| TensiÃ³n            | 5-12V            |
