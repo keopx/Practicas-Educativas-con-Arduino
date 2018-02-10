@@ -5,7 +5,7 @@
 - construir componentes electrónicos a nuestro gusto.
 - crear nuestro propio modelo de negocio.
 
-![Arduino UNO](Materiales/arduino-uno.png)
+![Arduino UNO](Materiales/assets/arduino-uno.png)
 
 Arduino se apoya en 2 pilares fundamentales; [Hardware](#hardware-de-arduino) (placa de Arduino) y [Software](#software-de-arduino) (entorno de programación).
 
@@ -28,7 +28,7 @@ Arduino contiene la siguiente distribución de pines:
 - También disponemos de **3 pines GND** para conectar a tierra nuestros circuitos.
 - Y por último **2 pines de alimentación** de 5V y 3.3V respectivamente.
 
-![Pines Arduino UNO](Materiales/pines-arduino-uno.png)
+![Pines Arduino UNO](Materiales/assets/pines-arduino-uno.png)
 
 
 
