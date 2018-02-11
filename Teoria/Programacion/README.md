@@ -5,4 +5,4 @@ Para programar una tarjeta de Arduino, podemos utilizar diferentes lenguajes y e
 - [Lenguaje de programación por bloques: mBlock](mblock.md)
 - [Lenguaje de programación textual: Arduino IDE](arduino-ide.md)
 
-![Software](assets/software.png)
+![Software](/Instalacion/assets/software.png)

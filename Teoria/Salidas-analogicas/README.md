@@ -42,3 +42,19 @@ La salida analógica PWM toma los valores comprendidos entre 0 y 255.
 ![Salidas analógicas en Arduino](assets/salidas-analogicas.png)
 
 Los pines de salida han sido diseñados para entregar señales de voltaje, no para suplir corriente a un circuito. El máximo de corriente que puede entregar un pin de salida es de aproximadamente 40mA (suficiente para encender un LED). Las cargas que vamos a manejar no deben superar los 5V ni consumir más de 40mA.
+
+
+
+<br><br>
+---
+<br><br>
+
+
+
+## Prácticas: Salidas analógicas
+
+* [Luces aleatorias](/Practicas/Luces-aleatorias/README.md)
+* [Led RGB (ánodo común)](/Practicas/Led-RGB-anodo-comun/README.md)
+* [Led RGB (cátodo común)](/Practicas/Led-RGB-catodo-comun/README.md)
+* [Servomotor 0-180](/Practicas/Servomotor-0-180/README.md)
+* [La Guerra de las Galaxias](/Practicas/La-guerra-de-las-galaxias/README.md)

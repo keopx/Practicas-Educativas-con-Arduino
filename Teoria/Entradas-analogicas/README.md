@@ -28,3 +28,18 @@ La salida digital toma los valores 0V (bajo) ó 5V (alto).
 ![Entradas digitales en Arduino](assets/entradas-digitales.png)
 
 Es importante recordar que no podemos sobrepasar los límites de voltaje permitidos, es decir, si se aplica un voltaje mayor a 5 voltios en una entrada digital, la placa de arduino se quemará. Lo mismo aplica para voltajes negativos, por lo que debemos asegurar que el voltaje aplicado a una entrada digital se encuentre entre 0 y 5 voltios.
+
+
+
+<br><br>
+---
+<br><br>
+
+
+
+## Prácticas: Entradas analógicas
+
+* [Encendido nocturno](/Practicas/Encendido-nocturno/README.md)
+* [Led RGB crepuscular](/Practicas/Led-RGB-crepuscular/README.md)
+* [Regulador de luz](/Practicas/Regulador-de-luz/README.md)
+* [Servomotor manual](/Practicas/Servomotor-manual/README.md)
