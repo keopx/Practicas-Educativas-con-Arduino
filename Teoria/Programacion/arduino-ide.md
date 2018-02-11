@@ -3,7 +3,7 @@
 Para programar una tarjeta de Arduino, podemos utilizar el lenguaje de programación textual de Arduino IDE.
 
 - [Estructura de control](#estructura-de-control)
-- [Funciones básicas](#funciones-basicas)
+- [Funciones básicas](#funciones-básicas)
 - [Salidas digitales](#salidas-digitales)
 - [Salidas analógicas](#salidas-analógicas)
 - [Entradas digitales](#entradas-digitales)

@@ -33,7 +33,7 @@ Cada una de las prácticas está compuesta por el enunciado de la misma, esquema
 
 ## Colaboradores
 
-* Ninjas del Club de Programación y Robótica, @CoderDojoMurcia
+* Ninjas del Club de Programación y Robótica ([@CoderDojoMurcia](https://twitter.com/CoderDojoMurcia))
 
 
 <br><br>
