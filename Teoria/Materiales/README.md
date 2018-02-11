@@ -14,7 +14,7 @@ Para el desarrollo de las prácticas de este libro vas a necesitar los siguiente
 - [Motor de CC](#motor-de-cc)
 - [Motor paso a paso](#motor-paso-a-paso)
 - [Pulsador](#pulsador)
-- [Potenciómetro](#potenciometro)
+- [Potenciómetro](#potenciómetro)
 - [Sensor de luz LDR](#sensor-de-luz-ldr)
 - [Sensor de temperatura LM35](#sensor-de-temperatura-lm35)
 - [Sensor de ultrasonidos HC-SR04](#sensor-de-ultrasonidos-hc-sr04)

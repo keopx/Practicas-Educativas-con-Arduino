@@ -5,9 +5,9 @@ Para programar una tarjeta de Arduino, podemos utilizar el lenguaje de programac
 - [Estructura de control](#estructura-de-control)
 - [Funciones básicas](#funciones-basicas)
 - [Salidas digitales](#salidas-digitales)
-- [Salidas analógicas](#salidas-analogicas)
+- [Salidas analógicas](#salidas-analógicas)
 - [Entradas digitales](#entradas-digitales)
-- [Entradas analógicas](#entradas-analogicas)
+- [Entradas analógicas](#entradas-analógicas)
 
 
 ---

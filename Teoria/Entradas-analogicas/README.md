@@ -9,17 +9,13 @@ En este capítulo aprenderás a programar diferentes prácticas utilizando las e
 <br><br>
 
 
-## ¿Qué es una señal digital?
+## Entradas analógicas
 
 Una señal digital es aquella que sólo puede tomar ciertos valores (alto o bajo). Su forma característica es conocida como señal de onda cuadrada y las representaciones se realizan en el dominio del tiempo. La función principal de las salidas digitales es entregar una señal de control que le dará funcionalidad a un circuito electrónico que será el encargado de cumplir con las funciones que el usuario requiera.
 
 ![Señal digital](assets/senal-digital.png)
 
-
 <br>
-
-
-## Entradas digitales en Arduino
 
 Las entradas digitales permiten recibir señales de voltaje. En arduino disponemos de 14 pines digitales serigrafiados con los números del 0 al 13, utilizados para entradas y salidas digitales.
 
@@ -31,13 +27,13 @@ Es importante recordar que no podemos sobrepasar los límites de voltaje permiti
 
 
 
-<br><br>
----
-<br><br>
+<br />
+<hr>
+<br />
 
 
 
-## Prácticas: Entradas analógicas
+## Prácticas
 
 * [Encendido nocturno](/Practicas/Encendido-nocturno/README.md)
 * [Led RGB crepuscular](/Practicas/Led-RGB-crepuscular/README.md)
