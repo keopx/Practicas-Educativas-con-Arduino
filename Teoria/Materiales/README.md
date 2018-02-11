@@ -297,7 +297,7 @@ Un **motor paso a paso** es componente similar al motor de corriente continua co
 
 Con un **interruptor** podemos abrir o cerrar el circuito eléctrico accionando la palanca.
 
-![Pulsador](asset/pulsador.png)
+![Pulsador](assets/pulsador.png)
 
 #### *Características*
 

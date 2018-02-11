@@ -6,11 +6,11 @@ Este manual está desarrollado por y para docentes interesados en introducir la 
 
 El libro está dividido en 5 bloques:
 
-1.	Primeros pasos con Arduino
-2.	Salidas digitales
-3.	Salidas analógicas PWM
-4.	Entradas digitales
-5.	Entradas digitales
+1.	[¿Qué es Arduino?](Teoria/README.md)
+2.	[Salidas digitales](Teoria/Salidas-digitales/README.md)
+3.	[Salidas analógicas](Teoria/Salidas-analogicas/README.md)
+4.	[Entradas digitales](Teoria/Entradas-digitales/README.md)
+5.	[Entradas analógicas](Teoria/Entradas-analogicas/README.md)
 
 Cada bloque del libro contiene la parte teórica que se deberá conocer antes de realizar las diferentes prácticas propuestas. 
 
@@ -33,7 +33,7 @@ Cada una de las prácticas está compuesta por el enunciado de la misma, esquema
 
 ## Colaboradores
 
-* 
+* Ninjas del Club de Programación y Robótica, @CoderDojoMurcia
 
 
 <br><br>
