@@ -19,11 +19,12 @@ Para programar una tarjeta de Arduino, podemos utilizar el lenguaje de programac
 
 Si todavía no conoces el lenguaje de programación por bloques de Scratch, accede a los [tutoriales para aprender a programar con Scratch](https://www.programoergosum.com/cursos-online/scratch) antes de realizar las siguientes prácticas.
 
+![Estructura de control](assets/estructura-control-mblock.png) 
 
 
-<br><br>
----
-<br><br>
+<br />
+<hr>
+<br />
 
 
 
@@ -33,13 +34,13 @@ El primer bloque activa el pin digital número 13 de la placa de arduino a un va
 
 Los pines para las salidas digitales corresponden a los pines desde el 0 hasta el 13 y toman los valores ALTO o BAJO.
 
-![Señal digital](assets/salidas-digitales-mblock.png) 
+![Salidas digitales](assets/salidas-digitales-mblock.png) 
 
 
 
-<br><br>
----
-<br><br>
+<br />
+<hr>
+<br />
 
 
 
@@ -51,13 +52,13 @@ También disponemos de un bloque encargado de hacer girar un servomotor entre 0�
 
 Los pines para las salidas analógicas PWM corresponden a los pines 11, 10, 9, 6, 5 y 3 y pueden tomar valores comprendidos entre 0 y 255, o entre 0 y 180 para el caso de los servomotores.
 
-![Señal analogica](assets/salidas-analogicas-mblock.png)
+![Salidas analógicas](assets/salidas-analogicas-mblock.png)
 
 
 
-<br><br>
----
-<br><br>
+<br />
+<hr>
+<br />
 
 
 
@@ -71,9 +72,9 @@ Los pines para las entradas digitales corresponden a los pines desde el 0 hasta 
 
 
 
-<br><br>
----
-<br><br>
+<br />
+<hr>
+<br />
 
 
 
@@ -83,4 +84,4 @@ El primer bloque recibe el valor del pin digital 9 de la placa de arduino. Por o
 
 Los pines para las entradas digitales corresponden a los pines desde el 0 hasta el 13 y toman los valores ALTO o BAJO.
 
-![Entradas digitales](assets/entradas-digitales-mblock.png)
+![Entradas analógicas](assets/entradas-analogicas-mblock.png)

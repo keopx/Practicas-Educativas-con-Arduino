@@ -51,9 +51,9 @@ Es importante tener claras las siguientes reglas del lenguaje de programación:
 
 
 
-<br><br>
----
-<br><br>
+<br />
+<hr>
+<br />
 
 
 
@@ -115,9 +115,9 @@ random(0, 255);
 
 
 
-<br><br>
----
-<br><br>
+<br />
+<hr>
+<br />
 
 
 
@@ -137,9 +137,9 @@ digitalWrite(13, HIGH);
 
 
 
-<br><br>
----
-<br><br>
+<br />
+<hr>
+<br />
 
 
 
@@ -159,9 +159,9 @@ analogWrite(11, 255);
 
 
 
-<br><br>
----
-<br><br>
+<br />
+<hr>
+<br />
 
 
 
@@ -197,9 +197,9 @@ pulseIn(12, HIGH);
 
 
 
-<br><br>
----
-<br><br>
+<br />
+<hr>
+<br />
 
 
 
