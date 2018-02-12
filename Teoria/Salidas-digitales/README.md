@@ -39,3 +39,4 @@ Los pines de salida han sido diseñados para entregar señales de voltaje, no pa
 * [Luz alterna](/Practicas/Luz-alterna/README.md)
 * [Semáforo simple](/Practicas/Semaforo-simple/README.md)
 * [Semáforo peatones](/Practicas/Semaforo-peatones/README.md)
+* [Coche fantástico](/Practicas/Coche-fantastico/README.md)
