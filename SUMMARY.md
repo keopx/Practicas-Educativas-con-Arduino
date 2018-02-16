@@ -20,28 +20,40 @@
     * [Ley de Ohm](Teoria/Electronica/Ley-de-ohm.md)
 
 
-## Prácticas de iniciación
+## Prácticas
 
 
-* [Hola mundo](Practicas/Hola-mundo/README.md)
+* [Nivel 1/5 (Muy Fácil)](Practicas/Nivel-1.md)
+    * [Hola mundo](Practicas/Hola-mundo/README.md)
+    * [Luz intermitente](Practicas/Luz-intermitente/README.md)
+    * [Luz alterna](Practicas/Luz-alterna/README.md)
+    * [Semáforo simple](Practicas/Semaforo-simple/README.md)
+    * [Semáforo peatones](Practicas/Semaforo-peatones/README.md)
     
-* [Luz intermitente](Practicas/Luz-intermitente/README.md)
-* [Luz alterna](Practicas/Luz-alterna/README.md)
-* [Semáforo simple](Practicas/Semaforo-simple/README.md)
-* [Semáforo peatones](Practicas/Semaforo-peatones/README.md)
-* [Coche fantástico](Practicas/Coche-fantastico/README.md)
+    * [Luces aleatorias](Practicas/Luces-aleatorias/README.md)
+    * [Led RGB (ánodo común)](Practicas/Led-RGB-anodo-comun/README.md)
+    * [Led RGB (cátodo común)](Practicas/Led-RGB-catodo-comun/README.md)
+    * [Servomotor 0-180](Practicas/Servomotor-0-180/README.md)
+    * [La Guerra de las Galaxias](Practicas/La-guerra-de-las-galaxias/README.md)
+    
+    * [Pulsador simple](Practicas/Pulsador-simple/README.md)
+    * [Medidor de distancias](Practicas/Medidor-de-distancias/README.md)
+    * [Detector de aparcamiento](Practicas/Detector-de-aparcamiento/README.md)
+    
+    * [Encendido nocturno](Practicas/Encendido-nocturno/README.md)
+    * [Led RGB crepuscular](Practicas/Led-RGB-crepuscular/README.md)
+    * [Regulador de luz](Practicas/Regulador-de-luz/README.md)
+    * [Servomotor manual](Practicas/Servomotor-manual/README.md)
 
-* [Luces aleatorias](Practicas/Luces-aleatorias/README.md)
-* [Led RGB (ánodo común)](Practicas/Led-RGB-anodo-comun/README.md)
-* [Led RGB (cátodo común)](Practicas/Led-RGB-catodo-comun/README.md)
-* [Servomotor 0-180](Practicas/Servomotor-0-180/README.md)
-* [La Guerra de las Galaxias](Practicas/La-guerra-de-las-galaxias/README.md)
 
-* [Pulsador simple](Practicas/Pulsador-simple/README.md)
-* [Medidor de distancias](Practicas/Medidor-de-distancias/README.md)
-* [Detector de aparcamiento](Practicas/Detector-de-aparcamiento/README.md)
+* [Nivel 2/5 (Fácil)](Practicas/Nivel-2.md)
+    * [Coche fantástico](Practicas/Coche-fantastico/README.md)
 
-* [Encendido nocturno](Practicas/Encendido-nocturno/README.md)
-* [Led RGB crepuscular](Practicas/Led-RGB-crepuscular/README.md)
-* [Regulador de luz](Practicas/Regulador-de-luz/README.md)
-* [Servomotor manual](Practicas/Servomotor-manual/README.md)
+
+* [Nivel 3/5 (Medio)](Practicas/Nivel-3.md)
+
+
+* [Nivel 4/5 (Difícil)](Practicas/Nivel-4.md)
+
+
+* [Nivel 5/5 (Muy Difícil)](Practicas/Nivel-5.md)
