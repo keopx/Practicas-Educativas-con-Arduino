@@ -4,9 +4,9 @@ El objetivo de esta práctica es programar un LED que parpadeé de forma intermi
 
 ![](practica.gif)
 
-| Autor |
-| :---  |
-| ![](https://avatars0.githubusercontent.com/u/12022187?s=40) - [Miguel Ángel Abellán](https://github.com/migueabellan) |
+| Autor de la práctica |
+| :---                 |
+| ![](https://avatars0.githubusercontent.com/u/12022187?s=20)  [Miguel Ángel Abellán](https://github.com/migueabellan) |
 
 ---
 
@@ -76,13 +76,13 @@ Por otro lado, al ejecutar el código se deberá establecer en el pin digital 13
  */
 
 void setup() {
-	pinMode(13, OUTPUT);
+    pinMode(13, OUTPUT);
 }
 
 void loop() {
-	digitalWrite(13, HIGH);
-	delay(1000);
-	digitalWrite(13, LOW);
-	delay(1000);
+    digitalWrite(13, HIGH);
+    delay(1000);
+    digitalWrite(13, LOW);
+    delay(1000);
 }
 ```

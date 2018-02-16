@@ -4,9 +4,9 @@ El objetivo de esta práctica es construir un semáforo para peatones utilizando
 
 ![](practica.gif)
 
-| Autor |
-| :---  |
-| ![](https://avatars0.githubusercontent.com/u/12022187?s=40) - [Miguel Ángel Abellán](https://github.com/migueabellan) |
+| Autor de la práctica |
+| :---                 |
+| ![](https://avatars0.githubusercontent.com/u/12022187?s=20)  [Miguel Ángel Abellán](https://github.com/migueabellan) |
 
 ---
 
@@ -82,26 +82,26 @@ Por otro lado, en la función principal loop() se programa la activación del pi
  */
 
 void setup() {
-  pinMode(13, OUTPUT);
-  pinMode(12, OUTPUT);
-  pinMode(11, OUTPUT);
-  digitalWrite(13, LOW);
-  digitalWrite(12, LOW);
-  digitalWrite(11, LOW);
+    pinMode(13, OUTPUT);
+    pinMode(12, OUTPUT);
+    pinMode(11, OUTPUT);
+    digitalWrite(13, LOW);
+    digitalWrite(12, LOW);
+    digitalWrite(11, LOW);
 }
 
 void loop() {
-  digitalWrite(13, HIGH);
-  delay(5000);
-  digitalWrite(13, LOW);
-  
-  digitalWrite(12, HIGH);
-  for(int i=0; i<10; i++){
-    digitalWrite(11, HIGH);
-    delay(200);
-    digitalWrite(11, LOW);
-    delay(500);
-  }
-  digitalWrite(12, LOW);
+    digitalWrite(13, HIGH);
+    delay(5000);
+    digitalWrite(13, LOW);
+    
+    digitalWrite(12, HIGH);
+    for(int i=0; i<10; i++){
+        digitalWrite(11, HIGH);
+        delay(200);
+        digitalWrite(11, LOW);
+        delay(500);
+    }
+    digitalWrite(12, LOW);
 }
 ```

@@ -2,8 +2,11 @@
 
 El objetivo de esta práctica consiste en reproducir con ayuda de un zumbador la banda sonora de La Guerra de las Galaxias mediante frecuencias.
 
-![La Guerra de las Galaxias con Arduino](practica.gif)
+![](practica.gif)
 
+| Autor de la práctica |
+| :---                 |
+| ![](https://avatars0.githubusercontent.com/u/12022187?s=20)  [Miguel Ángel Abellán](https://github.com/migueabellan) |
 
 ---
 
@@ -31,7 +34,7 @@ El objetivo de esta práctica consiste en reproducir con ayuda de un zumbador la
 
 Se conecta el cable negro (negativo) del zumbador al pin GND de la placa de arduino y el cable rojo (positivo) al pin analógico PWM 9 de la placa de arduino.
 
-![Esquema eléctrico](fritzing.png)
+![](fritzing.png)
 
 
 <br><br>
@@ -41,7 +44,7 @@ Se conecta el cable negro (negativo) del zumbador al pin GND de la placa de ardu
 
 Al ejecutar el código utilizamos los bloques de sonido siguiendo la partitura de la banda sonora de La Guerra de las Galaxias.
 
-![Programación en mBlock](mblock.png)
+![](mblock.png)
 
 
 <br><br>
@@ -53,13 +56,9 @@ En primer lugar se crea una lista con las notas y tonos de cada una de las notas
 
 Por otro lado, al ejecutar el código se llama a la función que reproduce la nota dada siguiendo la partitura de la banda sonora de La Guerra de las Galaxias.
 
-```
+```cpp+lineNumbers:true
 /**
  * La Guerra de las Galaxias
- * 
- * @author Miguel Ángel Abellán
- * @company Programo Ergo Sum
- * @license Creative Commons. Reconocimiento CompartirIgual 4.0
  */
 
 int c[5]={131,262,523,1046,2093}; // Do
@@ -70,12 +69,11 @@ int g[5]={196,392,784,1568,3136}; // Sol
 int a[5]={220,440,880,1760,3520}; // La
 int b[5]={247,494,988,1976,3951}; // Si
 
-void nota(int frecuencia, int duracion)
-{
-  tone(9, frecuencia);
-  delay(duracion);
-  noTone(9);
-  delay(50);
+void nota(int frecuencia, int duracion){
+    tone(9, frecuencia);
+    delay(duracion);
+    noTone(9);
+    delay(50);
 }
 
 void setup() {
@@ -83,25 +81,25 @@ void setup() {
 }
 
 void loop() {
-  nota(f[2],500);
-  nota(f[2],500);
-  nota(f[2],500);
-  nota(d[2],250);
-  nota(a[2],250);
-  nota(f[2],500);
-  nota(d[2],250);
-  nota(a[2],250);
-  nota(f[2],500);
-  delay(500);
-  nota(c[3],500);
-  nota(c[3],500);
-  nota(c[3],500);
-  nota(d[3],250);
-  nota(a[2],250);
-  nota(f[2],500);
-  nota(d[2],250);
-  nota(a[2],250);
-  nota(f[2],500);
-  delay(1000);
+    nota(f[2],500);
+    nota(f[2],500);
+    nota(f[2],500);
+    nota(d[2],250);
+    nota(a[2],250);
+    nota(f[2],500);
+    nota(d[2],250);
+    nota(a[2],250);
+    nota(f[2],500);
+    delay(500);
+    nota(c[3],500);
+    nota(c[3],500);
+    nota(c[3],500);
+    nota(d[3],250);
+    nota(a[2],250);
+    nota(f[2],500);
+    nota(d[2],250);
+    nota(a[2],250);
+    nota(f[2],500);
+    delay(1000);
 }
 ```

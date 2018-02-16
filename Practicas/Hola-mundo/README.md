@@ -4,9 +4,9 @@ En este práctica se va a programar el código encargado de encender y apagar el
 
 ![](practica.gif)
 
-| Autor |
-| :---  |
-| ![](https://avatars0.githubusercontent.com/u/12022187?s=40) - [Miguel Ángel Abellán](https://github.com/migueabellan) |
+| Autor de la práctica |
+| :---                 |
+| ![](https://avatars0.githubusercontent.com/u/12022187?s=20)  [Miguel Ángel Abellán](https://github.com/migueabellan) |
 
 ---
 
