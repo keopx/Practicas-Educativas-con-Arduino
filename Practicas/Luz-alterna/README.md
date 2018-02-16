@@ -1,4 +1,4 @@
-# Práctica 2: Luz alterna
+# Luz alterna
 
 El objetivo de esta práctica es programar dos luces que parpadean de forma alterna con una frecuencia de 1 segundo, es decir, se va a programar un código encargado de encender y apagar dos LEDs (haciendo uso de las salidas digitales).
 

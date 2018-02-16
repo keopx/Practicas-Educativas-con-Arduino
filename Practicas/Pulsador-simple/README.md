@@ -1,4 +1,4 @@
-# Práctica 1: Encender un LED mediante pulsador
+# Encender un LED mediante pulsador
 
 El objetivo de esta práctica es encender un LED utilizando un simple pulsador, es decir, se va a programar un código encargado de detectar si se pulsa el pulsador (haciendo uso de la entrada digital), en cuyo caso se encenderá el LED (haciendo uso de la salida digital). Para ello se va a construir un circuito utilizando un LED y un pulsador.
 

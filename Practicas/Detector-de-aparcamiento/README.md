@@ -1,4 +1,4 @@
-# Práctica 3: Detector de aparcamiento con ultrasonidos
+# Detector de aparcamiento con ultrasonidos
 
 El objetivo de esta práctica es medir la distancia entre objetos simulando el detector de aparcamiento con zumbador existente en algunos vehículos. Para ello se va a utilizar un sensor de ultrasonidos.
 

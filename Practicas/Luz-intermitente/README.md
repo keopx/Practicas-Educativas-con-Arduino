@@ -1,4 +1,4 @@
-# Práctica 1: Luz intermitente
+# Luz intermitente
 
 El objetivo de esta práctica es programar un LED que parpadeé de forma intermitente con una frecuencia de 1 segundo, es decir, se va a programar un código encargado de encender y apagar un LED (haciendo uso de la salida digital).
 

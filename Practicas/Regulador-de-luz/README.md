@@ -1,4 +1,4 @@
-# Práctica 3: Regulador de luz
+# Regulador de luz
 
 El objetivo de esta práctica es regular la intensidad de 3 LEDs utilizando un potenciómetro, es decir, podemos variar la cantidad de luz que emiten los LEDs girando el potenciómetro desde su posición de resistencia mínima a resistencia máxima.
 

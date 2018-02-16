@@ -1,4 +1,4 @@
-# Práctica 4: Servomotor 0º-180º
+# Servomotor 0º-180º
 
 El objetivo de esta práctica consiste en mover un servomotor desde su posición o ángulo de 0º hasta 180º y vuelta a empezar, de forma repetida. Además, se desplazará de 10º en 10º.
 

@@ -1,4 +1,4 @@
-# Práctica 1: Luces aleatorias
+# Luces aleatorias
 
 El objetivo de esta práctica es encender en diferentes intensidades 3 LEDs blancos, es decir, se va a programar un código encargado de encender cada LED blanco a una intensidad de luz diferente (haciendo uso de la salida analógica).
 

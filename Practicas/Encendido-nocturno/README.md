@@ -1,4 +1,4 @@
-# Práctica 1: Encendido nocturno
+# Encendido nocturno
 
 El objetivo de esta práctica es encender un LED utilizando un sensor de luz LDR, es decir, queremos que se encienda LED cuando cae la noche y oscurece. En caso contrario el LED permanecerá apagado. Para ello utilizaremos un sensor LDR.
 

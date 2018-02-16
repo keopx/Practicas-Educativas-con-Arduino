@@ -1,4 +1,4 @@
-# Práctica 2: LED RGB (ánodo común)
+# LED RGB (ánodo común)
 
 El objetivo de esta práctica consiste en encender un LED RGB de ánodo común en sus 3 colores básicos rojo, verde y azul. Aunque esta práctica se podría realizar utilizando salidas digitales, se va a realizar utilizando salidas analógicas con valores de 255.
 

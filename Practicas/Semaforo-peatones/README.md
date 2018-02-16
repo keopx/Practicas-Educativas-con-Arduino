@@ -1,4 +1,4 @@
-# Práctica 4: Semáforo de peatones
+# Semáforo de peatones
 
 El objetivo de esta práctica es construir un semáforo para peatones utilizando dos LEDs y un zumbador, es decir, se va a programar un código encargado de encender una luz roja y una luz verde al mismo tiempo que se emite un zumbido para avisar al peatón que puede cruzar por el paso de peatones.
 

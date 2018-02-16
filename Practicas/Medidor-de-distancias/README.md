@@ -1,4 +1,4 @@
-# Práctica 2: Medidor de distancia con ultrasonidos
+# Medidor de distancia con ultrasonidos
 
 El objetivo de esta práctica es medir la distancia entre objetos próximos comprendidos entre unos cuantos centímetros. Para ello se va a utilizar un sensor de ultrasonidos.
 

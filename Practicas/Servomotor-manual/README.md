@@ -1,4 +1,4 @@
-# Práctica 4: Servomotor con potenciómetro
+# Servomotor con potenciómetro
 
 El objetivo de esta práctica es regular el ángulo de un servomotor con ayuda de un potenciómetro, es decir, según se gira el potenciómetro desde su posición de resistencia mínima a resistencia máxima, el servomotor girará entre sus valores de 0º y 180º.
 

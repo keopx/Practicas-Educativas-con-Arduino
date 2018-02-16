@@ -1,4 +1,4 @@
-# Práctica 2: LED RGB crepuscular
+# LED RGB crepuscular
 
 El objetivo de esta práctica es cambiar los colores de un LED RGB utilizando un sensor de luz LDR, es decir, queremos que se encienda en diferentes colores a medida que oscurece pasando por una gama de colores. Para ello utilizaremos un sensor LDR y un LED RGB de ánodo común.
 

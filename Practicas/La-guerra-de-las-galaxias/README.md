@@ -1,4 +1,4 @@
-# Práctica 5: La Guerra de las Galaxias
+# La Guerra de las Galaxias
 
 El objetivo de esta práctica consiste en reproducir con ayuda de un zumbador la banda sonora de La Guerra de las Galaxias mediante frecuencias.
 

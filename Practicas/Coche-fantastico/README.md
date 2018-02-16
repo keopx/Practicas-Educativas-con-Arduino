@@ -1,4 +1,4 @@
-# Práctica 5: Luces del coche fantástico
+# Luces del coche fantástico
 
 El objetivo de esta práctica es programar el efecto de las luces del coche fantástico utilizando 6 diodos LEDs de color rojo. Las luces realizarán el efecto de desplazamiento desde la izquierda hasta la derecha y desde la derecha hasta la izquierda nuevamente.
 

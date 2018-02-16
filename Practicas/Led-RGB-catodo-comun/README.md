@@ -1,4 +1,4 @@
-# Práctica 3: LED RGB (cátodo común)
+# LED RGB (cátodo común)
 
 En esta práctica se va a encender un Led RGB de cátodo común en sus 3 colores básicos rojo, verde y azul. Aunque esta práctica se podría realizar utilizando salidas digitales, se va a realizar utilizando salidas analógicas con valores de 255.
 
