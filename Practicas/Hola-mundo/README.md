@@ -4,6 +4,7 @@ En este práctica se va a programar el código encargado de encender y apagar el
 
 ![](practica.gif)
 
+| - | - |
 | Autor | Miguel Ángel Abellán |
 | Dificultad | 1/5 (Muy fácil) |
 
