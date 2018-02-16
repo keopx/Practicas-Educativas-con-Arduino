@@ -2,11 +2,10 @@
 
 En este práctica se va a programar el código encargado de encender y apagar el led situado junto el pin número 13 de nuestra placa de Arduino. Deberá encenderse y apagarse con una frecuencia de 1 segundo.
 
-![Hola Mundo](practica.gif)
+![](practica.gif)
 
-### Autor
-
-Miguel Ángel Abellán ([@migueabellan](https://github.com/migueabellan))
+| Autor | Miguel Ángel Abellán |
+| Dificultad | 1/5 (Muy fácil) |
 
 ---
 
@@ -26,7 +25,7 @@ Miguel Ángel Abellán ([@migueabellan](https://github.com/migueabellan))
 
 Para esta práctica solamente vamos a utilizar la placa de arduino la cual deberá conectarse al ordenador utilizando el cable USB.
 
-![Esquema eléctrico](fritzing.png)
+![](fritzing.png)
 
 
 <br><br>
@@ -36,7 +35,7 @@ Para esta práctica solamente vamos a utilizar la placa de arduino la cual deber
 
 Para realizar la práctica utilizando mBlock, deberás haber configurado y cargado el firmware que hace de intermediario entre la placa y el programa mBlock. El siguiente paso será programar el código encargado de encender y apagar el pin digital 13 (el cual tiene contiene un led en la placa).
 
-![Programación en mBlock](mblock.png)
+![](mblock.png)
 
 
 <br><br>
