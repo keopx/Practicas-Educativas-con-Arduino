@@ -23,17 +23,27 @@ Cada una de las prácticas está compuesta por el enunciado de la misma, esquema
 <br><br>
 
 
-## Autor
+## Manual elaborado por:
 
-* Miguel Ángel Abellán ([@migueabellan](https://twitter.com/migueabellan))
+* Miguel Ángel Abellán ([GitHub](https://github.com/migueabellan) | [Twitter](https://twitter.com/migueabellan))
 
 
 <br><br>
 
 
-## Colaboradores
+## Autores de las prácticas:
 
-* Ninjas del Club de Programación y Robótica ([@CoderDojoMurcia](https://twitter.com/CoderDojoMurcia))
+* Miguel Ángel Abellán ([GitHub](https://github.com/migueabellan) | [Twitter](https://twitter.com/migueabellan))
+* ...
+* ..
+
+
+<br><br>
+
+
+## Revisado por:
+
+* Ninjas del Club de Programación y Robótica @CoderDojoMurcia ([Twitter](https://twitter.com/CoderDojoMurcia))
 
 
 <br><br>
