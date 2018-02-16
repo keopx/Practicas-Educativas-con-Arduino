@@ -4,6 +4,9 @@ En este práctica se va a programar el código encargado de encender y apagar el
 
 ![Hola Mundo](practica.gif)
 
+### Autor
+
+Miguel Ángel Abellán ([@migueabellan](https://github.com/migueabellan))
 
 ---
 
@@ -46,10 +49,6 @@ Para programar el código utilizando el lenguaje de programación de Arduino IDE
 ```cpp+lineNumbers:true
 /**
  * Hola Mundo
- * 
- * @author Miguel Ángel Abellán
- * @company Programo Ergo Sum
- * @license Creative Commons. Reconocimiento CompartirIgual 4.0
  */
 
 void setup() {
