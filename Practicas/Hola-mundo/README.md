@@ -6,7 +6,7 @@ En este práctica se va a programar el código encargado de encender y apagar el
 
 | Autor |
 | :---  |
-| ![](https://avatars0.githubusercontent.com/u/12022187?s=40&amp;v=4) [Miguel Ángel Abellán](https://github.com/migueabellan) |
+| ![](https://avatars0.githubusercontent.com/u/12022187?s=40) - [Miguel Ángel Abellán](https://github.com/migueabellan) |
 
 ---
 

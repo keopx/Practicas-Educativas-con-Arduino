@@ -2,8 +2,11 @@
 
 El objetivo de esta práctica es programar un LED que parpadeé de forma intermitente con una frecuencia de 1 segundo, es decir, se va a programar un código encargado de encender y apagar un LED (haciendo uso de la salida digital).
 
-![Luz intermitente con Arduino](practica.gif)
+![](practica.gif)
 
+| Autor |
+| :---  |
+| ![](https://avatars0.githubusercontent.com/u/12022187?s=40) - [Miguel Ángel Abellán](https://github.com/migueabellan) |
 
 ---
 
@@ -45,7 +48,7 @@ R = 2.9V / 0.02A = 145Ω -> 220Ω (por aproximación)
 
 Se conecta el LED al pin digital 13 de la placa de arduino (utilizando su debida resistencia). La patilla larga del LED debe ser conectada al voltaje positivo (ánodo) y la corta al voltaje negativo (cátodo) pasando por la resistencia.
 
-![Esquema eléctrico](fritzing.png)
+![](fritzing.png)
 
 
 <br><br>
@@ -55,7 +58,7 @@ Se conecta el LED al pin digital 13 de la placa de arduino (utilizando su debida
 
 Al ejecutar el código se deberá establecer en el pin digital 13 un valor alto, esperar 1 segundo, establecerse un valor bajo y volver a esperar. Este procedimiento se deberá repetir indefinidamente.
 
-![Programación en mBlock](mblock.png)
+![](mblock.png)
 
 
 <br><br>
@@ -67,13 +70,9 @@ En primer lugar, se configura el pin digital 13 en modo salida (OUTPUT). Esta co
 
 Por otro lado, al ejecutar el código se deberá establecer en el pin digital 13 un valor alto (HIGH), esperar 1 segundo (1000 milisegundos), establecerse un valor bajo (LOW) y volver a esperar. Este procedimiento se realiza en la función loop() ya que se repite indefinidamente.
 
-```
+```cpp+lineNumbers:true
 /**
  * Luz intermitente
- * 
- * @author Miguel Ángel Abellán
- * @company Programo Ergo Sum
- * @license Creative Commons. Reconocimiento CompartirIgual 4.0
  */
 
 void setup() {

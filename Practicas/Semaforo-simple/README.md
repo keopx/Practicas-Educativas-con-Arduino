@@ -2,8 +2,11 @@
 
 El objetivo de esta práctica es construir un semáforo simple, es decir, se va a programar un código encargado de simular un semáforo como el que se puede encontrar en cualquier ciudad.
 
-![Semáforo con Arduino](practica.gif)
+![](practica.gif)
 
+| Autor |
+| :---  |
+| ![](https://avatars0.githubusercontent.com/u/12022187?s=40) - [Miguel Ángel Abellán](https://github.com/migueabellan) |
 
 ---
 
@@ -45,7 +48,7 @@ R = 2.9V / 0.02A = 145Ω -> 220Ω (por aproximación)
 
 Se conectan los LEDs rojo, amarillo y verde a los pines digitales 13, 12 y 11 de la placa de arduino (utilizando su debida resistencia). La patilla larga del LED debe ser conectada al voltaje positivo (ánodo) y la corta al voltaje negativo (cátodo) pasando por la resistencia.
 
-![Esquema eléctrico](fritzing.png)
+![](fritzing.png)
 
 
 
@@ -57,7 +60,7 @@ Se conectan los LEDs rojo, amarillo y verde a los pines digitales 13, 12 y 11 de
 
 Al ejecutar el código se deberán establecer los pines digitales a un valor bajo para inicializar así los LEDs. A continuación se procede a activar y desactivar los diferentes pines simulando el funcionamiento del semáforo.
 
-![Programación en mBlock](mblock.png)
+![](mblock.png)
 
 
 <br /><br />
@@ -69,13 +72,9 @@ En primer lugar, se configuran los pines digitales 11, 12 y 13 en modo salida (O
 
 Al ejecutar el código se deberán establecer los pines digitales a un valor bajo para inicializar así los LEDs. A continuación se procede a activar y desactivar los diferentes pines simulando el funcionamiento del semáforo.
 
-```
+```cpp+lineNumbers:true
 /**
  * Semáforo simple
- *
- * @author Miguel Ángel Abellán
- * @company Programo Ergo Sum
- * @license Creative Commons. Reconocimiento CompartirIgual 4.0
  */
 
 void setup() {
