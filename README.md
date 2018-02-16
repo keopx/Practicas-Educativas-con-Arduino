@@ -23,34 +23,28 @@ Cada una de las prácticas está compuesta por el enunciado de la misma, esquema
 
 ## Autores de las prácticas:
 
-* Miguel Ángel Abellán ([GitHub](https://github.com/migueabellan) | [Twitter](https://twitter.com/migueabellan))
-* ...
-* ..
+| Ranking | Prácticas | Autor | 
+| :---    | :---      | :---  |
+| 1       | 18        | ![](https://avatars0.githubusercontent.com/u/12022187?s=20)  [Miguel Ángel Abellán](/Autores/README.md#migueabellan) |
+| 2       | 0         | ...   |
 
 
-<br><br>
+<br>
 
+---
 
-## Revisado por:
-
-* Ninjas del Club de Programación y Robótica @CoderDojoMurcia ([Twitter](https://twitter.com/CoderDojoMurcia))
-
-
-<br><br>
-
+<br>
 
 ## Ediciones
 
 * 1ª Edición: Enero, 2017: [Proyecto El Cable Amarillo](https://github.com/ElCableAmarillo/Listado-de-practicas). Financiado por el Fondo Europeo de Desarrollo Regional de la Región de Murcia. 
 * 2ª Edición: Febrero, 2018: Nueva documentación teórica sobre programación y electrónica. Adaptaciones mejoradas sobre las prácticas de la Edición 2017 y nuevas prácticas incorporadas al repositorio.
 
-
-
-<br><br>
-
+<br>
 
 ---
 
+<br>
 
 ## Licencia
 
