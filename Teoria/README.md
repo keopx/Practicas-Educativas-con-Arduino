@@ -5,4 +5,4 @@
 - construir componentes electrónicos a nuestro gusto.
 - crear nuestro propio modelo de negocio.
 
-![Arduino UNO](Componentes/assets/arduino-uno.png)
+![Arduino UNO](Electronica/assets/arduino-uno.png)

@@ -1,16 +1,5 @@
 # Salidas analogicas
 
-En este capítulo aprenderás a programar diferentes prácticas utilizando las salidas analógicas de la placa de arduino. Para cada una se explica la parte de electrónica que deberás conocer antes de programarlas. Observarás además que puedes programarlas utilizando los lenguajes de programación por bloques o textual de Arduino.
-
-
----
-
-
-<br><br>
-
-
-## Salidas analógicas PWM
-
 Una señal analógica es aquella que puede tomar diferentes valores. Su forma característica es conocida como señal de onda senoidal y las representaciones se realizan en el dominio del tiempo. La función principal de las salidas analógicas es entregar una señal de control que le dará funcionalidad a un circuito electrónico que será el encargado de cumplir con las funciones que el usuario requiera.
 
 ![Señal analógica](assets/senal-analogica.png)
@@ -43,7 +32,7 @@ Los pines de salida han sido diseñados para entregar señales de voltaje, no pa
 
 
 
-## Prácticas
+## Prácticas utilizando salidas analógicas
 
 * [Luces aleatorias](/Practicas/Luces-aleatorias/README.md)
 * [Led RGB (ánodo común)](/Practicas/Led-RGB-anodo-comun/README.md)

@@ -1,16 +1,5 @@
 # Salidas digitales
 
-En este capítulo aprenderás a programar diferentes prácticas utilizando las salidas digitales de la placa de arduino. Para cada una se explica la parte de electrónica que deberás conocer antes de programarlas. Observarás además que puedes programarlas utilizando los lenguajes de programación por bloques o textual de Arduino.
-
-
----
-
-
-<br><br>
-
-
-## Salidas digitales
-
 Una señal digital es aquella que sólo puede tomar ciertos valores (alto o bajo). Su forma característica es conocida como señal de onda cuadrada y las representaciones se realizan en el dominio del tiempo. La función principal de las salidas digitales es entregar una señal de control que le dará funcionalidad a un circuito electrónico que será el encargado de cumplir con las funciones que el usuario requiera.
 
 ![Señal digital](assets/senal-digital.png)
@@ -33,7 +22,7 @@ Los pines de salida han sido diseñados para entregar señales de voltaje, no pa
 
 
 
-## Prácticas
+## Prácticas utilizando salidas digitales
 
 * [Luz intermitente](/Practicas/Luz-intermitente/README.md)
 * [Luz alterna](/Practicas/Luz-alterna/README.md)
