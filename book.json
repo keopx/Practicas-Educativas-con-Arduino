@@ -1,6 +1,6 @@
 {
   "gitbook": "3.2.2",
-  "plugins": ["localized-footer"],
+  "plugins": ["localized-footer", "-highlight", "sunlight-highlighter"],
   "localized-footer": {
     "hline": true,
     "filename": "FOOTER.md"
