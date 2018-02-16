@@ -25,7 +25,7 @@ Cada una de las prácticas está compuesta por el enunciado de la misma, esquema
 
 | Ranking | Prácticas | Autor | 
 | :---    | :---      | :---  |
-| 1       | 18        | ![](https://avatars0.githubusercontent.com/u/12022187?s=20)  [Miguel Ángel Abellán](/Autores/README.md#migueabellan) |
+| 1       | 18        | ![](https://avatars0.githubusercontent.com/u/12022187?s=20)  [Miguel Ángel Abellán](Autores/README.md#migueabellan) |
 | 2       | 0         | ...   |
 
 
