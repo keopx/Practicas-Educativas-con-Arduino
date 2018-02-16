@@ -2,8 +2,11 @@
 
 El objetivo de esta práctica es cambiar los colores de un LED RGB utilizando un sensor de luz LDR, es decir, queremos que se encienda en diferentes colores a medida que oscurece pasando por una gama de colores. Para ello utilizaremos un sensor LDR y un LED RGB de ánodo común.
 
-![LED RGB crepuscular con Arduino](practica.gif)
+![](practica.gif)
 
+| Autor de la práctica |
+| :---                 |
+| ![](https://avatars0.githubusercontent.com/u/12022187?s=20)  [Miguel Ángel Abellán](https://github.com/migueabellan) |
 
 ---
 
@@ -66,7 +69,7 @@ R = 1,7V / 0,02A = 85Ω
 
 Por un lado se conecta el LED RGB de ánodo común a los pines 9, 6 y 5 (RGB) de la placa de arduino (utilizando su debida resistencia). Por otro lado, se conecta el sensor LDR al pin de entrada analógica 0 de la placa de arduino (utilizando la resistencia en modo Pull-Down).
 
-![Esquema eléctrico](fritzing.png)
+![](fritzing.png)
 
 
 <br /><br />
@@ -76,7 +79,7 @@ Por un lado se conecta el LED RGB de ánodo común a los pines 9, 6 y 5 (RGB) de
 
 Al ejecutar el código se calcula el valor analógico del sensor LDR y mediante condiciones creamos los diferentes casos; si es mayor que 600 se enciende el color rojo (mediante una llamada por eventos), si el valor está entre 300 y 600 se encenderá el color verde, y si es menor que 300 se encenderá el color azul.
 
-![Programación en mBlock](mblock.png)
+![](mblock.png)
 
 
 <br /><br />
@@ -88,38 +91,34 @@ En primer lugar, se configuran los pines analógicos 9, 6 y 5 en modo salida (OU
 
 Por otro lado, al ejecutar el código se calcula el valor analógico del sensor LDR y mediante condiciones creamos los diferentes casos; si es mayor que 600 se enciende el color rojo, si el valor está entre 300 y 600 se encenderá el color verde, y si es menor que 300 se encenderá el color azul.
 
-```
+```cpp+lineNumbers:true
 /**
  * Led RGB crepuscular
- * 
- * @author Miguel Ángel Abellán
- * @company Programo Ergo Sum
- * @license Creative Commons. Reconocimiento CompartirIgual 4.0
  */
 
 void setup() {
-  pinMode(9, OUTPUT);
-  pinMode(6, OUTPUT);
-  pinMode(5, OUTPUT);
-
-  analogWrite(9, 0);
-  analogWrite(6, 0);
-  analogWrite(5, 0);
+    pinMode(9, OUTPUT);
+    pinMode(6, OUTPUT);
+    pinMode(5, OUTPUT);
+    
+    analogWrite(9, 0);
+    analogWrite(6, 0);
+    analogWrite(5, 0);
 }
 
 void loop() {
-  if (analogRead(0) < 300) {
-    analogWrite(9, 0);
-    analogWrite(6, 255);
-    analogWrite(5, 255);
-  } else if (analogRead(0) < 600) {
-    analogWrite(9, 255);
-    analogWrite(6, 0);
-    analogWrite(5, 255);
-  } else {
-    analogWrite(9, 255);
-    analogWrite(6, 255);
-    analogWrite(5, 0);
-  }
+    if (analogRead(0) < 300) {
+        analogWrite(9, 0);
+        analogWrite(6, 255);
+        analogWrite(5, 255);
+    } else if (analogRead(0) < 600) {
+        analogWrite(9, 255);
+        analogWrite(6, 0);
+        analogWrite(5, 255);
+    } else {
+        analogWrite(9, 255);
+        analogWrite(6, 255);
+        analogWrite(5, 0);
+    }
 }
 ```

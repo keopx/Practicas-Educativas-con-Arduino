@@ -2,8 +2,11 @@
 
 El objetivo de esta práctica es medir la distancia entre objetos simulando el detector de aparcamiento con zumbador existente en algunos vehículos. Para ello se va a utilizar un sensor de ultrasonidos.
 
-![Detector de aparcamiento con Arduino](practica.gif)
+![](practica.gif)
 
+| Autor de la práctica |
+| :---                 |
+| ![](https://avatars0.githubusercontent.com/u/12022187?s=20)  [Miguel Ángel Abellán](https://github.com/migueabellan) |
 
 ---
 
@@ -40,7 +43,7 @@ Teniendo en cuenta las características técnicas de los diodos led que utilizam
 
 Fijándonos en los pines del sensor de ultrasonidos, se conecta el pin Vcc al pin 5V de la placa de arduino, el GND al GND de la placa de arduino, y los pines triger y echo a los pines 12 y 11 respectivamente. Por otro lado se conecta el zumbador al pin digital 13 de la placa de arduino.
 
-![Esquema eléctrico](fritzing.png)
+![](fritzing.png)
 
 
 <br /><br />
@@ -50,7 +53,7 @@ Fijándonos en los pines del sensor de ultrasonidos, se conecta el pin Vcc al pi
 
 Al ejecutar el código se deberá detectar la distancia mediante el bloque que devuelve la distancia en centímetros y almacenarla en una variable. De esta forma en caso de estar a más de 30 centímetros el zumbador permanecerá desactivado. En caso de estar a menos 10 centímetros se activará de forma fija, y si se encuentra entre 10 y 30 centímetros irá aumentando la velocidad del zumbador en base a una constante de 5 milisegundos.
 
-![Programación en mBlock](mblock.png)
+![](mblock.png)
 
 
 <br /><br />
@@ -62,49 +65,43 @@ En primer lugar, se configura el pin digitales 13 y 12 en modo salida (OUTPUT) y
 
 Al ejecutar el código se deberá detectar la distancia mediante el bloque que devuelve la distancia en centímetros y almacenarla en una variable. De esta forma en caso de estar a más de 30 centímetros el zumbador permanecerá desactivado. En caso de estar a menos 10 centímetros se activará de forma fija, y si se encuentra entre 10 y 30 centímetros irá aumentando la velocidad del zumbador en base a una constante de 5 milisegundos.
 
-```
+```cpp+lineNumbers:true
 /**
  * Detector de aparcamiento
- * 
- * @author Miguel Ángel Abellán
- * @company Programo Ergo Sum
- * @license Creative Commons. Reconocimiento CompartirIgual 4.0
  */
 
 void setup() {
-  pinMode(13, OUTPUT);
-  pinMode(12, OUTPUT);
-  pinMode(11, INPUT);
-
-  //Inicialización  de los pines
-  digitalWrite(13, LOW);
-  digitalWrite(12, LOW);
+    pinMode(13, OUTPUT);
+    pinMode(12, OUTPUT);
+    pinMode(11, INPUT);
+    
+    digitalWrite(13, LOW);
+    digitalWrite(12, LOW);
 }
 
-//Este código se ejecuta en bucle repetidamente
 void loop() {
-  digitalWrite(12, HIGH);
-  delayMicroseconds(10);
-  digitalWrite(12, LOW);
-
-  long tiempo;
-  tiempo = pulseIn(11, HIGH);
-
-  // Velocidad Sonido = 343 m/s
-  float distancia = 34300*tiempo*0.000001;
-  distancia = distancia / 2;
-  
-  if(int(distancia)<30){
+    digitalWrite(12, HIGH);
+    delayMicroseconds(10);
+    digitalWrite(12, LOW);
+    
+    long tiempo;
+    tiempo = pulseIn(11, HIGH);
+    
+    // Velocidad Sonido = 343 m/s
+    float distancia = 34300*tiempo*0.000001;
+    distancia = distancia / 2;
+    
+    if(int(distancia)<30){
     if(int(distancia)<10){
-      digitalWrite(13, HIGH);
+        digitalWrite(13, HIGH);
     }else{
-      digitalWrite(13, HIGH);
-      delay(50);
-      digitalWrite(13, LOW);
-      delay(distancia*5);
+        digitalWrite(13, HIGH);
+        delay(50);
+        digitalWrite(13, LOW);
+        delay(distancia*5);
     }
-  }else{
-    digitalWrite(13, LOW);
-  }
+    }else{
+        digitalWrite(13, LOW);
+    }
 }
 ```

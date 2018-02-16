@@ -2,8 +2,11 @@
 
 El objetivo de esta práctica es medir la distancia entre objetos próximos comprendidos entre unos cuantos centímetros. Para ello se va a utilizar un sensor de ultrasonidos.
 
-![Medidor de distancias con Arduino](practica.gif)
+![](practica.gif)
 
+| Autor de la práctica |
+| :---                 |
+| ![](https://avatars0.githubusercontent.com/u/12022187?s=20)  [Miguel Ángel Abellán](https://github.com/migueabellan) |
 
 ---
 
@@ -32,7 +35,7 @@ El objetivo de esta práctica es medir la distancia entre objetos próximos comp
 
 Fijándonos en los pines del sensor de ultrasonidos, se conecta el pin Vcc al pin 5V de la placa de arduino, el GND al GND de la placa de arduino, y los pines triger y echo a los pines 13 y 12 respectivamente.
 
-![Esquema eléctrico](fritzing.png)
+![](fritzing.png)
 
 
 <br /><br />
@@ -42,7 +45,7 @@ Fijándonos en los pines del sensor de ultrasonidos, se conecta el pin Vcc al pi
 
 Al ejecutar el código se deberá detectar la distancia mediante el bloque que devuelve la distancia en centímetros. Además el valor se guardará en una variable para mostrarla por la pantalla.
 
-![Programación en mBlock](mblock.png)
+![](mblock.png)
 
 
 <br /><br />
@@ -56,36 +59,32 @@ Al ejecutar el código se establece el pin digital 13 a un valor alto (HIGH) y b
 
 Para ver los valores de distancias deberás abrir el monitor serial.
 
-```
+```cpp+lineNumbers:true
 /**
  * Medidor de distancia
- * 
- * @author Miguel Ángel Abellán
- * @company Programo Ergo Sum
- * @license Creative Commons. Reconocimiento CompartirIgual 4.0
  */
 
 void setup() {
-  Serial.begin(9600);
-  pinMode(13, OUTPUT);
-  pinMode(12, INPUT);
-
-  digitalWrite(13, LOW);
+    Serial.begin(9600);
+    pinMode(13, OUTPUT);
+    pinMode(12, INPUT);
+    
+    digitalWrite(13, LOW);
 }
 
 void loop() {
-  digitalWrite(13, HIGH);
-  delayMicroseconds(10);
-  digitalWrite(13, LOW);
-
-  long tiempo;
-  tiempo = pulseIn(12, HIGH);
-
-  // Velocidad Sonido = 343 m/s
-  float distancia = 34300*tiempo*0.000001;
-  distancia = distancia / 2;
-
-  Serial.print("Distancia: ");
-  Serial.println(distancia);
+    digitalWrite(13, HIGH);
+    delayMicroseconds(10);
+    digitalWrite(13, LOW);
+    
+    long tiempo;
+    tiempo = pulseIn(12, HIGH);
+    
+    // Velocidad Sonido = 343 m/s
+    float distancia = 34300*tiempo*0.000001;
+    distancia = distancia / 2;
+    
+    Serial.print("Distancia: ");
+    Serial.println(distancia);
 }
 ```

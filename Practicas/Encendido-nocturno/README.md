@@ -2,8 +2,11 @@
 
 El objetivo de esta práctica es encender un LED utilizando un sensor de luz LDR, es decir, queremos que se encienda LED cuando cae la noche y oscurece. En caso contrario el LED permanecerá apagado. Para ello utilizaremos un sensor LDR.
 
-![Encendido nocturno con Arduino](practica.gif)
+![](practica.gif)
 
+| Autor de la práctica |
+| :---                 |
+| ![](https://avatars0.githubusercontent.com/u/12022187?s=20)  [Miguel Ángel Abellán](https://github.com/migueabellan) |
 
 ---
 
@@ -53,7 +56,7 @@ R = 2.9V / 0.02A = 145Ω -> 220Ω (por aproximación)
 
 Por un lado se conecta el LED al pin digital 13 de la placa de arduino (utilizando su debida resistencia). Por otro lado, se conecta el sensor LDR al pin analógico 0 de la placa de arduino (utilizando la resistencia en modo Pull-Down).
 
-![Esquema eléctrico](fritzing.png)
+![](fritzing.png)
 
 
 <br /><br />
@@ -63,7 +66,7 @@ Por un lado se conecta el LED al pin digital 13 de la placa de arduino (utilizan
 
 Al ejecutar el código se calcula el valor del sensor analógico conectado al pin 0 de la placa de arduino, y en caso de ser superior al valor 150 se activará la salida digital 13 encendiendo el LED. En caso contrario el LED permanecerá apagado.
 
-![Programación en mBlock](mblock.png)
+![](mblock.png)
 
 
 <br /><br />
@@ -75,25 +78,21 @@ En primer lugar, se configura el pin digital 13 en modo salida (OUTPUT). Esta co
 
 Por otro lado, en la función loop() se calcula el valor del sensor analógico conectado al pin 0 de la placa de arduino, y en caso de ser superior al valor 150 se activará la salida digital 13 encendiendo el LED. En caso contrario el LED permanecerá apagado.
 
-```
+```cpp+lineNumbers:true
 /**
  * Encendido nocturno
- *
- * @author Miguel Ángel Abellán
- * @company Programo Ergo Sum
- * @license Creative Commons. Reconocimiento CompartirIgual 4.0
  */
 
 void setup() {
-  pinMode(13, OUTPUT);
+    pinMode(13, OUTPUT);
 }
 
 void loop() {
-  if (analogRead(0) > 150) {
-    digitalWrite(13, HIGH);
-  }
-  else {
-    digitalWrite(13, LOW);
-  }
+    if (analogRead(0) > 150) {
+        digitalWrite(13, HIGH);
+    }
+    else {
+        digitalWrite(13, LOW);
+    }
 }
 ```

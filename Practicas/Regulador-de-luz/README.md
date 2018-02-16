@@ -2,8 +2,11 @@
 
 El objetivo de esta práctica es regular la intensidad de 3 LEDs utilizando un potenciómetro, es decir, podemos variar la cantidad de luz que emiten los LEDs girando el potenciómetro desde su posición de resistencia mínima a resistencia máxima.
 
-![Regulador de luz con Arduino](practica.gif)
+![](practica.gif)
 
+| Autor de la práctica |
+| :---                 |
+| ![](https://avatars0.githubusercontent.com/u/12022187?s=20)  [Miguel Ángel Abellán](https://github.com/migueabellan) |
 
 ---
 
@@ -53,7 +56,7 @@ R = 2.9V / 0.02A = 145Ω -> 220Ω (por aproximación)
 
 Por un lado se conectan los LEDs a los pines 9, 6 y 5 de la placa de arduino (utilizando su debida resistencia). Por otro lado, se conecta el potenciómetro al pin analógico 0 de la placa de arduino.
 
-![Esquema eléctrico](fritzing.png)
+![](fritzing.png)
 
 
 <br /><br />
@@ -63,7 +66,7 @@ Por un lado se conectan los LEDs a los pines 9, 6 y 5 de la placa de arduino (ut
 
 Al ejecutar el código se calcula el valor analógico del potenciómetro y se almacena en una variable. A continuación se interpola el valor obtenido en la entrada analógica a través del potenciómetro (o-1023) con el valor de salida analógica (0-255). Todos los LEDs se encenderán con la misma intensidad fijada en la variable.
 
-![Programación en mBlock](mblock.png)
+![](mblock.png)
 
 
 <br /><br />
@@ -75,28 +78,24 @@ En primer lugar, se configuran los pines analógicos 9, 6 y 5 en modo salida (OU
 
 Al ejecutar el código se calcula el valor analógico del potenciómetro y se almacena en una variable. A continuación se interpola utilizando la función map() el valor obtenido en la entrada analógica a través del potenciómetro (o-1023) con el valor de salida analógica (0-255). Todos los LEDs se encenderán con la misma intensidad fijada en la variable.
 
-```
+```cpp+lineNumbers:true
 /**
  * Regulador de luz
- * 
- * @author Miguel Ángel Abellán
- * @company Programo Ergo Sum
- * @license Creative Commons. Reconocimiento CompartirIgual 4.0
  */
 
 void setup() {
-  pinMode(9, OUTPUT);
-  pinMode(6, OUTPUT);
-  pinMode(5, OUTPUT);
+    pinMode(9, OUTPUT);
+    pinMode(6, OUTPUT);
+    pinMode(5, OUTPUT);
 }
 
 void loop() {
-  int valor = analogRead(0);
-  valor = map(valor, 0, 1023, 0, 255);
-
-  analogWrite(9, valor);
-  analogWrite(6, valor);
-  analogWrite(5, valor);
-  delay(15);
+    int valor = analogRead(0);
+    valor = map(valor, 0, 1023, 0, 255);
+    
+    analogWrite(9, valor);
+    analogWrite(6, valor);
+    analogWrite(5, valor);
+    delay(15);
 }
 ```
