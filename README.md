@@ -2,19 +2,9 @@
 
 Este manual está desarrollado por y para docentes interesados en introducir la **programación y robótica en el aula** desde educación secundaria.
 
-![Club de programación y robótica en Murcia](assets/portada.png)
-
-El libro está dividido en 5 bloques:
-
-1.	[¿Qué es Arduino?](Teoria/README.md)
-2.	[Salidas digitales](Teoria/Salidas-digitales/README.md)
-3.	[Salidas analógicas](Teoria/Salidas-analogicas/README.md)
-4.	[Entradas digitales](Teoria/Entradas-digitales/README.md)
-5.	[Entradas analógicas](Teoria/Entradas-analogicas/README.md)
-
-Cada bloque del libro contiene la parte teórica que se deberá conocer antes de realizar las diferentes prácticas propuestas. 
-
 Cada una de las prácticas está compuesta por el enunciado de la misma, esquema electrónico con explicación detallada sobre el uso de los componentes electrónicos, y la programación en los lenguajes de programación por bloques y de Arduino IDE.
+
+![](assets/portada.png)
 
 
 ---
