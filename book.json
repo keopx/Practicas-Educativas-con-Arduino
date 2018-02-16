@@ -4,5 +4,11 @@
   "localized-footer": {
     "hline": true,
     "filename": "FOOTER.md"
+  },
+  "pluginsConfig": {
+    "sunlight-highlighter": {
+      "theme": "dark",
+      "lineNumbers": true
+    }
   }
 }

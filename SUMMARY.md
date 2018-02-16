@@ -3,7 +3,7 @@
 * [Introducción](README.md)
 
 
-## Teoría
+## Arduino
 
 
 * [¿Qué es Arduino?](Teoria/README.md)
@@ -14,6 +14,7 @@
     * [Programación](Teoria/Programacion/README.md)
         * [mBlock](Teoria/Programacion/mblock.md)
         * [Arduino IDE](Teoria/Programacion/arduino-ide.md)
+    * [Hola mundo](Practicas/Hola-mundo/README.md)
 
 
 ## Prácticas
