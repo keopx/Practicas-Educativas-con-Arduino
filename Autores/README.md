@@ -8,7 +8,7 @@ En esta sección aparecen los enlaces a las prácticas de cada uno de los autore
 
 <br><br>
 
-## migueabellan
+## Miguel Ángel Abellán
 
 1. [Hola mundo](/Practicas/Hola-mundo/README.md)
 2. [Luz intermitente](/Practicas/Luz-intermitente/README.md)
