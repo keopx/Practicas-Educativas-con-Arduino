@@ -2,12 +2,15 @@
 
 Para programar una tarjeta de Arduino, podemos utilizar el lenguaje de programación textual de Arduino IDE.
 
-- [Estructura de control](#estructura-de-control)
-- [Funciones básicas](#funciones-básicas)
-- [Salidas digitales](#salidas-digitales)
-- [Salidas analógicas](#salidas-analógicas)
-- [Entradas digitales](#entradas-digitales)
-- [Entradas analógicas](#entradas-analógicas)
+- [¿Qué es Arduino IDE?](#arduino-ide)
+- [Instalar mBlock](#instalar-arduino-ide)
+- Programación en Arduino IDE
+    - [Estructura de control](#estructura-de-control)
+    - [Funciones básicas](#funciones-básicas)
+    - [Salidas digitales](#salidas-digitales)
+    - [Salidas analógicas](#salidas-analógicas)
+    - [Entradas digitales](#entradas-digitales)
+    - [Entradas analógicas](#entradas-analógicas)
 
 
 ---
@@ -16,11 +19,37 @@ Para programar una tarjeta de Arduino, podemos utilizar el lenguaje de programac
 <br><br>
 
 
+## Arduino IDE
+
+Arduino IDE es un editor de texto y compilador para programar y transferir el contenido de las instrucciones a la placa de Arduino en su lenguaje máquina. El lenguaje de programación utilizado es Processing.
+
+![Arduino IDE](assets/arduino-ide.png)
+
+
+
+<br />
+<hr>
+<br />
+
+
+
+## Instalar Arduino IDE
+ 
+Independientemente del sistema operativo que utilicemos, desde la [web del proyecto](https://www.arduino.cc/en/Main/Software/) está disponible para Windows, Linux y Mac, siendo la instalación similar.
+
+
+
+<br />
+<hr>
+<br />
+
+
+
 ## Estructura de control
 
 Todo programa para Arduino consta de 2 funciones; la función setup() y la función loop(). La función setup() es la primera función que se ejecuta en nuestro programa, ejecutándose sólo una vez, y se utiliza para configurar la comunicación con nuestro equipo, inicializar los pines de nuestra tarjeta de Arduino e inicialización de las variables.
 
-```
+```cpp+lineNumbers:true
 // La función setup() es la primera función en ejecutarse, una sola vez
 void setup(){
     Instrucción 1
@@ -29,11 +58,11 @@ void setup(){
     Instrucción N
 }
 ```
- 
+
 
 La función loop() se ejecuta repetidamente después de la función setup(). Dentro de la misma vamos a introducir el programa que queremos ejecutar dentro de la placa de Arduino.
 
-```
+```cpp+lineNumbers:true
 // La función loop() se ejecuta repetidamente en modo bucle infinito
 void loop(){
     Instrucción 1
@@ -63,7 +92,7 @@ Función pinMode()
 
 La función pinMode(), utilizada en la función setup(), sirve para configurar el modo de trabajo de un pin pudiendo ser INPUT (entrada) u OUTPUT (salida).
 
-```
+```cpp+lineNumbers:true
 // Configura "pin" como salida
 pinMode(pin, OUTPUT);
 
@@ -77,7 +106,7 @@ Función delay()
 
 La función delay() sirve para detener el flujo del programa durante una cantidad de tiempo. Dicha cantidad de tiempo está representada en milisegundos.
 
-```
+```cpp+lineNumbers:true
 // Espera una determinada cantidad de milisegundos
 delay(milisegundos);
 
@@ -91,7 +120,7 @@ Función delayMicroseconds()
 
 La función delayMicroseconds() sirve para detener el flujo del programa durante una cantidad de tiempo. Dicha cantidad de tiempo está representada en milisegundos.
 
-```
+```cpp+lineNumbers:true
 // Espera una determinada cantidad de microsegundos
 delayMicroseconds(microsegundos);
 
@@ -105,7 +134,7 @@ Función random()
 
 La función random() sirve para elegir un valor aleatorio entre dos valores dados.
 
-```
+```cpp+lineNumbers:true
 // Elige un valor entre un mínimo y un máximo
 random(mínimo, máximo);
 
@@ -127,7 +156,7 @@ Función digitalWrite()
 
 La función digitalWrite(), utilizada normalmente en la función loop(), sirve para escribir un valor (o poner en un estado) un pin digital. Los valores o estados posibles son HIGH (alto) o LOW (bajo).
 
-```
+```cpp+lineNumbers:true
 // Establece en "pin" como valor alto
 digitalWrite(pin, HIGH);
 
@@ -149,7 +178,7 @@ Función analogWrite()
 
 La función analogWrite(), utilizada normalmente en la función loop(), sirve para escribir un valor a un pin PWM. Los valores posibles están comprendidos entre 0 y 255. Recuerda que en arduino disponemos de los pines 11, 10, 9, 6, 5, 3 para utilizar como salidas PWM.
 
-```
+```cpp+lineNumbers:true
 // Establece en "pin" el valor 150
 analogWrite(pin, 150);
 
@@ -171,7 +200,7 @@ Función digitalRead()
 
 La función digitalRead(), utilizada normalmente en la función loop(), sirve para leer un valor (o poner en un estado) un pin digital. Los valores o estados posibles son HIGH (alto) o LOW (bajo). El valor leído puede ser almacenado en una variable o comprobarse dinamicamente en una condición.
 
-```
+```cpp+lineNumbers:true
 // Lee en "pin"
 digitalRead(pin);
 
@@ -185,7 +214,7 @@ Función pulseIn()
 
 La función pulseIn() sirve para detectar el cambio de estado en una señal por ultrasonidos, es decir, si se configura el pin echo del sensor de ultrasonidos a un valor alto (HIGH), devolverá el tiempo transcurrido entre el cambio de estado a ese valor. Previamente habrá que establecer el pin del triger en el sensor ultrasonidos a un valor bajo (LOW). De esta forma, sabiendo el tiempo transcurrido se puede calcular una distancia.
 
-```
+```cpp+lineNumbers:true
 // Obtener el tiempo transcurrido hasta el valor alto
 digitalWrite(trigger, LOW);
 pulseIn(echo, HIGH);
@@ -209,7 +238,7 @@ Función analogRead()
 
 La función analogRead(), utilizada normalmente en la función loop(), sirve para leer un valor un pin de entrada analógico. Los valores están comprendidos entre 0 y 1023. El valor leído puede ser almacenado en una variable o comprobarse dinámicamente en una condición.
 
-```
+```cpp+lineNumbers:true
 // Lee en "pin"
 analogRead(pin);
 
@@ -223,7 +252,7 @@ Función map()
 
 La función map() sirve para mapear de forma sencilla convirtiendo un rango de valores en otro rango.
 
-```
+```cpp+lineNumbers:true
 // Estrapolar un rango de valores en otro
 map(valor, rango_final(inicio, fin), rango_inicial(inicio, fin));
 
