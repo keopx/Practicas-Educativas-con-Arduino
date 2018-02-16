@@ -43,7 +43,7 @@ Para realizar la práctica utilizando mBlock, deberás haber configurado y carga
 
 Para programar el código utilizando el lenguaje de programación de Arduino IDE, recuerda elegir el puerto correcto. El siguiente paso será programar el código encargado de encender y apagar el pin digital 13 (el cual tiene contiene un led en la placa). Fíjate además que estamos indicando a Arduino que el pin digital 13 tiene que tratarlo como salida.
 
-```cpp
+```cpp+lineNumbers:true
 /**
  * Hola Mundo
  * 
