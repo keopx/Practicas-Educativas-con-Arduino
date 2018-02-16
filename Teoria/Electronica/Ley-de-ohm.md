@@ -1,15 +1,4 @@
-# Electrónica
-
-Antes de construir las prácticas deberás conocer la parte de electrónica básica.
-
-
----
-
-
-<br><br>
-
-
-## ¿Qué es la Ley de Ohm?
+# ¿Qué es la Ley de Ohm?
 
 La Ley de Ohm establece que la diferencia de potencial V que aplicamos entre los extremos de un conductor determinado es proporcional a la intensidad de la corriente I que circula por el dicho conductor.
 

@@ -7,29 +7,17 @@
 
 
 * [¿Qué es Arduino?](Teoria/README.md)
+    * [Hardware](Teoria/Hardware/README.md)
+        * [Salidas digitales](Teoria/Hardware/Salidas-digitales.md)
+        * [Salidas analógicas](Teoria/Hardware/Salidas-analogicas.md)
+        * [Entradas digitales](Teoria/Hardware/Entradas-digitales.md)
+        * [Entradas analógicas](Teoria/Hardware/Entradas-analogicas.md)
+    * [Software](Teoria/Software/README.md)
+        * [mBlock](Teoria/Software/mBlock.md)
+        * [Arduino IDE](Teoria/Software/Arduino-ide.md)
 
-* [Hardware](Teoria/Hardware/README.md)
-    * [Salidas digitales](Teoria/Hardware/Salidas-digitales/README.md)
-    * [Salidas analógicas](Teoria/Hardware/Salidas-analogicas/README.md)
-    * [Entradas digitales](Teoria/Hardware/Entradas-digitales/README.md)
-    * [Entradas analógicas](Teoria/Hardware/Entradas-analogicas/README.md)
-
-* [Software](Teoria/Software/README.md)
-    * [mBlock](Teoria/Software/Instalacion/mblock.md)
-    * [Arduino IDE](Teoria/Instalacion/arduino-ide.md)
-
-* [Programación](Teoria/Programacion/README.md)
-    * [mBlock](Teoria/Programacion/mblock.md)
-    * [Arduino IDE](Teoria/Programacion/arduino-ide.md)
-
-* [Componentes](Teoria/Componentes/README.md)
-
-* [Electrónica](Teoria/Electronica/README.md)
-    * [Materiales](Teoria/Materiales/README.md)
-    * [Salidas digitales](Teoria/Salidas-digitales/README.md)
-    * [Salidas analógicas](Teoria/Salidas-analogicas/README.md)
-    * [Entradas digitales](Teoria/Entradas-digitales/README.md)
-    * [Entradas analógicas](Teoria/Entradas-analogicas/README.md)
+* [Electrónica](Teoria/Electronica/Componentes.md)
+    * [Ley de Ohm](Teoria/Electronica/Ley-de-ohm.md)
 
 
 ## Prácticas de iniciación
