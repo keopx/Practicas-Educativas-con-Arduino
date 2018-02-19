@@ -28,3 +28,4 @@ En esta sección aparecen los enlaces a las prácticas de cada uno de los autore
 16. [Regulador de luz](/Practicas/Regulador-de-luz/README.md)
 17. [Servomotor manual](/Practicas/Servomotor-manual/README.md)
 18. [Coche fantástico](/Practicas/Coche-fantastico/README.md)
+19. [Cubo de LEDs 2x2x2](/Practicas/Cubo-de-leds-2x2x2/README.md)
