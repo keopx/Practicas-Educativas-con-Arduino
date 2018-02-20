@@ -13,18 +13,3 @@ La entrada analógica toma los valores comprendidos entre 0 y 1023.
 ![Entradas analógicas en Arduino](assets/entradas-analogicas.png)
 
 Es importante recordar que no podemos sobrepasar los límites de voltaje permitidos, es decir, si se aplica un voltaje mayor a 5 voltios en una entrada digital, la placa de arduino se quemará. Lo mismo aplica para voltajes negativos, por lo que debemos asegurar que el voltaje aplicado a una entrada digital se encuentre entre 0 y 5 voltios.
-
-
-
-<br />
-<hr>
-<br />
-
-
-
-## Prácticas utilizando entradas analógicas
-
-* [Encendido nocturno](/Practicas/Encendido-nocturno/README.md)
-* [Led RGB crepuscular](/Practicas/Led-RGB-crepuscular/README.md)
-* [Regulador de luz](/Practicas/Regulador-de-luz/README.md)
-* [Servomotor manual](/Practicas/Servomotor-manual/README.md)

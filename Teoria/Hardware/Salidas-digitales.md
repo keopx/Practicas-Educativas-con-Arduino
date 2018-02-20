@@ -13,19 +13,3 @@ La salida digital toma los valores 0V (bajo) ó 5V (alto).
 ![Salidas digitales en Arduino](assets/salidas-digitales.png)
 
 Los pines de salida han sido diseñados para entregar señales de voltaje, no para suplir corriente a un circuito. El máximo de corriente que puede entregar un pin de salida es de aproximadamente 40mA (suficiente para encender un LED). Las cargas que vamos a manejar no deben superar los 5V ni consumir más de 40mA.
-
-
-
-<br />
-<hr>
-<br />
-
-
-
-## Prácticas utilizando salidas digitales
-
-* [Luz intermitente](/Practicas/Luz-intermitente/README.md)
-* [Luz alterna](/Practicas/Luz-alterna/README.md)
-* [Semáforo simple](/Practicas/Semaforo-simple/README.md)
-* [Semáforo peatones](/Practicas/Semaforo-peatones/README.md)
-* [Coche fantástico](/Practicas/Coche-fantastico/README.md)
