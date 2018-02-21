@@ -34,7 +34,6 @@
     * [Led RGB (ánodo común)](Practicas/Led-RGB-anodo-comun/README.md)
     * [Led RGB (cátodo común)](Practicas/Led-RGB-catodo-comun/README.md)
     * [Servomotor 0-180](Practicas/Servomotor-0-180/README.md)
-    * [La Guerra de las Galaxias](Practicas/La-guerra-de-las-galaxias/README.md)
     
     * [Pulsador simple](Practicas/Pulsador-simple/README.md)
     * [Medidor de distancias](Practicas/Medidor-de-distancias/README.md)
@@ -44,6 +43,7 @@
     * [Led RGB crepuscular](Practicas/Led-RGB-crepuscular/README.md)
     * [Regulador de luz](Practicas/Regulador-de-luz/README.md)
     * [Servomotor manual](Practicas/Servomotor-manual/README.md)
+    * [Sensor de temperatura](Practicas/Sensor-de-temperatura/README.md)
 
 
 * [Nivel 2/5 (Fácil)](Practicas/Nivel-2.md)
@@ -51,6 +51,7 @@
 
 
 * [Nivel 3/5 (Medio)](Practicas/Nivel-3.md)
+    * [La Guerra de las Galaxias](Practicas/La-guerra-de-las-galaxias/README.md)
     * [Cubo de LEDs 2x2x2](Practicas/Cubo-de-leds-2x2x2/README.md)
 
 

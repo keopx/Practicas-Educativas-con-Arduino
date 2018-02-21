@@ -29,3 +29,4 @@ En esta sección aparecen los enlaces a las prácticas de cada uno de los autore
 17. [Servomotor manual](/Practicas/Servomotor-manual/README.md)
 18. [Coche fantástico](/Practicas/Coche-fantastico/README.md)
 19. [Cubo de LEDs 2x2x2](/Practicas/Cubo-de-leds-2x2x2/README.md)
+20. [Sensor de temperatura](/Practicas/Sensor-de-temperatura/README.md)
