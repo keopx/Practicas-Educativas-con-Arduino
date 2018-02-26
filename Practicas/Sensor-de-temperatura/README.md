@@ -37,12 +37,13 @@ El objetivo de esta práctica es encender los LEDs rojo, naranja o azul dependie
 | Rango de medición             | -55° a 150°C  |
 | Precisión                     | ±0,5°C        |
 
-El sensor de temperatura se conectará a los terminales de 5V y GND siendo la patilla central el valor analógico que medirá la temperatura. En caso de conectar el sensor de temperatura al revés, observaremos que se calienta demasiado en cuestión de segundos.
+El sensor de temperatura se conectará a los terminales de 5V y GND siendo la patilla central el valor analógico que medirá la temperatura. Los extremos son para alimentación, mientras que el pin central proporciona la medición en una referencia de tensión, a razón de 10mV/ºC.
 
-Si queremos saber que voltaje tenemos en la entrada analógica solo debemos de multiplicar por 5/1024 (0.0048V de precisión). Esto nos da el voltaje de nuestro sensor, ahora hay que transformar los voltios en grados. Ya hemos averiguado, gracias a la ficha técnica, que 1ºC equivale a 10mV (0.01V) por lo tanto solo debemos dividir el valor de voltaje obtenido antes entre 0.01 y nos dará la temperatura.
+El rango de medición es de -55ºC (-550mV) a 150ºC (1500 mV). Su precisión a temperatura ambiente es de 0,5ºC.
 
 ```
-Temperatura = (Valor * 5 / 1024) / 0.01 = Valor * 5 * 100 / 1024
+Milivoltios = ( valor analógico / 1023 ) * 5000
+Temperatura = Milivoltios / 10
 ```
 
 ![](fritzing.png)
@@ -74,12 +75,13 @@ void setup() {
     pinMode(13, OUTPUT);
     pinMode(12, OUTPUT);
     pinMode(11, OUTPUT);
-}
+
 
 void loop() {
     
     float temperatura = analogRead(0);
-    temperatura = ( temperatura * 5 * 100 ) / 1024;
+	float milivoltios = ( temperatura / 1023 ) * 5000;
+	temperatura = milivoltios / 10; 
     
     if (temperatura < 10 ) {
         digitalWrite(13, LOW);
