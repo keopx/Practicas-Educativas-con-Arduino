@@ -1,4 +1,4 @@
-# Nivel 1
+# Nivel 1/5 (Muy Fácil)
 
 * [Hola mundo](/Practicas/Hola-mundo/README.md)
 * [Luz intermitente](/Practicas/Luz-intermitente/README.md)

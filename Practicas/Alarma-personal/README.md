@@ -6,7 +6,7 @@ Con esta práctica fabricamos una alarma que el alumno puede utilizar personalme
 
 | Autor de la práctica |
 | :---                 |
-| Pedro José Fernández |
+| Pedro José Fernández Martínez |
 
 ---
 
