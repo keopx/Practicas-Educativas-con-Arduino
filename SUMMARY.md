@@ -48,6 +48,7 @@
     * [Servomotor manual](Practicas/Servomotor-manual/README.md)
     * [Sensor de temperatura](Practicas/Sensor-de-temperatura/README.md)
     * [Alarma personal](Practicas/Alarma-personal/README.md)
+    * [Barrera accionada por pulsador](Practicas/Barrera-accionada-por-pulsador/README.md)
 
 
 * [Nivel 2/5 (Fácil)](Practicas/Nivel-2.md)

@@ -15,3 +15,4 @@
 * [Servomotor manual](/Practicas/Servomotor-manual/README.md)
 
 * [Alarma personal](/Practicas/Alarma-personal/README.md)
+* [Barrera accionada por pulsador](/Practicas/Barrera-accionada-por-pulsador/README.md)
