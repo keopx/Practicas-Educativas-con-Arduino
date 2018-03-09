@@ -44,4 +44,4 @@ Para la simulación en la pantalla del ordenador del movimiento de las semillas 
 
 ![](mblock.png)
 
-[Descarga el código para mBlock](mBlock.sb2)
+[Descarga el código para mBlock](mblock.sb2)

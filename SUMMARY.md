@@ -3,7 +3,7 @@
 * [Introducción](README.md)
 
 
-## Arduino
+## TEORÍA
 
 
 * [¿Qué es Arduino?](Teoria/README.md)
@@ -20,14 +20,16 @@
     * [Ley de Ohm](Teoria/Electronica/Ley-de-ohm.md)
 
 
-## VideoJuegos
+
+## VIDEOJUEGOS
 
 
 * [Nivel 1/5 (Muy Fácil)](Videojuegos/mBlock.md)
     * [Make a Wish](Videojuegos/Make-a-wish/README.md)
 
 
-## Prácticas
+
+## PRÁCTICAS
 
 
 * [Nivel 1/5 (Muy Fácil)](Practicas/Nivel-1.md)
