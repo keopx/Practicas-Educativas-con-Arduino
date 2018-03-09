@@ -6,7 +6,7 @@ Make a wish es un "diente de león" virtual. Soplando en el detector de sonido v
 
 | Autor de la práctica |
 | :---                 |
-| Natalia Fernández de la Cruz |
+| Natalia Fernández de la Cruz López |
 
 ---
 

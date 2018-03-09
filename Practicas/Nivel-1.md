@@ -13,3 +13,5 @@
 * [Detector de aparcamiento](/Practicas/Detector-de-aparcamiento/README.md)
 * [Regulador de luz](/Practicas/Regulador-de-luz/README.md)
 * [Servomotor manual](/Practicas/Servomotor-manual/README.md)
+
+* [Alarma personal](/Practicas/Alarma-personal/README.md)

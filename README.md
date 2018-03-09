@@ -26,7 +26,8 @@ Cada una de las prácticas está compuesta por el enunciado de la misma, esquema
 | Ranking | Prácticas | Autor | 
 | :---    | :---      | :---  |
 | 1       | 20        | ![](https://avatars0.githubusercontent.com/u/12022187?s=20)  [Miguel Ángel Abellán](Autores/README.md#miguel-ángel-abellán) |
-| 2       | 1         | Natalia Fernández de la Cruz |
+| 2       | 1         | Natalia Fernández de la Cruz López |
+| 3       | 1         | Pedro José Fernández Martínez |
 
 
 
