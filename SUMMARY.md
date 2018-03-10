@@ -57,6 +57,7 @@
     * [Pulsador simple](Practicas/Pulsador-simple/README.md)
     * [Encendido nocturno](Practicas/Encendido-nocturno/README.md)
     * [Led RGB crepuscular](Practicas/Led-RGB-crepuscular/README.md)
+    * [Luces de feria](Practicas/Luces-de-feria/README.md)
 
 
 * [Nivel 3/5 (Medio)](Practicas/Nivel-3.md)
