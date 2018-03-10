@@ -23,13 +23,14 @@ Cada una de las prácticas está compuesta por el enunciado de la misma, esquema
 
 ## Autores de las prácticas:
 
-| Ranking | Prácticas | Autor | 
-| :---    | :---      | :---  |
-| 1       | 20        | ![](https://avatars0.githubusercontent.com/u/12022187?s=20)  [Miguel Ángel Abellán](Autores/README.md#miguel-ángel-abellán) |
-| 2       | 1         | Natalia Fernández de la Cruz López |
-| 3       | 1         | Pedro José Fernández Martínez |
-| 4       | 1         | Antonio Martínez Hernández |
-| 5       | 1         | Heriberto Martínez Martínez |
+| Prácticas | Autor | 
+| :---      | :---  |
+| 20        | ![](https://avatars0.githubusercontent.com/u/12022187?s=20)  [Miguel Ángel Abellán](Autores/README.md#miguel-ángel-abellán) |
+| 2         | Alfredo Velazquez Marín |
+| 1         | Natalia Fernández de la Cruz López |
+| 1         | Pedro José Fernández Martínez |
+| 1         | Antonio Martínez Hernández |
+| 1         | Heriberto Martínez Martínez |
 
 
 
