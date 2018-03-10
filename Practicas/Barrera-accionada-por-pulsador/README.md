@@ -4,7 +4,7 @@ Se ha construido una maqueta de una barrera levadiza accionada con pulsador (con
 
 ![](practica.gif)
 
-| Autor de la práctica |
+| Autores de la práctica |
 | :---                 |
 | Antonio Martínez Hernández |
 | Heriberto Martínez Martínez |

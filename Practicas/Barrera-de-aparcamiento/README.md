@@ -6,7 +6,7 @@ La práctica consiste en una barrera de aparcamiento, que sube cuando un detecto
 
 | Autor de la práctica |
 | :---                 |
-| Alfredo Velazquez Marín |
+| Alfredo Velázquez Marín |
 
 ---
 

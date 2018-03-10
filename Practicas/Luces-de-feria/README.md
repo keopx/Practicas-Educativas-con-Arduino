@@ -6,7 +6,7 @@ En esta práctica se hacen varios efectos de encendido de nueve LEDs. Utilizando
 
 | Autor de la práctica |
 | :---                 |
-| Alfredo Velazquez Marín |
+| Alfredo Velázquez Marín |
 
 ---
 
