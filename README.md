@@ -15,7 +15,7 @@ Cada una de las prácticas está compuesta por el enunciado de la misma, esquema
 
 ## Manual elaborado por:
 
-* Miguel Ángel Abellán ([GitHub](https://github.com/migueabellan) | [Twitter](https://twitter.com/migueabellan))
+* ![](https://avatars0.githubusercontent.com/u/12022187?s=20) Miguel Ángel Abellán ([GitHub](https://github.com/migueabellan) | [Twitter](https://twitter.com/migueabellan))
 * ...
 * ..
 
@@ -29,7 +29,7 @@ Ayúdanos en la elaboración del manual y aparecerás como autor
 
 | Prácticas | Autor | 
 | :---      | :---  |
-| 20        | ![](https://avatars0.githubusercontent.com/u/12022187?s=20)  [Miguel Ángel Abellán](Autores/README.md#miguel-ángel-abellán) |
+| 20        | [Miguel Ángel Abellán](Autores/README.md#miguel-ángel-abellán) |
 | 2         | Alfredo Velázquez Marín |
 | 1         | Natalia Fernández de la Cruz López |
 | 1         | Pedro José Fernández Martínez |
@@ -39,7 +39,10 @@ Ayúdanos en la elaboración del manual y aparecerás como autor
 | 1         | Mariano Noguera López |
 | 1         | Celia Martínez Soto |
 | 1         | María Isabel Hernández Monllor |
+| 1         | Ana María García Caparrós |
+| 1         | Guillermo José Gómez Espuny |
 
+Envíanos tu práctica y aparecerás como autor
 
 
 <br>
