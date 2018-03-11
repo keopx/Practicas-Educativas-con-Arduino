@@ -35,6 +35,7 @@ Ayúdanos en la elaboración del manual y aparecerás como autor
 | 1         | Pedro José Fernández Martínez |
 | 1         | Antonio Martínez Hernández |
 | 1         | Heriberto Martínez Martínez |
+| 1         | Celia Martínez Soto |
 
 
 
