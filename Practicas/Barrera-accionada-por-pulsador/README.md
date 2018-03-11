@@ -8,6 +8,8 @@ Se ha construido una maqueta de una barrera levadiza accionada con pulsador (con
 | :---                 |
 | Antonio Martínez Hernández |
 | Heriberto Martínez Martínez |
+| Ana Belén Ayala García |
+| Mariano Noguera López |
 
 ---
 
