@@ -53,6 +53,7 @@
     * [Barrera accionada por pulsador](Practicas/Barrera-accionada-por-pulsador/README.md)
     * [Barrera de aparcamiento](Practicas/Barrera-de-aparcamiento/README.md)
     * [Theremin electrónico](Practicas/Theremin-electronico/README.md)
+    * [Sensor de aparcamiento LED](Practicas/Sensor-de-aparcamiento-led/README.md)
 
 
 * [Nivel 2/5 (Fácil)](Practicas/Nivel-2.md)

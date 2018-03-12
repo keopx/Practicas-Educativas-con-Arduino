@@ -41,6 +41,7 @@ Ayúdanos en la elaboración del manual y aparecerás como autor
 | 1         | María Isabel Hernández Monllor |
 | 1         | Ana María García Caparrós |
 | 1         | Guillermo José Gómez Espuny |
+| 1         | José Martínez García |
 
 Envíanos tu práctica y aparecerás como autor
 
