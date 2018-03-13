@@ -1,6 +1,6 @@
 # Máquina para dibujar
 
-Este trabajo trata sobre la construcción de una máquina para hacer dibujos conjugando los movimientos de un motor paso a paso y un servo motor. 
+Este trabajo trata sobre la construcción de una máquina para hacer dibujos conjugando los movimientos de un motor paso a paso y un servo motor. Inspirado en el vídeo que se encuentra en esta dirección: https://vimeo.com/80311461
 
 ![](practica.gif)
 
