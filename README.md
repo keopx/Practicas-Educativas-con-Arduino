@@ -13,7 +13,7 @@ Cada una de las prácticas está compuesta por el enunciado de la misma, esquema
 <br><br>
 
 
-## Manual elaborado por:
+## Manual elaborado por
 
 * ![](https://avatars0.githubusercontent.com/u/12022187?s=20) Miguel Ángel Abellán ([GitHub](https://github.com/migueabellan) | [Twitter](https://twitter.com/migueabellan))
 * ...
@@ -25,26 +25,33 @@ Ayúdanos en la elaboración del manual y aparecerás como autor
 <br><br>
 
 
-## Autores de las prácticas:
+## Autores de las prácticas
 
-| Prácticas | Autor | 
-| :---      | :---  |
-| 20        | [Miguel Ángel Abellán](Autores/README.md#miguel-ángel-abellán) |
-| 2         | Alfredo Velázquez Marín |
-| 1         | Natalia Fernández de la Cruz López |
-| 1         | Pedro José Fernández Martínez |
-| 1         | Antonio Martínez Hernández |
-| 1         | Heriberto Martínez Martínez |
-| 1         | Ana Belén Ayala García |
-| 1         | Mariano Noguera López |
-| 1         | Celia Martínez Soto |
-| 1         | María Isabel Hernández Monllor |
-| 1         | Ana María García Caparrós |
-| 1         | Guillermo José Gómez Espuny |
-| 1         | José Martínez García |
-| 1         | Carlota Gómez de Slazar Cateriu |
-| 1         | Pablo González Fernández |
-| 1         | José Antonio Torrecillas Moya |
+Sistema de puntuación:
+- Nivel 1/5: 1 Punto
+- Nivel 2/5: 2 Punto
+- Nivel 3/5: 3 Punto
+- Nivel 4/5: 4 Punto
+- Nivel 5/5: 5 Punto
+
+| Puntos | Nivel 1/5 | Nivel 2/5 | Nivel 3/5 | Nivel 4/5 | Nivel 5/5 | Autor | 
+| :---:  |   :---:   |   :---:   |   :---:   |   :---:   |   :---:   | :---  |
+| 28     |    14     |    4      |    2      |           |           | [Miguel Ángel Abellán](Autores/README.md#miguel-ángel-abellán) |
+| 3      |           |           |    1      |           |           | José Antonio Torrecillas Moya |
+| 2      |    2      |           |           |           |           | Alfredo Velázquez Marín |
+| 1      |    1      |           |           |           |           | Natalia Fernández de la Cruz López |
+| 1      |    1      |           |           |           |           | Pedro José Fernández Martínez |
+| 1      |    1      |           |           |           |           | Antonio Martínez Hernández |
+| 1      |    1      |           |           |           |           | Heriberto Martínez Martínez |
+| 1      |    1      |           |           |           |           | Ana Belén Ayala García |
+| 1      |    1      |           |           |           |           | Mariano Noguera López |
+| 1      |    1      |           |           |           |           | Celia Martínez Soto |
+| 1      |    1      |           |           |           |           | María Isabel Hernández Monllor |
+| 1      |    1      |           |           |           |           | Ana María García Caparrós |
+| 1      |    1      |           |           |           |           | Guillermo José Gómez Espuny |
+| 1      |    1      |           |           |           |           | José Martínez García |
+| 1      |    1      |           |           |           |           | Carlota Gómez de Slazar Cateriu |
+| 1      |    1      |           |           |           |           | Pablo González Fernández |
 
 Envíanos tu práctica y aparecerás como autor
 
