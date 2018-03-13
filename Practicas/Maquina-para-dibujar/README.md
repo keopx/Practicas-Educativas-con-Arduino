@@ -25,6 +25,15 @@ Este trabajo trata sobre la construcción de una máquina para hacer dibujos con
 - Cables
 
 
+<br><br>
+
+
+## Montaje
+
+Accede al vídeo en YouTube para ver el montaje de la práctica: https://youtu.be/4oOBonm__dI
+
+![](montaje.png)
+
 <br /><br />
 
 
