@@ -44,6 +44,7 @@ Ayúdanos en la elaboración del manual y aparecerás como autor
 | 1         | José Martínez García |
 | 1         | Carlota Gómez de Slazar Cateriu |
 | 1         | Pablo González Fernández |
+| 1         | José Antonio Torrecillas Moya |
 
 Envíanos tu práctica y aparecerás como autor
 

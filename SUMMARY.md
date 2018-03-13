@@ -68,6 +68,7 @@
 * [Nivel 3/5 (Medio)](Practicas/Nivel-3.md)
     * [La Guerra de las Galaxias](Practicas/La-guerra-de-las-galaxias/README.md)
     * [Cubo de LEDs 2x2x2](Practicas/Cubo-de-leds-2x2x2/README.md)
+    * [Cubo de LEDs 2x2x2](Practicas/Maquina-para-dibujar/README.md)
 
 
 * [Nivel 4/5 (Difícil)](Practicas/Nivel-4.md)
