@@ -1,6 +1,6 @@
 # Autores
 
-En esta sección aparecen los enlaces a las prácticas de cada uno de los **autores con más de 5 prácticas**
+En esta sección aparecen los enlaces a las prácticas de cada uno de los **autores con más de 5 prácticas entregadas**
 
 
 ---
