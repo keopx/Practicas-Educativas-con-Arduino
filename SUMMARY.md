@@ -54,6 +54,7 @@
     * [Barrera de aparcamiento](Practicas/Barrera-de-aparcamiento/README.md)
     * [Theremin electrónico](Practicas/Theremin-electronico/README.md)
     * [Sensor de aparcamiento LED](Practicas/Sensor-de-aparcamiento-led/README.md)
+    * [Semáforo con pulsador](Practicas/Semaforo-con-pulsador/README.md)
 
 
 * [Nivel 2/5 (Fácil)](Practicas/Nivel-2.md)

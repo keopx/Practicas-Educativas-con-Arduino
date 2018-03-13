@@ -42,6 +42,8 @@ Ayúdanos en la elaboración del manual y aparecerás como autor
 | 1         | Ana María García Caparrós |
 | 1         | Guillermo José Gómez Espuny |
 | 1         | José Martínez García |
+| 1         | Carlota Gómez de Slazar Cateriu |
+| 1         | Pablo González Fernández |
 
 Envíanos tu práctica y aparecerás como autor
 
