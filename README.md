@@ -27,18 +27,19 @@ Ayúdanos en la elaboración del manual y aparecerás como autor
 
 ## Autores de las prácticas
 
-Sistema de puntuación:
+Sistema de puntuación: Cada práctica entregada se multiplicará por el valor del nivel. Los niveles son estimaciones de dificultad en cuanto programación y electrónica.
 - Nivel 1/5: 1 Punto
-- Nivel 2/5: 2 Punto
-- Nivel 3/5: 3 Punto
-- Nivel 4/5: 4 Punto
-- Nivel 5/5: 5 Punto
+- Nivel 2/5: 2 Puntos
+- Nivel 3/5: 3 Puntos
+- Nivel 4/5: 4 Puntos
+- Nivel 5/5: 5 Puntos
 
-| Puntos | 1/5 | 2/5 | 3/5 | 4/5 | 5/5 | Autor | 
+| Puntos | 1/5   | 2/5   | 3/5   | 4/5   | 5/5   | Autor | 
 | :---:  | :---: | :---: | :---: | :---: | :---: | :---  |
 | 28     |  14   |  4    |  2    |       |       | [Miguel Ángel Abellán](Autores/README.md#miguel-ángel-abellán) |
 | 3      |       |       |  1    |       |       | José Antonio Torrecillas Moya |
 | 2      |  2    |       |       |       |       | Alfredo Velázquez Marín |
+| 2      |       |  1    |       |       |       | Gerónimo Carbonell Capel |
 | 1      |  1    |       |       |       |       | Natalia Fernández de la Cruz López |
 | 1      |  1    |       |       |       |       | Pedro José Fernández Martínez |
 | 1      |  1    |       |       |       |       | Antonio Martínez Hernández |
