@@ -4,9 +4,10 @@ Sistema para refrigerar estancias cuando superan una determinada temperatura. A 
 
 ![](practica.gif)
 
-| Autor de la práctica |
+| Autores de la práctica |
 | :---                 |
 | Gerónimo Carbonell Capel |
+| Pascual Banegas Gil |
 
 ---
 
