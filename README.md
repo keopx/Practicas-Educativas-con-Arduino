@@ -37,8 +37,10 @@ Sistema de puntuación: Cada práctica entregada se multiplicará por el valor d
 | Puntos | 1/5   | 2/5   | 3/5   | 4/5   | 5/5   | Autor | 
 | :---:  | :---: | :---: | :---: | :---: | :---: | :---  |
 | 28     |  14   |  4    |  2    |       |       | [Miguel Ángel Abellán](Autores/README.md#miguel-ángel-abellán) |
-| 3      |       |       |  1    |       |       | José Antonio Torrecillas Moya |
 | 3      |  1    |  1    |       |       |       | Alfredo Velázquez Marín |
+| 3      |       |       |  1    |       |       | José Antonio Torrecillas Moya |
+| 3      |       |       |  1    |       |       | Sergio Lino Ferrández Gil |
+| 3      |       |       |  1    |       |       | Ana Meseguir García |
 | 2      |       |  1    |       |       |       | Gerónimo Carbonell Capel |
 | 2      |       |  1    |       |       |       | Pascual Banegas Gil |
 | 1      |  1    |       |       |       |       | Natalia Fernández de la Cruz López |
