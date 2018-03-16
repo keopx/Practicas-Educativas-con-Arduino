@@ -40,7 +40,7 @@ Sistema de puntuación: Cada práctica entregada se multiplicará por el valor d
 | 3      |  1    |  1    |       |       |       | Alfredo Velázquez Marín |
 | 3      |       |       |  1    |       |       | José Antonio Torrecillas Moya |
 | 3      |       |       |  1    |       |       | Sergio Lino Ferrández Gil |
-| 3      |       |       |  1    |       |       | Ana Meseguir García |
+| 3      |       |       |  1    |       |       | Ana Meseguer García |
 | 2      |       |  1    |       |       |       | Gerónimo Carbonell Capel |
 | 2      |       |  1    |       |       |       | Pascual Banegas Gil |
 | 1      |  1    |       |       |       |       | Natalia Fernández de la Cruz López |

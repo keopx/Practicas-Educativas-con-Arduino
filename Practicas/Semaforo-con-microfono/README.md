@@ -7,7 +7,7 @@ Este proyecto versa sobre un semaforo para el control del ruido en el aula, con 
 | Autores de la práctica |
 | :---                 |
 | Sergio Lino Ferrández Gil |
-| Ana Meseguir García |
+| Ana Meseguer García |
 
 ---
 
